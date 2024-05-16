@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 
 import Loading from "./pages/Loading";
+import Header from "./components/Header";
 import { Outlet } from "react-router-dom";
+import Footer from "./components/Footer";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -19,7 +21,19 @@ function App() {
     }
   }
 
-  return <div>{loading === true ? <Loading /> : <Outlet />}</div>;
+  return (
+    <div>
+      {loading === true ? (
+        <Loading />
+      ) : (
+        <div>
+          <Header />
+          <Outlet />
+          <Footer />
+        </div>
+      )}
+    </div>
+  );
 }
 
 export default App;

@@ -4,13 +4,14 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App.jsx";
 import Error from "./pages/Error.jsx";
-import Landing from "./pages/Landing.jsx";
+import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
-import Testimonial from "./pages/Testimonial.jsx";
+import Testimonials from "./pages/Testimonials.jsx";
 import Contact from "./pages/Contact.jsx";
 import Services from "./pages/Services.jsx";
-import FAQ from "./pages/FAQ.jsx";
+import FAQs from "./pages/FAQs.jsx";
 
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 
 const router = createBrowserRouter([
@@ -21,15 +22,15 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Landing />,
+        element: <Home />,
       },
       {
         path: "about",
         element: <About />,
       },
       {
-        path: "testimonial",
-        element: <Testimonial />,
+        path: "testimonials",
+        element: <Testimonials />,
       },
       {
         path: "contact",
@@ -40,8 +41,8 @@ const router = createBrowserRouter([
         element: <Services />,
       },
       {
-        path: "FAQ",
-        element: <FAQ />,
+        path: "faqs",
+        element: <FAQs />,
       },
     ],
   },
