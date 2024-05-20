@@ -1,5 +1,11 @@
+import Hero from "../assets/ImageFour.jpg";
+
 function Home({}) {
-  return <h2>Landing Page</h2>;
+  return (
+    <section>
+      <img src={Hero}></img>
+    </section>
+  );
 }
 
 export default Home;
