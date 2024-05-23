@@ -133,18 +133,18 @@ nav > ul > li {
   transition: 2s;
 }
 
-#hamburgerMenu > div {
+#hamburgerHeading {
   display: flex;
   flex-direction: column;
   margin: 20px 15px;
   width: 50%;
 }
 
-#hamburgerMenu > div > h2 {
+#hamburgerHeading > h2 {
   margin: auto;
 }
 
-#hamburgerMenu > div > span {
+#hamburgerHeading > span {
   margin: auto;
 }
 

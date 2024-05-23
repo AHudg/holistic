@@ -6,9 +6,9 @@ function Hamburger({}) {
     const hamburgerMenu = document.getElementById("hamburgerMenu");
 
     if (hamburgerCheckbox.checked) {
-      hamburgerMenu.style = "transform: translateY(100%)";
+      hamburgerMenu.style = "transform: translateY(100%); opacity: 1";
     } else {
-      hamburgerMenu.style = "transform: translateY(0)";
+      hamburgerMenu.style = "transform: translateY(0); opacity: 0";
     }
   };
 
@@ -45,7 +45,7 @@ function Hamburger({}) {
         </div>
       </label>
       <div id="hamburgerMenu">
-        <div>
+        <div id="hamburgerHeading">
           <h2>Gentle Journey</h2>
           <span>Doula Services</span>
         </div>
