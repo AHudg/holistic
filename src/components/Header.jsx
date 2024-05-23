@@ -20,11 +20,10 @@ function Header({}) {
   }, []);
 
   return (
-    <header className="">
+    <header>
       <h1>
-        <a href="/" className="title">
-          Divine Doula
-        </a>
+        <a href="/">Gentle Journey</a>
+        <span>Doula Services</span>
       </h1>
       {screenSize < breakpoint ? <Hamburger /> : <Nav />}
     </header>

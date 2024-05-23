@@ -18,7 +18,7 @@ function Nav({}) {
   }
 
   return (
-    <nav className="">
+    <nav>
       <ul>
         {navLinks.map((link) => {
           return (

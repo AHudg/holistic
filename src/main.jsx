@@ -13,6 +13,7 @@ import FAQs from "./pages/FAQs.jsx";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
+import "./pages/pages.css";
 
 const router = createBrowserRouter([
   {
