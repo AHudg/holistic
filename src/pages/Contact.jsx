@@ -12,22 +12,15 @@ function Contact({}) {
       <span id="myPhone">979.900.6015</span>
       <span id="myEmail">katherine.ellis333@gmail.com</span>
 
-      <i className="fa-brands fa-square-facebook"></i>
       <i className="fa-brands fa-square-instagram"></i>
-      <i className="fa-brands fa-linkedin"></i>
 
-      {/* <div className="container">
-        <form className="row justify-content-between">
-          <div className="col-6 row">
-            <label htmlFor="firstName">First Name:</label>
-            <input type="text" id="firstName" name="firstName"></input>
-          </div>
+      <form name="contact" action="/pages/contact" netlify>
+        <input
+          type="hidden"
+          name="subject"
+          value="Contact Info from Prospective Client - Website"
+        ></input>
 
-          <div className="col-6 row">
-            <label htmlFor="lastName">Last Name:</label>
-            <input type="text" id="lastName" name="lastName"></input>
-          </div> */}
-      <form className="">
         <div className="">
           <div className="">
             <label htmlFor="firstName">First Name:</label>
@@ -71,7 +64,7 @@ function Contact({}) {
           <option value="social">Social Media</option>
           <option value="other">Other</option>
         </select>
-        <button type="button">Submit</button>
+        <button type="submit">Submit</button>
       </form>
     </div>
   );
