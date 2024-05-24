@@ -15,11 +15,7 @@ function Contact({}) {
       <i className="fa-brands fa-square-instagram"></i>
 
       <form name="contact" action="/contact" netlify>
-        {/* <input
-          type="hidden"
-          name="subject"
-          value="Contact Info from Prospective Client - Website"
-        ></input> */}
+        <input type="hidden" name="form-name" value="contact"></input>
 
         <div className="">
           <div className="">
