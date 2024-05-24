@@ -14,7 +14,7 @@ function Contact({}) {
 
       <i className="fa-brands fa-square-instagram"></i>
 
-      <form name="contact" action="/contact" netlify>
+      <form name="contact" method="post">
         <input type="hidden" name="form-name" value="contact"></input>
 
         <div className="">
