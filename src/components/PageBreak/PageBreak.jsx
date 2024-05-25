@@ -1,5 +1,7 @@
 import bee from "../assets/beeCutout.png";
 
+import "./pagebreak.css";
+
 function PageBreak({}) {
   return (
     <div className="pageBreak">

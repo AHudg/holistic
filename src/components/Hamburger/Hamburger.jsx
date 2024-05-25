@@ -1,4 +1,5 @@
 import { useLocation } from "react-router-dom";
+import "./hamburger.css";
 
 function Hamburger({}) {
   const handleHamburger = () => {

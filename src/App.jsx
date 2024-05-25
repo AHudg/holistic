@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 
-import Loading from "./pages/Loading/Loading";
-import Header from "./components/Header";
+import Loading from "./pages/Loading/Loading.jsx";
+import Header from "./components/Header/Header.jsx";
 import { Outlet } from "react-router-dom";
-import Footer from "./components/Footer";
+import Footer from "./components/Footer/Footer.jsx";
 
 function App() {
   const [loading, setLoading] = useState(true);

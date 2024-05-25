@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 
-import Hamburger from "./Hamburger";
-import Nav from "./Nav";
+import Hamburger from "../Hamburger/Hamburger.jsx";
+import Nav from "../Nav/Nav.jsx";
+
+import "./header.css";
 
 function Header({}) {
   const [screenSize, setScreenSize] = useState(window.innerWidth);
