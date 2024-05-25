@@ -22,7 +22,7 @@ function Header({}) {
   return (
     <header>
       <h1>
-        <a href="/">Gentle Journey</a>
+        <a href="/">Tender Touch</a>
         <span>Doula Services</span>
       </h1>
       {screenSize < breakpoint ? <Hamburger /> : <Nav />}

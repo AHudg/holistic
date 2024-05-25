@@ -15,12 +15,66 @@ img {
 /* FAQs */
 
 /* Contact */
+.contactPage {
+  margin: 0 20px;
+}
+
+.contactPage > h2 {
+  font-size: 2rem;
+}
+
+.info {
+  display: flex;
+  /* justify-content: center; */
+}
+
+.info a {
+  margin-right: 10px;
+}
+
 form {
   display: flex;
   flex-direction: column;
-  margin: 20px;
+  margin: 10px 0;
 }
 
 form > div {
   display: flex;
+}
+
+label {
+  margin-top: 5px;
+}
+
+input {
+  margin-bottom: 5px;
+}
+
+#firstName {
+  width: 95%;
+  margin-right: 5%;
+}
+
+#lastName {
+  width: 100%;
+}
+
+button {
+  width: 50%;
+  margin: 30px auto 10px auto;
+}
+
+@media screen and (min-width: 575px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 992px) {
+}
+
+@media screen and (min-width: 1200px) {
+}
+
+@media screen and (min-width: 1400px) {
 }

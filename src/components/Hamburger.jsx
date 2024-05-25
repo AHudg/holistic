@@ -46,7 +46,7 @@ function Hamburger({}) {
       </label>
       <div id="hamburgerMenu">
         <div id="hamburgerHeading">
-          <h2>Gentle Journey</h2>
+          <h2>Tender Touch</h2>
           <span>Doula Services</span>
         </div>
         <nav className="hamburgerNav">
