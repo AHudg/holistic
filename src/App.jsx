@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import Loading from "./pages/Loading";
+import Loading from "./pages/Loading/Loading";
 import Header from "./components/Header";
 import { Outlet } from "react-router-dom";
 import Footer from "./components/Footer";

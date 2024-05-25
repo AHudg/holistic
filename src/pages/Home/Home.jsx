@@ -1,4 +1,5 @@
-import Hero from "../assets/ImageFour.jpg";
+import Hero from "../../assets/ImageFour.jpg";
+import "./home.css";
 
 function Home({}) {
   return (

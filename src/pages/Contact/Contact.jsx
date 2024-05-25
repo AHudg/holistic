@@ -1,4 +1,5 @@
-import PageBreak from "../components/PageBreak";
+import PageBreak from "../../components/PageBreak";
+import "./contact.css";
 
 function Contact({}) {
   return (
@@ -85,7 +86,9 @@ function Contact({}) {
           <option value="Other">Other</option>
         </select>
 
-        <button type="submit">Submit</button>
+        <button type="submit" className="contactBtn">
+          Submit
+        </button>
       </form>
 
       <PageBreak />
