@@ -7,6 +7,7 @@ import Footer from "./components/Footer/Footer.jsx";
 
 function App() {
   const [loading, setLoading] = useState(true);
+  const [modalClass, setModalClass] = useState(false);
 
   useEffect(() => {
     // call the user defined function checkLoad every second, only when variable loading has changed
@@ -26,10 +27,10 @@ function App() {
       {loading === true ? (
         <Loading />
       ) : (
-        <div>
+        <div id="frame" className={modalClass ? "disableScroll" : ""}>
           <Header />
           <Outlet />
-          <Footer />
+          <Footer setModalClass={setModalClass} />
         </div>
       )}
     </div>

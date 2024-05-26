@@ -1,4 +1,4 @@
-import bee from "../assets/beeCutout.png";
+import bee from "../../assets/beeCutout.png";
 
 import "./pagebreak.css";
 

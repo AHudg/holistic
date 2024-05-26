@@ -1,4 +1,4 @@
-import PageBreak from "../../components/PageBreak";
+import PageBreak from "../../components/PageBreak/PageBreak.jsx";
 import "./contact.css";
 
 function Contact({}) {
@@ -14,13 +14,13 @@ function Contact({}) {
 
       <div className="info">
         <a href="tel:979-900-6015">
-          <i class="fa-solid fa-phone"></i>
+          <i className="fa-solid fa-phone"></i>
         </a>
         <span id="myPhone">979.900.6015</span>
       </div>
       <div className="info">
         <a href="mailto:katherine.ellis333@gmail.com" target="_blank">
-          <i class="fa-solid fa-envelope"></i>
+          <i className="fa-solid fa-envelope"></i>
         </a>
         <span id="myEmail">katherine.ellis333@gmail.com</span>
       </div>

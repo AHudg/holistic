@@ -11,6 +11,11 @@ a {
   color: black;
 }
 
+.disableScroll {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
 @media screen and (min-width: 575px) {
 }
 
