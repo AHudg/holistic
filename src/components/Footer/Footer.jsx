@@ -20,20 +20,30 @@ function Footer({ setModalClass }) {
 
   return (
     <footer id="footer">
-      <h2>Footer</h2>
-      <a href="tel:979-900-6015">
-        <i className="fa-solid fa-phone"></i>
-      </a>
-      <a href="mailto:katherine.ellis333@gmail.com" target="_blank">
-        <i className="fa-solid fa-envelope"></i>
-      </a>
-      <a href="http://instagram.com/_u/katherinee.ellis/" target="_blank">
-        <i className="fa-brands fa-square-instagram"></i>
-      </a>
-      {/* Site Map, Privacy Policy, Terms of Service, Social Media, Logo, Contact Information, Copyright */}
-      <p>&copy; 2024 Key Six Designs, LLC.</p>
-      <p onClick={handlePrivacy}>Privacy Policy</p>
-      <p onClick={handleToS}>Terms of Service</p>
+      <div>
+        <div className="logo">
+          <h4>Tender Touch</h4>
+          <span>Doula Services</span>
+        </div>
+        <div className="footerContact">
+          <a href="tel:979-900-6015">
+            <i className="fa-solid fa-phone fa-lg"></i>
+          </a>
+          <a href="mailto:katherine.ellis333@gmail.com" target="_blank">
+            <i className="fa-solid fa-envelope fa-lg"></i>
+          </a>
+          <a href="http://instagram.com/_u/katherinee.ellis/" target="_blank">
+            <i className="fa-brands fa-square-instagram fa-lg"></i>
+          </a>
+        </div>
+      </div>
+      <div className="legal">
+        <p>&copy; 2024 Key Six Designs, LLC.</p>
+        <div>
+          <p onClick={handlePrivacy}>Privacy Policy</p>
+          <p onClick={handleToS}>Terms of Service</p>
+        </div>
+      </div>
 
       {openPrivacy ? (
         <PrivacyPolicy
