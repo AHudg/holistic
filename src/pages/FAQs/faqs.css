@@ -1,3 +1,50 @@
+.faqSection {
+  background-color: gainsboro;
+}
+
+.bgContainer {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  overflow: hidden;
+}
+
+.faqBackground {
+  width: 450px;
+  height: auto;
+  rotate: -45deg;
+  position: absolute;
+  top: 70px;
+  right: -200px;
+  opacity: 0.3;
+}
+
+.faqHeader {
+  padding: 50px 30px;
+  margin-bottom: 50px;
+}
+
+.faqHeader > h2 {
+  font-size: 5rem;
+  margin: 0;
+}
+
+.faqHeader > h3 {
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+.faq {
+  border-bottom: black 2px solid;
+  margin: 5px 20px;
+}
+
+.question {
+}
+
+.answer {
+}
+
 @media screen and (min-width: 575px) {
 }
 

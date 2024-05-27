@@ -1,7 +1,6 @@
 footer {
   display: flex;
   flex-direction: column;
-  margin: 20px;
 }
 
 footer > div {
@@ -17,8 +16,8 @@ footer > div {
   width: 50%;
 }
 
-h4 {
-  margin: 0;
+.logo > h4 {
+  margin-bottom: 0;
 }
 
 .footerContact {

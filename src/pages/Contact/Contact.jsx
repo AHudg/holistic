@@ -90,8 +90,6 @@ function Contact({}) {
           Submit
         </button>
       </form>
-
-      <PageBreak />
     </section>
   );
 }
