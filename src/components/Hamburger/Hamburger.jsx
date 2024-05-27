@@ -1,15 +1,17 @@
 import { useLocation } from "react-router-dom";
 import "./hamburger.css";
 
-function Hamburger({}) {
+function Hamburger({ setModalClass }) {
   const handleHamburger = () => {
     const hamburgerCheckbox = document.getElementById("hamburgerCheckbox");
     const hamburgerMenu = document.getElementById("hamburgerMenu");
 
     if (hamburgerCheckbox.checked) {
       hamburgerMenu.style = "transform: translateY(100%); opacity: 1";
+      setModalClass(true);
     } else {
       hamburgerMenu.style = "transform: translateY(0); opacity: 0";
+      setModalClass(false);
     }
   };
 
@@ -47,7 +49,7 @@ function Hamburger({}) {
       </label>
       <div id="hamburgerMenu">
         <div id="hamburgerHeading">
-          <h2>Tender Touch</h2>
+          <h3>Tender Touch</h3>
           <span>Doula Services</span>
         </div>
         <nav className="hamburgerNav">

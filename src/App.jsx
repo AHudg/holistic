@@ -28,7 +28,7 @@ function App() {
         <Loading />
       ) : (
         <div id="frame" className={modalClass ? "disableScroll" : ""}>
-          <Header />
+          <Header setModalClass={setModalClass} />
           <Outlet />
           <Footer setModalClass={setModalClass} />
         </div>

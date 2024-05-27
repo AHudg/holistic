@@ -5,7 +5,7 @@ import Nav from "../Nav/Nav.jsx";
 
 import "./header.css";
 
-function Header({}) {
+function Header({ setModalClass }) {
   const [screenSize, setScreenSize] = useState(window.innerWidth);
   const breakpoint = 768;
 
@@ -27,7 +27,11 @@ function Header({}) {
         <a href="/">Tender Touch</a>
         <span>Doula Services</span>
       </h1>
-      {screenSize < breakpoint ? <Hamburger /> : <Nav />}
+      {screenSize < breakpoint ? (
+        <Hamburger setModalClass={setModalClass} />
+      ) : (
+        <Nav />
+      )}
     </header>
   );
 }
