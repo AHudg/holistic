@@ -26,9 +26,22 @@ function FAQs({}) {
     "Explanation!",
   ];
 
+  const handleExpand = function (event) {
+    const targetName = event.target.name;
+    const selectAnswer = document.getElementById(targetName);
+    console.log(selectAnswer.offsetHeight);
+    if (selectAnswer.getAttribute("data-status") === "closed") {
+      selectAnswer.className += " answerSelected";
+      selectAnswer.setAttribute("data-status", "open");
+    } else {
+      selectAnswer.className = "answer";
+      selectAnswer.setAttribute("data-status", "closed");
+    }
+  };
+
   return (
     <section className="faqSection">
-      <div className="bgContainer">
+      <div>
         <img src={bee} className="faqBackground"></img>
       </div>
       <div className="faqHeader">
@@ -36,14 +49,31 @@ function FAQs({}) {
         <h3>Frequently Asked Questions.</h3>
         <h3>Here are some common questions about Tender Touch.</h3>
       </div>
+
       <div>
         {questions.map((question) => {
           iterator++;
           return (
-            <div className="faq">
-              <i className="fa-solid fa-plus"></i>
-              <h4 className="question">{question}</h4>
-              <p className="answer">{answers[iterator]}</p>
+            <div key={"question" + iterator} className="faq">
+              <div>
+                <h4>{question}</h4>
+                <label htmlFor={"expandCheckbox" + iterator}>
+                  <input
+                    type="checkbox"
+                    name={"expandCheckbox" + iterator}
+                    className="expandCheckbox"
+                    onClick={handleExpand}
+                  ></input>
+                  <i className="fa-solid fa-plus fa-lg"></i>
+                </label>
+              </div>
+              <p
+                className="answer"
+                id={"expandCheckbox" + iterator}
+                data-status="closed"
+              >
+                {answers[iterator]}
+              </p>
             </div>
           );
         })}

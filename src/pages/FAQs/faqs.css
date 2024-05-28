@@ -1,11 +1,6 @@
 .faqSection {
-  background-color: gainsboro;
-}
-
-.bgContainer {
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
+  background-color: rgb(214, 254, 214);
+  position: relative;
   overflow: hidden;
 }
 
@@ -14,9 +9,9 @@
   height: auto;
   rotate: -45deg;
   position: absolute;
-  top: 70px;
+  top: 100px;
   right: -200px;
-  opacity: 0.3;
+  opacity: 0.2;
 }
 
 .faqHeader {
@@ -30,19 +25,52 @@
 }
 
 .faqHeader > h3 {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: lighter;
+  width: 75%;
+  position: relative;
+  z-index: 1;
 }
 
 .faq {
   border-bottom: black 2px solid;
   margin: 5px 20px;
+  position: relative;
+  z-index: 1;
 }
 
-.question {
+.faq > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq > div > label {
+  /* width: auto; */
+  /* height: auto; */
+  /* position: relative; */
+  /* top: 1.5rem;
+    right: -80vw; */
+}
+
+.expandCheckbox {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
 }
 
 .answer {
+  margin: 0;
+  max-height: 1px;
+  opacity: 0;
+  transition: max-height 1s ease-in-out, opacity 0.5s;
+}
+
+.answerSelected {
+  max-height: 300px;
+  opacity: 1;
+  transition: max-height 1s ease-in-out, opacity 0.5s;
+  transition-delay: 0s, 0.5s;
+  transition-property: max-height, opacity;
 }
 
 @media screen and (min-width: 575px) {
