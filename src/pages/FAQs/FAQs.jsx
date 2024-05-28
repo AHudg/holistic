@@ -15,15 +15,15 @@ function FAQs({}) {
     "What can I expect the day of?",
   ];
   const answers = [
-    "explanation",
-    "explanation",
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dignissimos fugit, quod obcaecati ab ratione distinctio doloribus esse expedita sunt, optio ipsa, repellat quas praesentium magni adipisci quia tempora facilis?",
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas soluta nulla quis. Suscipit maiores commodi sequi unde, cum fugit saepe, dolor iure explicabo eveniet maxime laboriosam cumque. Vel, neque ab! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas soluta nulla quis. Suscipit maiores commodi sequi unde, cum fugit saepe, dolor iure explicabo eveniet maxime laboriosam cumque. Vel, neque ab!",
     "-labor day only plan -full pregnancy plan: walking through pregnancy + labor -education consultations",
-    "explanation",
-    "explanation",
-    "explanation",
-    "explanation",
-    "Explanation",
-    "Explanation!",
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas soluta nulla quis. Suscipit maiores commodi sequi unde, cum fugit saepe, dolor iure explicabo eveniet maxime laboriosam cumque. Vel, neque ab!",
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas soluta nulla quis. Suscipit maiores commodi sequi unde, cum fugit saepe, dolor iure explicabo eveniet maxime laboriosam cumque. Vel, neque ab!",
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas soluta nulla quis. Suscipit maiores commodi sequi unde, cum fugit saepe, dolor iure explicabo eveniet maxime laboriosam cumque. Vel, neque ab!",
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas soluta nulla quis. Suscipit maiores commodi sequi unde, cum fugit saepe, dolor iure explicabo eveniet maxime laboriosam cumque. Vel, neque ab!",
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas soluta nulla quis. Suscipit maiores commodi sequi unde, cum fugit saepe, dolor iure explicabo eveniet maxime laboriosam cumque. Vel, neque ab!",
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas soluta nulla quis. Suscipit maiores commodi sequi unde, cum fugit saepe, dolor iure explicabo eveniet maxime laboriosam cumque. Vel, neque ab!",
   ];
 
   const handleExpand = function (event) {
