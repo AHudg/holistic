@@ -7,10 +7,10 @@ function Hamburger({ setModalClass }) {
     const hamburgerMenu = document.getElementById("hamburgerMenu");
 
     if (hamburgerCheckbox.checked) {
-      hamburgerMenu.style = "transform: translateY(100%); opacity: 1";
+      hamburgerMenu.style = "transform: translateX(-100vw);";
       setModalClass(true);
     } else {
-      hamburgerMenu.style = "transform: translateY(0); opacity: 0";
+      hamburgerMenu.style = "transform: translateY(0);";
       setModalClass(false);
     }
   };
@@ -18,7 +18,7 @@ function Hamburger({ setModalClass }) {
   const hamLinks = [
     "Home",
     "About",
-    "Testimonials",
+    // "Testimonials",
     "Services",
     "FAQs",
     "Contact",
@@ -26,7 +26,6 @@ function Hamburger({ setModalClass }) {
 
   let currentLocale = useLocation().pathname.split("/")[1];
 
-  // to allow "Home" to highlight if active; lowercase to match later logic
   if (!currentLocale) {
     currentLocale = "home";
   }

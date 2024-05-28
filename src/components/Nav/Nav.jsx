@@ -4,7 +4,7 @@ function Nav({}) {
   const navLinks = [
     "Home",
     "About",
-    "Testimonials",
+    // "Testimonials",
     "Services",
     "FAQs",
     "Contact",
