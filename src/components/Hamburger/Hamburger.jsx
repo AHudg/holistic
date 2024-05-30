@@ -7,7 +7,7 @@ function Hamburger({ setModalClass }) {
     const hamburgerMenu = document.getElementById("hamburgerMenu");
 
     if (hamburgerCheckbox.checked) {
-      hamburgerMenu.style = "transform: translateX(-100vw);";
+      hamburgerMenu.style = "transform: translateY(100vh);";
       setModalClass(true);
     } else {
       hamburgerMenu.style = "transform: translateY(0);";
@@ -46,32 +46,34 @@ function Hamburger({ setModalClass }) {
           <span className="bar bar4"></span>
         </div>
       </label>
-      <div id="hamburgerMenu">
-        <div id="hamburgerHeading">
-          <h3>Tender Touch</h3>
-          <span>Doula Services</span>
+      <div className="hamburgerFrame">
+        <div id="hamburgerMenu">
+          <div id="hamburgerHeading">
+            <h3>Tender Touch</h3>
+            <span>Doula Services</span>
+          </div>
+          <nav className="hamburgerNav">
+            <ul>
+              {hamLinks.map((link) => {
+                return (
+                  <li key={"li" + link}>
+                    <a
+                      href={link === "Home" ? "/" : "/" + link.toLowerCase()}
+                      key={link}
+                      className={
+                        currentLocale === link.toLowerCase()
+                          ? "hamLink active"
+                          : "hamLink"
+                      }
+                    >
+                      {link}
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
+          </nav>
         </div>
-        <nav className="hamburgerNav">
-          <ul>
-            {hamLinks.map((link) => {
-              return (
-                <li key={"li" + link}>
-                  <a
-                    href={link === "Home" ? "/" : "/" + link.toLowerCase()}
-                    key={link}
-                    className={
-                      currentLocale === link.toLowerCase()
-                        ? "hamLink active"
-                        : "hamLink"
-                    }
-                  >
-                    {link}
-                  </a>
-                </li>
-              );
-            })}
-          </ul>
-        </nav>
       </div>
     </div>
   );
