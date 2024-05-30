@@ -1,6 +1,73 @@
+:root {
+  --sage: #738462;
+  --meadow: rgb(92, 107, 42);
+  --paleCherry: rgb(154, 91, 110);
+  --cherry: rgb(102, 10, 35);
+  --paleCrumble: rgb(218, 204, 175);
+  --crumble: #c0ae88;
+}
+
+.hero {
+  position: relative;
+}
+
 img {
   width: 100vw;
   height: 100vh;
+}
+
+.whatDoula {
+  position: relative;
+  background-color: var(--sage);
+}
+
+.whyDoula {
+  position: relative;
+  background-color: var(--meadow);
+}
+
+.banner {
+  position: relative;
+}
+
+.serviceBanner {
+  position: relative;
+  background-color: var(--crumble);
+}
+
+.aboutBanner {
+  position: relative;
+  background-color: var(--paleCherry);
+}
+
+.faqBanner {
+  position: relative;
+  background-color: var(--sage);
+}
+
+.testimonialBanner {
+  position: relative;
+  background-color: var(--cherry);
+}
+
+.multiWaves {
+  aspect-ratio: 900/450;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.multiCherryCrumbleSVG {
+  background-image: url(../../assets/smallCherryCrumble.svg);
+}
+
+.multiCherrySageSVG {
+  background-image: url(../../assets/smallCherrySage.svg);
+}
+
+.flip {
+  transform: rotate(180deg);
 }
 
 @media screen and (min-width: 575px) {
@@ -10,6 +77,17 @@ img {
 }
 
 @media screen and (min-width: 992px) {
+  .multiWaves {
+    aspect-ratio: 1800/450;
+  }
+
+  .multiCherryCrumbleSVG {
+    background-image: url(../../assets/bigCherryCrumble.svg);
+  }
+
+  .multiCherrySageSVG {
+    background-image: url(../../assets/bigCherrySage.svg);
+  }
 }
 
 @media screen and (min-width: 1200px) {

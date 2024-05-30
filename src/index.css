@@ -11,6 +11,10 @@ a {
   color: black;
 }
 
+p {
+  margin: 0;
+}
+
 .disableScroll {
   height: 100vh;
   overflow-y: hidden;

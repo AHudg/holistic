@@ -1,0 +1,50 @@
+:root {
+  --sage: #738462;
+  --meadow: rgb(92, 107, 42);
+  --paleCherry: rgb(154, 91, 110);
+  --cherry: rgb(102, 10, 35);
+  --paleCrumble: rgb(218, 204, 175);
+  --crumble: #c0ae88;
+}
+
+.topWave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.topRelative {
+  position: relative;
+}
+
+.meadowBottomWave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+#frameSVG svg {
+  position: relative;
+  display: block;
+  width: calc(141% + 1.3px);
+  height: 79px;
+}
+
+.sage {
+  fill: var(--sage);
+}
+
+.meadow {
+  fill: var(--meadow);
+}
+
+.crumble {
+  fill: var(--crumble);
+}

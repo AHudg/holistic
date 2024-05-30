@@ -1,11 +1,16 @@
 import Hero from "../../assets/ImageFour.jpg";
+import Wave from "../../components/WaveSVG/WaveSVG";
 import "./home.css";
+import "../../components/WaveSVG/waveSVG.css";
 
 function Home({}) {
   return (
     <div>
-      <section>
+      <section className="hero">
         <img src={Hero}></img>
+        <Wave classProp={"topWave"} fill={"sage"} />
+      </section>
+      <section className="whatDoula">
         <h2>What is a doula</h2>
         <p>
           Doula is the professional name for someone who is your
@@ -30,8 +35,9 @@ function Home({}) {
           that doulas are non-medical professionals and do not offer medical
           advice or practices.
         </p>
+        <Wave classProp={"topWave topRelative"} fill={"meadow"} />
       </section>
-      <section>
+      <section className="whyDoula">
         <h2>Why a doula</h2>
         <p>
           Research has shown that having a doula in your birth can decrease your
@@ -50,18 +56,40 @@ function Home({}) {
           dissatisfaction with the birth experience.
         </p>
       </section>
-      <section>
-        <p>About Me Blurb?</p>
+      <section className="banner">
+        <Wave classProp={"meadowBottomWave"} fill={"meadow"} />
+        <img src={Hero}></img>
+        <Wave classProp={"topWave"} fill={"crumble"} />
       </section>
-      <section>
-        <p>Link to services?</p>
+      <section className="serviceBanner">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, id
+          natus atque corporis dolores voluptatum praesentium ipsa qui nemo
+          culpa dolorum eum eligendi facere repellendus ea totam optio. Est,
+          esse!
+        </p>
       </section>
-      <section>
-        <p>Link to FAQ?</p>
+      <section className="aboutBanner">
+        <div className="multiWaves multiCherryCrumbleSVG"></div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus,
+          molestias officia! Eum modi similique repellat laboriosam, accusantium
+          quisquam expedita totam iusto, mollitia architecto vero quasi
+          recusandae molestias, saepe sint harum!
+        </p>
+        <div className="multiWaves multiCherrySageSVG flip"></div>
       </section>
-      <section>
+      <section className="faqBanner">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet,
+          temporibus! Praesentium non et, magni deleniti ipsum repudiandae
+          consectetur laborum delectus quibusdam nam nulla dolores! Odio,
+          accusamus! Maxime eligendi cum in!
+        </p>
+      </section>
+      {/* <section className="testimonialBanner">
         <p>Link to Testimonials?</p>
-      </section>
+      </section> */}
     </div>
   );
 }
