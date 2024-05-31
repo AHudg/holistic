@@ -5,13 +5,14 @@ import "../../components/WaveSVG/waveSVG.css";
 
 function Home({}) {
   return (
-    <div>
+    <div id="homePage">
       <section className="hero">
         <img src={Hero}></img>
         <Wave classProp={"topWave"} fill={"sage"} />
       </section>
       <section className="whatDoula">
-        <h2>What is a doula</h2>
+        <div className="bee beeOne"></div>
+        <h2>What is a doula?</h2>
         <p>
           Doula is the professional name for someone who is your
           support—educationally, mentally, emotionally, and at times physically!
@@ -22,8 +23,7 @@ function Home({}) {
           against them, to create an environment where you feel safe,
           comfortable, and in charge of your birth. I believe birth was designed
           by God, and it belongs to women.
-        </p>
-        <p>
+          <br /> <br />
           This can look like providing education to the family, answering
           questions, hip squeezes, counter pressure, offering different position
           ideas for you and your partner to use during labor, connecting you to
@@ -35,10 +35,13 @@ function Home({}) {
           that doulas are non-medical professionals and do not offer medical
           advice or practices.
         </p>
+        <div className="bee beeTwo"></div>
         <Wave classProp={"topWave topRelative"} fill={"meadow"} />
       </section>
       <section className="whyDoula">
-        <h2>Why a doula</h2>
+        <div className="bee beeThree"></div>
+
+        <h2>Why a doula?</h2>
         <p>
           Research has shown that having a doula in your birth can decrease your
           stress during pregnancy and positively impact the labor process.
@@ -48,8 +51,7 @@ function Home({}) {
           for birth. Whether you are a first time mom or are looking for a
           different birth experience, doulas are here to help you through
           pregnancy and labor.
-        </p>
-        <p>
+          <br /> <br />
           Can decrease your chances of ending up in a cesarean section or
           complications during birth. Fewer women end in epidural, fewer women
           have instrumental vaginal deliveries, and decrease likelihood of
@@ -62,15 +64,20 @@ function Home({}) {
         <Wave classProp={"topWave"} fill={"crumble"} />
       </section>
       <section className="serviceBanner">
+        <h2>Services</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, id
           natus atque corporis dolores voluptatum praesentium ipsa qui nemo
           culpa dolorum eum eligendi facere repellendus ea totam optio. Est,
-          esse!
+          esse! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia
+          aspernatur voluptatem, saepe eius numquam dolore officia porro
+          asperiores aperiam itaque, consequatur odio quo necessitatibus
+          quisquam et fuga ex? Odio, nemo!
         </p>
       </section>
       <section className="aboutBanner">
         <div className="multiWaves multiCherryCrumbleSVG"></div>
+        <h2>About Me</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus,
           molestias officia! Eum modi similique repellat laboriosam, accusantium
@@ -80,6 +87,7 @@ function Home({}) {
         <div className="multiWaves multiCherrySageSVG flip"></div>
       </section>
       <section className="faqBanner">
+        <h2>FAQs</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet,
           temporibus! Praesentium non et, magni deleniti ipsum repudiandae

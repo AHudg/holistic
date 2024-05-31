@@ -1,52 +1,102 @@
 :root {
-  --sage: #738462;
+  --sage: rgb(115, 132, 98);
   --meadow: rgb(92, 107, 42);
   --paleCherry: rgb(154, 91, 110);
   --cherry: rgb(102, 10, 35);
   --paleCrumble: rgb(218, 204, 175);
-  --crumble: #c0ae88;
+  --crumble: rgb(192, 174, 136);
 }
 
-.hero {
+#homePage > section > p {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#homePage > section {
   position: relative;
+  overflow: hidden;
 }
 
-img {
-  width: 100vw;
-  height: 100vh;
+.bee {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-image: url(../../assets/beeCrumbleCutout.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.8;
+}
+
+.beeOne {
+  top: 30px;
+  right: 5px;
+  transform: rotate(-45deg);
+}
+
+.beeTwo {
+  bottom: 0;
+  left: 40px;
+  transform: rotate(25deg);
+}
+
+.beeThree {
+  top: 0px;
+  right: 15px;
+  transform: rotate(145deg);
 }
 
 .whatDoula {
-  position: relative;
   background-color: var(--sage);
 }
 
+#homePage > section > h2 {
+  font-size: 2rem;
+  padding-top: 50px;
+  text-align: center;
+}
+
+#homePage > section > p {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.whatDoula h2,
+.whatDoula p,
+.whyDoula h2,
+.whyDoula p,
+.faqBanner h2,
+.faqBanner p {
+  color: var(--crumble);
+}
+
 .whyDoula {
-  position: relative;
   background-color: var(--meadow);
 }
 
-.banner {
-  position: relative;
-}
-
 .serviceBanner {
-  position: relative;
   background-color: var(--crumble);
 }
 
+.serviceBanner h2,
+.serviceBanner p {
+  color: var(--meadow);
+}
+
 .aboutBanner {
-  position: relative;
   background-color: var(--paleCherry);
 }
 
+.aboutBanner h2,
+.aboutBanner p {
+  color: var(--cherry);
+}
+
 .faqBanner {
-  position: relative;
   background-color: var(--sage);
 }
 
 .testimonialBanner {
-  position: relative;
   background-color: var(--cherry);
 }
 
