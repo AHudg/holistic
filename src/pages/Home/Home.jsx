@@ -1,5 +1,6 @@
 import Hero from "../../assets/ImageFour.jpg";
 import Wave from "../../components/WaveSVG/WaveSVG";
+import Katherine from "../../assets/Katherine.jpg";
 import "./home.css";
 import "../../components/WaveSVG/waveSVG.css";
 
@@ -40,7 +41,6 @@ function Home({}) {
       </section>
       <section className="whyDoula">
         <div className="bee beeThree"></div>
-
         <h2>Why a doula?</h2>
         <p>
           Research has shown that having a doula in your birth can decrease your
@@ -63,27 +63,31 @@ function Home({}) {
         <img src={Hero}></img>
         <Wave classProp={"topWave"} fill={"crumble"} />
       </section>
+      {/* <section className="testimonialBanner">
+        <p>Link to Testimonials?</p>
+      </section> */}
       <section className="serviceBanner">
-        <h2>Services</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, id
-          natus atque corporis dolores voluptatum praesentium ipsa qui nemo
-          culpa dolorum eum eligendi facere repellendus ea totam optio. Est,
-          esse! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia
-          aspernatur voluptatem, saepe eius numquam dolore officia porro
-          asperiores aperiam itaque, consequatur odio quo necessitatibus
-          quisquam et fuga ex? Odio, nemo!
-        </p>
+        <div>
+          <div className="lilly"></div>
+          <div className="serviceWords">
+            <h2>
+              <a href="/services">Services</a>
+            </h2>
+            <p>
+              Tender Touches offers multiple packages to accomadate all future
+              mommas. From labor only to full pregnancy terms with education, we
+              aim support you every step of the way. Interested in learning more
+              of what I have to offer?
+            </p>
+            <a href="/services">View our packages!</a>
+          </div>
+        </div>
       </section>
       <section className="aboutBanner">
         <div className="multiWaves multiCherryCrumbleSVG"></div>
         <h2>About Me</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus,
-          molestias officia! Eum modi similique repellat laboriosam, accusantium
-          quisquam expedita totam iusto, mollitia architecto vero quasi
-          recusandae molestias, saepe sint harum!
-        </p>
+        <img src={Katherine}></img>
+        <p>Howdy! I'm Katherine!</p>
         <div className="multiWaves multiCherrySageSVG flip"></div>
       </section>
       <section className="faqBanner">
@@ -95,9 +99,6 @@ function Home({}) {
           accusamus! Maxime eligendi cum in!
         </p>
       </section>
-      {/* <section className="testimonialBanner">
-        <p>Link to Testimonials?</p>
-      </section> */}
     </div>
   );
 }

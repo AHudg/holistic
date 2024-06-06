@@ -1,4 +1,5 @@
 import { useLocation } from "react-router-dom";
+import "./nav.css";
 
 function Nav({}) {
   const navLinks = [
@@ -18,7 +19,7 @@ function Nav({}) {
   }
 
   return (
-    <nav>
+    <nav className="desktopNav">
       <ul>
         {navLinks.map((link) => {
           return (

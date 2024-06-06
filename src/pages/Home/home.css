@@ -50,15 +50,15 @@
   background-color: var(--sage);
 }
 
-#homePage > section > h2 {
+#homePage > section > h2,
+#homePage > section > div > div > h2 {
   font-size: 2rem;
-  padding-top: 50px;
   text-align: center;
 }
 
-#homePage > section > p {
+#homePage > section > p,
+#homePage > section > div > div > p {
   text-align: center;
-  padding-bottom: 50px;
 }
 
 .whatDoula h2,
@@ -76,20 +76,73 @@
 
 .serviceBanner {
   background-color: var(--crumble);
+  width: 100vw;
+  padding: 30px 20px 40px;
 }
 
-.serviceBanner h2,
-.serviceBanner p {
+.serviceBanner > div {
+  display: flex;
+  justify-content: end;
+}
+
+.lilly {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 40vw;
+  height: 250px;
+  background-image: url(../../assets/LillyStencil.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index: 999;
+}
+
+.serviceWords {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60vw;
+}
+
+.serviceWords > h2 > a {
   color: var(--meadow);
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.serviceWords > p {
+  color: var(--meadow);
+}
+
+.serviceWords > a {
+  color: var(--crumble);
+  background-color: var(--meadow);
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.serviceWords > a:hover {
+  box-shadow: 5px 5px 10px var(--sage);
+  color: white;
 }
 
 .aboutBanner {
   background-color: var(--paleCherry);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .aboutBanner h2,
 .aboutBanner p {
   color: var(--cherry);
+}
+
+.aboutBanner > img {
+  width: 80vw;
+  border-radius: 20px;
+  margin-bottom: 20px;
 }
 
 .faqBanner {
@@ -106,6 +159,8 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
+  top: 0px;
 }
 
 .multiCherryCrumbleSVG {
