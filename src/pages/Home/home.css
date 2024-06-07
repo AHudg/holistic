@@ -17,10 +17,32 @@
   overflow: hidden;
 }
 
+#homePage > section > p,
+#homePage > section > div > div > p {
+  text-align: center;
+}
+
+.whatDoula,
+.faqBanner {
+  background-color: var(--sage);
+  color: var(--paleCrumble);
+}
+
+.whatDoula h2 {
+  margin: 40px auto 15px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.whatDoula p,
+.whyDoula p {
+  margin-bottom: 30px;
+}
+
 .bee {
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 70px;
   background-image: url(../../assets/beeCrumbleCutout.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -30,48 +52,32 @@
 
 .beeOne {
   top: 30px;
-  right: 5px;
-  transform: rotate(-45deg);
+  right: -5px;
+  transform: rotate(-55deg);
 }
 
 .beeTwo {
-  bottom: 0;
-  left: 40px;
-  transform: rotate(25deg);
-}
-
-.beeThree {
-  top: 0px;
-  right: 15px;
-  transform: rotate(145deg);
-}
-
-.whatDoula {
-  background-color: var(--sage);
-}
-
-#homePage > section > h2,
-#homePage > section > div > div > h2 {
-  font-size: 2rem;
-  text-align: center;
-}
-
-#homePage > section > p,
-#homePage > section > div > div > p {
-  text-align: center;
-}
-
-.whatDoula h2,
-.whatDoula p,
-.whyDoula h2,
-.whyDoula p,
-.faqBanner h2,
-.faqBanner p {
-  color: var(--crumble);
+  top: 5px;
+  left: 30px;
+  transform: rotate(30deg);
+  z-index: 1;
 }
 
 .whyDoula {
   background-color: var(--meadow);
+  color: var(--paleCrumble);
+}
+
+.whyDoula h2 {
+  margin: 15px auto;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.beeThree {
+  bottom: 0px;
+  right: 50px;
+  transform: rotate(115deg);
 }
 
 .serviceBanner {
@@ -102,6 +108,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: end;
   width: 60vw;
 }
 
@@ -134,19 +141,65 @@
   align-items: center;
 }
 
-.aboutBanner h2,
+.aboutBanner h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--paleCrumble);
+}
+
 .aboutBanner p {
-  color: var(--cherry);
+  color: var(--paleCrumble);
 }
 
 .aboutBanner > img {
   width: 80vw;
   border-radius: 20px;
   margin-bottom: 20px;
+  border: 2px solid var(--cherry);
+}
+
+.aboutBanner > p > a {
+  color: var(--paleCrumble);
+  margin-left: 10px;
+  font-style: italic;
+}
+
+.aboutBanner > p > a:hover {
+  color: white;
 }
 
 .faqBanner {
-  background-color: var(--sage);
+  display: flex;
+  align-items: center;
+}
+
+#faqHeader {
+  margin: 0 0 40px 20px;
+  color: var(--crumble);
+  line-height: 0.9;
+  text-shadow: -5px -4px 2px var(--meadow);
+}
+
+#faqHeader > span {
+  font-size: 4rem;
+  color: var(--paleCrumble);
+}
+
+.second {
+  margin-left: 1rem;
+}
+
+.third {
+  margin-left: 2.5rem;
+}
+
+.faqBanner > p > a {
+  color: var(--paleCrumble);
+  font-style: italic;
+}
+
+.faqBanner > p > a:hover {
+  color: white;
 }
 
 .testimonialBanner {

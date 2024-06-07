@@ -7,27 +7,24 @@
   --crumble: #c0ae88;
 }
 
-.topWave {
+.wave {
   position: absolute;
-  bottom: 0;
   left: 0;
   width: 100%;
   overflow: hidden;
   line-height: 0;
-  transform: rotate(180deg);
 }
 
-.topRelative {
+.relative {
   position: relative;
 }
 
-.meadowBottomWave {
-  position: absolute;
+.topPosition {
   top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
+}
+
+.bottomPosition {
+  bottom: 0;
 }
 
 #frameSVG svg {

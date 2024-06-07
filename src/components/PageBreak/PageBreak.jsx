@@ -9,7 +9,7 @@ function PageBreak({}) {
         <div className="leftPageBreak"></div>
         <div className="leftPageBreak"></div>
       </div>
-      <img src={bee} className="bee"></img>
+      <img src={bee} className="pageBreakBee"></img>
       <div>
         <div className="rightPageBreak"></div>
         <div className="rightPageBreak"></div>
