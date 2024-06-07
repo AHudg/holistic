@@ -22,6 +22,10 @@
   text-align: center;
 }
 
+.hero {
+  width: 100vw;
+}
+
 .whatDoula,
 .faqBanner {
   background-color: var(--sage);
@@ -80,6 +84,15 @@
   transform: rotate(115deg);
 }
 
+.bannerPhoto {
+  background-image: url("../../assets/ImageThree.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 250px;
+  width: 100vw;
+}
+
 .serviceBanner {
   background-color: var(--crumble);
   width: 100vw;
@@ -115,6 +128,7 @@
 .serviceWords > h2 > a {
   color: var(--meadow);
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  font-size: 2rem;
 }
 
 .serviceWords > p {
