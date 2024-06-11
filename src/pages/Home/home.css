@@ -30,13 +30,30 @@
 .heroWords {
   display: flex;
   flex-direction: column;
-  z-index: 2;
   color: white;
   justify-content: center;
   align-items: center;
   position: absolute;
   top: 45%;
   width: 100vw;
+  opacity: 0;
+}
+
+.fadeIn {
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .heroWords > p,
@@ -49,7 +66,7 @@
 }
 
 .heroWords > button {
-  /* width: 100vw; */
+  margin: 10px;
 }
 
 .whatDoula,

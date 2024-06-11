@@ -8,7 +8,7 @@ function Home({}) {
   return (
     <div id="homePage">
       <section>
-        <div className="heroWords">
+        <div className="heroWords fadeIn">
           <p>Welcome!</p>
           <p>I can't wait to meet you.</p>
           <button>Book Now!</button>

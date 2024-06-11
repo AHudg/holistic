@@ -1,7 +1,7 @@
 import { useLocation } from "react-router-dom";
 import "./hamburger.css";
 
-function Hamburger({ setModalClass }) {
+function Hamburger({ hamLinks, currentLocale, setModalClass }) {
   const handleHamburger = () => {
     const hamburgerCheckbox = document.getElementById("hamburgerCheckbox");
     const hamburgerMenu = document.getElementById("hamburgerMenu");
@@ -14,21 +14,6 @@ function Hamburger({ setModalClass }) {
       setModalClass(false);
     }
   };
-
-  const hamLinks = [
-    "Home",
-    "About",
-    // "Testimonials",
-    "Services",
-    "FAQs",
-    "Contact",
-  ];
-
-  let currentLocale = useLocation().pathname.split("/")[1];
-
-  if (!currentLocale) {
-    currentLocale = "home";
-  }
 
   return (
     <div>

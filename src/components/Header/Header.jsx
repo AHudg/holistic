@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 import Hamburger from "../Hamburger/Hamburger.jsx";
 import Nav from "../Nav/Nav.jsx";
@@ -21,16 +22,38 @@ function Header({ setModalClass }) {
     };
   }, []);
 
+  const navLinks = [
+    "Home",
+    "About",
+    // "Testimonials",
+    "Services",
+    "FAQs",
+    "Contact",
+  ];
+
+  let currentLocale = useLocation().pathname.split("/")[1];
+
+  // to allow "Home" to highlight if active; lowercase to match later logic
+  if (!currentLocale) {
+    currentLocale = "home";
+  }
+
   return (
     <header>
       <h1>
-        <a href="/">Tender Touch</a>
-        <span>Doula Services</span>
+        <a href="/" className="cormorant normal">
+          Tender Touch
+        </a>
+        <span className="cormorant italics">Doula Services</span>
       </h1>
       {screenSize < breakpoint ? (
-        <Hamburger setModalClass={setModalClass} />
+        <Hamburger
+          hamLinks={navLinks}
+          currentLocale={currentLocale}
+          setModalClass={setModalClass}
+        />
       ) : (
-        <Nav />
+        <Nav navLinks={navLinks} currentLocale={currentLocale} />
       )}
     </header>
   );

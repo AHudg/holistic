@@ -2,6 +2,20 @@
   font-size: 16px;
 }
 
+.cormorant {
+  font-family: "Cormorant", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+}
+
+.normal {
+  font-style: normal;
+}
+
+.italics {
+  font-style: italic;
+}
+
 ul {
   padding: 0;
 }
