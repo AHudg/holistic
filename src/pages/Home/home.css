@@ -23,7 +23,33 @@
 }
 
 .hero {
+  height: 100vh;
+  width: auto;
+}
+
+.heroWords {
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 45%;
   width: 100vw;
+}
+
+.heroWords > p,
+.heroWords > button {
+  margin: 0 auto;
+}
+
+.heroWords > p:first-child {
+  font-size: 3rem;
+}
+
+.heroWords > button {
+  /* width: 100vw; */
 }
 
 .whatDoula,

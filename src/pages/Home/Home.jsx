@@ -1,5 +1,4 @@
 import Hero from "../../assets/ImageFour.jpg";
-import Banner from "../../assets/ImageThree.jpg";
 import Wave from "../../components/WaveSVG/WaveSVG";
 import Katherine from "../../assets/Katherine.jpg";
 import "./home.css";
@@ -8,7 +7,12 @@ import "../../components/WaveSVG/waveSVG.css";
 function Home({}) {
   return (
     <div id="homePage">
-      <section className="hero">
+      <section>
+        <div className="heroWords">
+          <p>Welcome!</p>
+          <p>I can't wait to meet you.</p>
+          <button>Book Now!</button>
+        </div>
         <img src={Hero} className="hero"></img>
         <Wave classProp={"wave bottomPosition flip"} fill={"sage"} />
       </section>
