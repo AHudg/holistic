@@ -35,7 +35,7 @@ function Footer({ setModalClass, bgColor, textColor }) {
                 style={{ color: textColor }}
               ></i>
             </a>
-            <a href="mailto:katherine.ellis333@gmail.com" target="_blank">
+            <a href="mailto:katherine@tendertouchdoula.com" target="_blank">
               <i
                 className="fa-solid fa-envelope fa-lg"
                 style={{ color: textColor }}

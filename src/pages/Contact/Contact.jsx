@@ -19,10 +19,10 @@ function Contact({}) {
         <span id="myPhone">979.900.6015</span>
       </div>
       <div className="info">
-        <a href="mailto:katherine.ellis333@gmail.com" target="_blank">
+        <a href="mailto:katherine@tendertouchdoula.com" target="_blank">
           <i className="fa-solid fa-envelope"></i>
         </a>
-        <span id="myEmail">katherine.ellis333@gmail.com</span>
+        <span id="myEmail">katherine@tendertouchdoula.com</span>
       </div>
       <div className="info">
         <a href="http://instagram.com/_u/katherinee.ellis/" target="_blank">

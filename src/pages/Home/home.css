@@ -107,6 +107,7 @@
   top: 30px;
   right: -5px;
   transform: rotate(-55deg);
+  filter: hue-rotate(360deg);
 }
 
 .beeTwo {

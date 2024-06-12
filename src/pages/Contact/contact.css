@@ -1,6 +1,7 @@
 /* Contact */
 .contactPage {
   margin: 0 20px;
+  background-color: var(--sage);
 }
 
 .contactPage > h2 {

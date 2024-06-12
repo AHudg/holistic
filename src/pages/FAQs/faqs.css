@@ -1,5 +1,5 @@
 .faqSection {
-  background-color: rgb(214, 254, 214);
+  background-color: var(--meadow);
   position: relative;
   overflow: hidden;
 }

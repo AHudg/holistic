@@ -2,7 +2,7 @@ import "./services.css";
 
 function Services({}) {
   return (
-    <section>
+    <section className="serviceSection">
       <h2>Services Page</h2>
       <h3>Pregnancy & Birth Plan Consultation: $60 for 2 hours</h3>
       <p>

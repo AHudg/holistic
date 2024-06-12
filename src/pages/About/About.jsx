@@ -2,7 +2,7 @@ import "./about.css";
 
 function About({}) {
   return (
-    <section>
+    <section className="aboutSection">
       <h2>About Me</h2>
       <p>
         Welcome! My name is Katherine Ellis and I am a proud birth doula and

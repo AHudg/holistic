@@ -1,8 +1,11 @@
-import bee from "../../assets/beeCutout.png";
+import bee from "../../assets/beeCrumbleCutout.png";
+import { useLocation } from "react-router-dom";
 
 import "./pagebreak.css";
 
 function PageBreak({ textColor }) {
+  let currentLocale = useLocation().pathname.split("/")[1];
+
   return (
     <div className="pageBreak">
       <div>
@@ -15,7 +18,14 @@ function PageBreak({ textColor }) {
           style={{ backgroundColor: textColor }}
         ></div>
       </div>
-      <img src={bee} className="pageBreakBee"></img>
+      <img
+        src={bee}
+        className={
+          currentLocale == "services"
+            ? "pageBreakBee meadowBee"
+            : "pageBreakBee"
+        }
+      ></img>
       <div>
         <div
           className="rightPageBreak"
