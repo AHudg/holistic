@@ -2,17 +2,29 @@ import bee from "../../assets/beeCutout.png";
 
 import "./pagebreak.css";
 
-function PageBreak({}) {
+function PageBreak({ textColor }) {
   return (
     <div className="pageBreak">
       <div>
-        <div className="leftPageBreak"></div>
-        <div className="leftPageBreak"></div>
+        <div
+          className="leftPageBreak"
+          style={{ backgroundColor: textColor }}
+        ></div>
+        <div
+          className="leftPageBreak"
+          style={{ backgroundColor: textColor }}
+        ></div>
       </div>
       <img src={bee} className="pageBreakBee"></img>
       <div>
-        <div className="rightPageBreak"></div>
-        <div className="rightPageBreak"></div>
+        <div
+          className="rightPageBreak"
+          style={{ backgroundColor: textColor }}
+        ></div>
+        <div
+          className="rightPageBreak"
+          style={{ backgroundColor: textColor }}
+        ></div>
       </div>
     </div>
   );

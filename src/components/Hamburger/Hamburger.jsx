@@ -1,16 +1,23 @@
-import { useLocation } from "react-router-dom";
+import { useState } from "react";
 import "./hamburger.css";
 
-function Hamburger({ hamLinks, currentLocale, setModalClass }) {
+function Hamburger({ setModalClass, currentLocale, hamLinks, textColor }) {
+  const [colorBar, setcolorBar] = useState(textColor);
+  const [transBar, setTransBar] = useState(textColor);
+
   const handleHamburger = () => {
     const hamburgerCheckbox = document.getElementById("hamburgerCheckbox");
     const hamburgerMenu = document.getElementById("hamburgerMenu");
 
     if (hamburgerCheckbox.checked) {
       hamburgerMenu.style = "transform: translateY(100vh);";
+      setcolorBar("black");
+      setTransBar("transparent");
       setModalClass(true);
     } else {
       hamburgerMenu.style = "transform: translateY(0);";
+      setcolorBar(textColor);
+      setTransBar(textColor);
       setModalClass(false);
     }
   };
@@ -25,40 +32,50 @@ function Hamburger({ hamLinks, currentLocale, setModalClass }) {
           onClick={handleHamburger}
         />
         <div className="hamburger">
-          <span className="bar bar1"></span>
-          <span className="bar bar2"></span>
-          <span className="bar bar3"></span>
-          <span className="bar bar4"></span>
+          <span
+            className="bar bar1"
+            style={{ backgroundColor: colorBar }}
+          ></span>
+          <span
+            className="bar bar2"
+            style={{ backgroundColor: transBar }}
+          ></span>
+          <span
+            className="bar bar3"
+            style={{ backgroundColor: transBar }}
+          ></span>
+          <span
+            className="bar bar4"
+            style={{ backgroundColor: colorBar }}
+          ></span>
         </div>
       </label>
-      <div className="hamburgerFrame">
-        <div id="hamburgerMenu">
-          <div id="hamburgerHeading">
-            <h3>Tender Touch</h3>
-            <span>Doula Services</span>
-          </div>
-          <nav className="hamburgerNav">
-            <ul>
-              {hamLinks.map((link) => {
-                return (
-                  <li key={"li" + link}>
-                    <a
-                      href={link === "Home" ? "/" : "/" + link.toLowerCase()}
-                      key={link}
-                      className={
-                        currentLocale === link.toLowerCase()
-                          ? "hamLink active"
-                          : "hamLink"
-                      }
-                    >
-                      {link}
-                    </a>
-                  </li>
-                );
-              })}
-            </ul>
-          </nav>
+      <div id="hamburgerMenu">
+        <div id="hamburgerHeading">
+          <h3>Tender Touch</h3>
+          <span className="italics">Doula Services</span>
         </div>
+        <nav className="hamburgerNav">
+          <ul>
+            {hamLinks.map((link) => {
+              return (
+                <li key={"li" + link}>
+                  <a
+                    href={link === "Home" ? "/" : "/" + link.toLowerCase()}
+                    key={link}
+                    className={
+                      currentLocale === link.toLowerCase()
+                        ? "hamLink active"
+                        : "hamLink"
+                    }
+                  >
+                    {link}
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
       </div>
     </div>
   );

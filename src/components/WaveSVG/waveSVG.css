@@ -15,10 +15,6 @@
   line-height: 0;
 }
 
-.relative {
-  position: relative;
-}
-
 .topPosition {
   top: 0;
 }
@@ -34,14 +30,14 @@
   height: 79px;
 }
 
-.sage {
+.sageFill {
   fill: var(--sage);
 }
 
-.meadow {
+.meadowFill {
   fill: var(--meadow);
 }
 
-.crumble {
+.crumbleFill {
   fill: var(--crumble);
 }

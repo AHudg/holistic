@@ -5,7 +5,7 @@ import PrivacyPolicy from "../Legal/PrivacyPolicy.jsx";
 import ToS from "../Legal/ToS.jsx";
 import "./footer.css";
 
-function Footer({ setModalClass }) {
+function Footer({ setModalClass, bgColor, textColor }) {
   const [openPrivacy, setOpenPrivacy] = useState(false);
   const [openToS, setOpenToS] = useState(false);
 
@@ -20,9 +20,9 @@ function Footer({ setModalClass }) {
   };
 
   return (
-    <div>
-      <PageBreak />
-      <footer id="footer">
+    <div style={{ backgroundColor: bgColor }}>
+      <PageBreak textColor={textColor} />
+      <footer style={{ color: textColor }}>
         <div>
           <div className="logo">
             <h4>Tender Touch</h4>
@@ -30,13 +30,22 @@ function Footer({ setModalClass }) {
           </div>
           <div className="footerContact">
             <a href="tel:979-900-6015">
-              <i className="fa-solid fa-phone fa-lg"></i>
+              <i
+                className="fa-solid fa-phone fa-lg"
+                style={{ color: textColor }}
+              ></i>
             </a>
             <a href="mailto:katherine.ellis333@gmail.com" target="_blank">
-              <i className="fa-solid fa-envelope fa-lg"></i>
+              <i
+                className="fa-solid fa-envelope fa-lg"
+                style={{ color: textColor }}
+              ></i>
             </a>
             <a href="http://instagram.com/_u/katherinee.ellis/" target="_blank">
-              <i className="fa-brands fa-square-instagram fa-lg"></i>
+              <i
+                className="fa-brands fa-square-instagram fa-lg"
+                style={{ color: textColor }}
+              ></i>
             </a>
           </div>
         </div>

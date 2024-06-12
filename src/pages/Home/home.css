@@ -56,17 +56,23 @@
   }
 }
 
-.heroWords > p,
-.heroWords > button {
-  margin: 0 auto;
+.heroWords > p {
+  font-size: 1rem;
 }
 
-.heroWords > p:first-child {
+.heroWords > span {
   font-size: 3rem;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
-.heroWords > button {
+.heroWords > a {
   margin: 10px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: var(--sage);
+  border: 2px var(--paleCrumble) solid;
+  color: var(--paleCrumble);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
 .whatDoula,
@@ -77,7 +83,7 @@
 
 .whatDoula h2 {
   margin: 40px auto 15px;
-  font-size: 2rem;
+  font-size: 2.25rem;
   text-align: center;
 }
 
@@ -117,7 +123,7 @@
 
 .whyDoula h2 {
   margin: 15px auto;
-  font-size: 2rem;
+  font-size: 2.25rem;
   text-align: center;
 }
 
@@ -171,7 +177,7 @@
 .serviceWords > h2 > a {
   color: var(--meadow);
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
-  font-size: 2rem;
+  font-size: 2.25rem;
 }
 
 .serviceWords > p {
@@ -199,7 +205,7 @@
 }
 
 .aboutBanner h2 {
-  font-size: 2rem;
+  font-size: 2.25rem;
   text-align: center;
   color: var(--paleCrumble);
 }
@@ -218,7 +224,6 @@
 .aboutBanner > p > a {
   color: var(--paleCrumble);
   margin-left: 10px;
-  font-style: italic;
 }
 
 .aboutBanner > p > a:hover {

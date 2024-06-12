@@ -2,18 +2,11 @@
   font-size: 16px;
 }
 
-.cormorant {
+body {
   font-family: "Cormorant", serif;
   font-optical-sizing: auto;
   font-weight: 500;
-}
-
-.normal {
   font-style: normal;
-}
-
-.italics {
-  font-style: italic;
 }
 
 ul {
@@ -32,6 +25,14 @@ p {
 .disableScroll {
   height: 100vh;
   overflow-y: hidden;
+}
+
+.italics {
+  font-style: italic;
+}
+
+.relative {
+  position: relative;
 }
 
 @media screen and (min-width: 575px) {

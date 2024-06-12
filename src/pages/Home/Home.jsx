@@ -9,16 +9,16 @@ function Home({}) {
     <div id="homePage">
       <section>
         <div className="heroWords fadeIn">
-          <p>Welcome!</p>
+          <span className="italics">Welcome!</span>
           <p>I can't wait to meet you.</p>
-          <button>Book Now!</button>
+          <a href="/contact">Book Now!</a>
         </div>
         <img src={Hero} className="hero"></img>
-        <Wave classProp={"wave bottomPosition flip"} fill={"sage"} />
+        <Wave classProp={"wave bottomPosition flip"} fill={"sageFill"} />
       </section>
       <section className="whatDoula">
         <div className="bee beeOne"></div>
-        <h2>What is a doula?</h2>
+        <h2 className="italics">What is a Doula?</h2>
         <p>
           Doula is the professional name for someone who is your support—
           educationally, mentally, emotionally, and at times physically!
@@ -41,8 +41,8 @@ function Home({}) {
       </section>
       <section className="whyDoula">
         <div className="bee beeTwo"></div>
-        <Wave classProp={"wave relative"} fill={"sage"} />
-        <h2>Why a doula?</h2>
+        <Wave classProp={"wave relative"} fill={"sageFill"} />
+        <h2 className="italics">Why a Doula?</h2>
         <p>
           Research has shown that having a doula in your birth can decrease your
           stress during pregnancy and positively impact the labor process.
@@ -61,16 +61,18 @@ function Home({}) {
         <div className="bee beeThree"></div>
       </section>
       <section className="banner">
-        <Wave classProp={"wave"} fill={"meadow"} />
+        <Wave classProp={"wave"} fill={"meadowFill"} />
         <div className="bannerPhoto"></div>
-        <Wave classProp={"wave bottomPosition flip"} fill={"crumble"} />
+        <Wave classProp={"wave bottomPosition flip"} fill={"crumbleFill"} />
       </section>
       <section className="serviceBanner">
         <div>
           <div className="lilly"></div>
           <div className="serviceWords">
             <h2>
-              <a href="/services">Services</a>
+              <a href="/services" className="italics">
+                Services
+              </a>
             </h2>
             <p>
               I offer multiple packages to accomadate all my future mommas and
@@ -78,13 +80,15 @@ function Home({}) {
               pregnancy, I aim support you every step of the way. Interested in
               learning more of what I have to offer?
             </p>
-            <a href="/services">View the packages!</a>
+            <a href="/services" className="italics">
+              View the packages!
+            </a>
           </div>
         </div>
       </section>
       <section className="aboutBanner">
         <div className="multiWaves multiCherryCrumbleSVG"></div>
-        <h2>Meet Your Future Doula</h2>
+        <h2 className="italics">Meet Your Future Doula</h2>
         <img src={Katherine}></img>
         <p>
           Howdy! I'm Katherine, a proud birth doula and homemaker! I'm so
@@ -92,7 +96,9 @@ function Home({}) {
           side during your journey. I am a second generation Aggie who graduated
           from Texas A&M in 2024 with a degree in Community Health; I have
           always loved education and the human body, and I knew that I needed...
-          <a href="/about">Read More.</a>
+          <a href="/about" className="italics">
+            Read More.
+          </a>
         </p>
         <div className="multiWaves multiCherrySageSVG flip"></div>
       </section>
@@ -107,7 +113,7 @@ function Home({}) {
           uestions
         </h2>
         <p>
-          Inquiries can to your general questions can typically be found{" "}
+          Inquiries to your general questions can typically be found{" "}
           <a href="faqs">here.</a>
         </p>
       </section>

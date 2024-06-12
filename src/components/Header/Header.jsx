@@ -1,12 +1,11 @@
 import { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
 
 import Hamburger from "../Hamburger/Hamburger.jsx";
 import Nav from "../Nav/Nav.jsx";
 
 import "./header.css";
 
-function Header({ setModalClass }) {
+function Header({ setModalClass, currentLocale, bgColor, textColor }) {
   const [screenSize, setScreenSize] = useState(window.innerWidth);
   const breakpoint = 768;
 
@@ -31,26 +30,23 @@ function Header({ setModalClass }) {
     "Contact",
   ];
 
-  let currentLocale = useLocation().pathname.split("/")[1];
-
-  // to allow "Home" to highlight if active; lowercase to match later logic
-  if (!currentLocale) {
-    currentLocale = "home";
-  }
-
   return (
-    <header>
+    <header
+      className={currentLocale === "home" ? "absoluteHeader" : ""}
+      style={{ backgroundColor: bgColor }}
+    >
       <h1>
-        <a href="/" className="cormorant normal">
+        <a href="/" style={{ color: textColor }}>
           Tender Touch
         </a>
-        <span className="cormorant italics">Doula Services</span>
+        <span style={{ color: textColor }}>Doula Services</span>
       </h1>
       {screenSize < breakpoint ? (
         <Hamburger
-          hamLinks={navLinks}
-          currentLocale={currentLocale}
           setModalClass={setModalClass}
+          currentLocale={currentLocale}
+          hamLinks={navLinks}
+          textColor={textColor}
         />
       ) : (
         <Nav navLinks={navLinks} currentLocale={currentLocale} />
