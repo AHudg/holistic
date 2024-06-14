@@ -223,29 +223,15 @@
 }
 
 .faqBanner {
-  /* display: flex; */
-  align-items: center;
+  padding-bottom: 30px;
 }
 
 #faqHeader {
-  margin: 0 0 40px 20px;
-  color: var(--crumble);
-  line-height: 0.9;
-  text-shadow: -5px -4px 2px var(--meadow);
-}
-
-#faqHeader > span {
-  font-size: 4rem;
+  text-align: center;
+  font-size: 2rem;
   color: var(--paleCrumble);
+  text-shadow: 4px 3px 2px var(--meadow);
 }
-
-/* .second {
-  margin-left: 1rem;
-}
-
-.third {
-  margin-left: 2.5rem;
-} */
 
 .faqBanner > p > a {
   color: var(--paleCrumble);

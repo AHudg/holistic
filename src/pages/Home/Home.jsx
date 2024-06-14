@@ -98,8 +98,8 @@ function Home({}) {
       <section className="faqBanner">
         <h2 id="faqHeader">Have Questions?</h2>
         <p>
-          Inquiries to your general questions can typically be found{" "}
-          <a href="faqs">here.</a>
+          Inquiries to your general questions can typically be found at our FAQ
+          page <a href="faqs">here.</a>
         </p>
       </section>
     </div>
