@@ -1,12 +1,3 @@
-:root {
-  --sage: #738462;
-  --meadow: rgb(92, 107, 42);
-  --paleCherry: rgb(154, 91, 110);
-  --cherry: rgb(102, 10, 35);
-  --paleCrumble: rgb(218, 204, 175);
-  --crumble: #c0ae88;
-}
-
 .wave {
   position: absolute;
   left: 0;

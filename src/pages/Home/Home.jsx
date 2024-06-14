@@ -21,22 +21,15 @@ function Home({}) {
         <h2 className="italics">What is a Doula?</h2>
         <p>
           Doula is the professional name for someone who is your support—
-          educationally, mentally, emotionally, and at times physically!
-          Pregnancy and labor can be overwhelming, and no one should have to
-          sift through the information alone. Doulas work with your partner to
-          create an environment where you feel safe, comfortable, and in charge
-          of your birth.
-          <br /> <br />
-          There are two types of doulas: birth doulas and postpartum doulas. I
-          am a certified birth doula who is excited to walk alongside you
-          through your pregnancy and labor, but do not offer postpartum
-          services. My passion is to provide education to help make informed
-          decisions regarding your birth plan. This can look like providing
-          education to the family, answering questions, hip squeezes, counter
-          pressure, offering different position ideas for you and your partner
-          to use during labor, connecting you to local providers for your needs,
-          or just keeping you hydrated and fed as you go through the birth
-          process.
+          educationally, mentally, emotionally, and at times physically! There
+          are two types of doulas: birth doulas and postpartum doulas. I am a
+          certified birth doula who is excited to walk alongside you through
+          your pregnancy and labor, but do not offer postpartum services. My
+          passion is to provide education to help make informed decisions
+          regarding your birth plan. Pregnancy and labor can be overwhelming,
+          and no one should have to sift through the information alone. Doulas
+          work with your partner to create an environment where you feel safe,
+          comfortable, and in charge of your birth.
         </p>
       </section>
       <section className="whyDoula">
@@ -103,15 +96,7 @@ function Home({}) {
         <div className="multiWaves multiCherrySageSVG flip"></div>
       </section>
       <section className="faqBanner">
-        <h2 id="faqHeader">
-          <span>F</span>requently
-          <br />
-          <span className="second">A</span>
-          sked
-          <br />
-          <span className="third">Q</span>
-          uestions
-        </h2>
+        <h2 id="faqHeader">Have Questions?</h2>
         <p>
           Inquiries to your general questions can typically be found{" "}
           <a href="faqs">here.</a>

@@ -1,5 +1,8 @@
 .aboutSection {
   background-color: var(--paleCherry);
+  padding: 20px 20px;
+  text-align: center;
+  color: var(--paleCrumble);
 }
 
 @media screen and (min-width: 575px) {

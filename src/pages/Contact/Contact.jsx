@@ -31,7 +31,7 @@ function Contact({}) {
         <p>Don't forget to follow on Instagram!</p>
       </div>
 
-      <PageBreak />
+      <PageBreak textColor={"var(--paleCrumble)"} />
 
       <form name="contact" method="post">
         <input type="hidden" name="form-name" value="contact"></input>

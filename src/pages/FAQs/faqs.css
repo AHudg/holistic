@@ -2,16 +2,18 @@
   background-color: var(--meadow);
   position: relative;
   overflow: hidden;
+  color: var(--paleCrumble);
 }
 
 .faqBackground {
-  width: 450px;
+  width: 350px;
   height: auto;
   rotate: -45deg;
   position: absolute;
-  top: 100px;
-  right: -200px;
+  top: 110px;
+  right: -150px;
   opacity: 0.2;
+  filter: hue-rotate(30deg);
 }
 
 .faqHeader {
@@ -27,14 +29,19 @@
 .faqHeader > h3 {
   font-size: 1rem;
   font-weight: lighter;
+  font-style: italic;
   width: 75%;
   position: relative;
   z-index: 1;
 }
 
+.faqDiv {
+  margin-bottom: 50px;
+}
+
 .faq {
-  border-bottom: black 2px solid;
-  margin: 5px 20px;
+  border-bottom: var(--paleCrumble) 2px solid;
+  margin: 10px 20px 0;
   position: relative;
   z-index: 1;
 }
@@ -44,6 +51,10 @@
   justify-content: space-between;
 }
 
+.faq > div > h4 {
+  font-weight: bold;
+}
+
 .expandCheckbox {
   position: absolute;
   width: 100%;
@@ -51,9 +62,9 @@
 }
 
 .answer {
-  margin: 0;
   max-height: 1px;
   opacity: 0;
+  font-weight: lighter;
   transition: max-height 1s ease-in-out, opacity 0.5s;
 }
 

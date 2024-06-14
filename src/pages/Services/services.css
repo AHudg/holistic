@@ -1,5 +1,38 @@
 .serviceSection {
   background-color: var(--paleCrumble);
+  text-align: center;
+  padding: 20px 20px;
+  color: var(--meadow);
+}
+
+.serviceHeader > h2 {
+  font-size: 2rem;
+  font-weight: bolder;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.serviceSection > h3 {
+  margin: 20px 0;
+  border-bottom: double 3px var(--meadow);
+  font-style: italic;
+}
+
+.serviceSection > ul {
+  margin: 10px 20px;
+}
+
+.serviceSection > ul > p,
+.serviceSection > ul > li {
+  text-align: start;
+}
+
+.serviceSection > ul > li {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.bottomBlurb {
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 575px) {

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useLocation } from "react-router-dom";
 
 import PageBreak from "../PageBreak/PageBreak.jsx";
 import PrivacyPolicy from "../Legal/PrivacyPolicy.jsx";
@@ -18,6 +19,14 @@ function Footer({ setModalClass, bgColor, textColor }) {
     setOpenToS(true);
     setModalClass(true);
   };
+
+  let currentLocale = useLocation().pathname.split("/")[1];
+
+  if (!currentLocale) {
+    currentLocale = "home";
+    bgColor = "var(--sage)";
+    textColor = "var(--paleCrumble)";
+  }
 
   return (
     <div style={{ backgroundColor: bgColor }}>
