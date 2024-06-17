@@ -1,9 +1,14 @@
+import AboutKatherine from "../../assets/AboutKatherine.jpeg";
+import CherryFlower from "../../assets/CherryFlower.png";
 import "./about.css";
 
 function About({}) {
   return (
     <section className="aboutSection">
-      <h2>About Me</h2>
+      <h2>Meet Your Future Doula</h2>
+      <img src={CherryFlower} className="cherryFlower" />
+
+      <img src={AboutKatherine} className="aboutPhoto" />
       <p>
         Welcome! My name is Katherine Ellis and I am a proud birth doula and
         homemaker. I was born into a small town and into a family of 8 children

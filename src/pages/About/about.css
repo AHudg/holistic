@@ -5,6 +5,24 @@
   color: var(--paleCrumble);
 }
 
+.aboutSection > h2 {
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.aboutPhoto {
+  width: 80vw;
+  margin: 0 0 20px;
+  border-radius: 100px 100px 0 0;
+  box-shadow: -10px 10px 0 var(--cherry);
+}
+
+.cherryFlower {
+  width: 70px;
+  position: absolute;
+  right: 20px;
+}
+
 @media screen and (min-width: 575px) {
 }
 
