@@ -14,19 +14,19 @@ function Contact({}) {
 
       <div className="info">
         <a href="tel:979-900-6015">
-          <i className="fa-solid fa-phone"></i>
+          <i className="fa-solid fa-phone fa-lg"></i>
         </a>
         <span id="myPhone">979.900.6015</span>
       </div>
       <div className="info">
         <a href="mailto:katherine@tendertouchdoula.com" target="_blank">
-          <i className="fa-solid fa-envelope"></i>
+          <i className="fa-solid fa-envelope fa-lg"></i>
         </a>
         <span id="myEmail">katherine@tendertouchdoula.com</span>
       </div>
       <div className="info">
         <a href="http://instagram.com/_u/katherinee.ellis/" target="_blank">
-          <i className="fa-brands fa-square-instagram"></i>
+          <i className="fa-brands fa-square-instagram fa-lg"></i>
         </a>
         <p>Don't forget to follow on Instagram!</p>
       </div>

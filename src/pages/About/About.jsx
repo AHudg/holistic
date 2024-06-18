@@ -1,13 +1,13 @@
 import AboutKatherine from "../../assets/AboutKatherine.jpeg";
-import CherryFlower from "../../assets/CherryFlower.png";
+import RecoloredFlower from "../../assets/RecoloredFlower.png";
+
 import "./about.css";
 
 function About({}) {
   return (
     <section className="aboutSection">
       <h2>Meet Your Future Doula</h2>
-      <img src={CherryFlower} className="cherryFlower" />
-
+      <img src={RecoloredFlower} className="cherryFlower" />
       <img src={AboutKatherine} className="aboutPhoto" />
       <p>
         Welcome! My name is Katherine Ellis and I am a proud birth doula and

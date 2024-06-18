@@ -18,9 +18,11 @@
 }
 
 .cherryFlower {
-  width: 70px;
+  width: 80px;
   position: absolute;
-  right: 20px;
+  right: 25px;
+  transform: rotate(-20deg);
+  filter: drop-shadow(-5px 5px 5px rgba(0, 0, 0, 0.3));
 }
 
 @media screen and (min-width: 575px) {
