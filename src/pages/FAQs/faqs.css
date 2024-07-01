@@ -36,7 +36,7 @@
 }
 
 .faqDiv {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .faq {
@@ -74,19 +74,54 @@
   transition: max-height 1s ease-in-out, opacity 0.5s;
   transition-delay: 0s, 0.5s;
   transition-property: max-height, opacity;
+  margin-bottom: 10px;
 }
 
 @media screen and (min-width: 575px) {
+  .faqDiv {
+    width: 80vw;
+    margin: 0 auto 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
+  .faqHeader {
+    margin-left: 40px;
+  }
 }
 
 @media screen and (min-width: 992px) {
+  .faqBackground {
+    width: 450px;
+    top: 90px;
+  }
+
+  .faqHeader {
+    margin-left: 100px;
+  }
+
+  .faqDiv {
+    width: 70vw;
+  }
 }
 
 @media screen and (min-width: 1200px) {
+  .faqHeader {
+    margin-left: 200px;
+  }
+
+  .faqDiv {
+    width: 50vw;
+  }
 }
 
 @media screen and (min-width: 1400px) {
+  .faqBackground {
+    width: 550px;
+    right: -200px;
+  }
+
+  .faqDiv {
+    width: 40vw;
+  }
 }
