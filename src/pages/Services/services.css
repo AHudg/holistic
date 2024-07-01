@@ -11,22 +11,22 @@
   text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
 }
 
-.serviceSection > h3 {
+.package > h3 {
   margin: 20px 0;
   border-bottom: double 3px var(--meadow);
   font-style: italic;
 }
 
-.serviceSection > ul {
+.package > ul {
   margin: 10px 20px;
 }
 
-.serviceSection > ul > p,
-.serviceSection > ul > li {
+.package > ul > p,
+.package > ul > li {
   text-align: start;
 }
 
-.serviceSection > ul > li {
+.package > ul > li {
   list-style: disc;
   margin-left: 20px;
 }
@@ -36,16 +36,40 @@
 }
 
 @media screen and (min-width: 575px) {
+  .package {
+    width: 70vw;
+    margin: auto;
+  }
 }
 
 @media screen and (min-width: 768px) {
+  .package {
+    width: 60vw;
+  }
 }
 
 @media screen and (min-width: 992px) {
+  .package {
+    width: 50vw;
+  }
 }
 
 @media screen and (min-width: 1200px) {
+  .packageContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .package {
+    width: 40vw;
+    margin: 0 50px;
+  }
 }
 
 @media screen and (min-width: 1400px) {
+  .package {
+    margin: 0 10px;
+    width: 30vw;
+  }
 }

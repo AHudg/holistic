@@ -26,12 +26,27 @@
 }
 
 @media screen and (min-width: 575px) {
+  .aboutPhoto {
+    width: 60vw;
+    box-shadow: -15px 15px 0 var(--cherry);
+    margin: 0 0 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
+  .aboutPhoto {
+    width: 50vw;
+    box-shadow: -15px 15px 0 var(--cherry);
+    margin: 0 0 30px;
+  }
 }
 
 @media screen and (min-width: 992px) {
+  .aboutPhoto {
+    float: left;
+    width: 40vw;
+    margin: 30px 30px 30px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
