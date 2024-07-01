@@ -5,11 +5,11 @@
   background-color: var(--sage);
 }
 
-.contactPage > h2 {
+.contactPage > div > h2 {
   font-size: 2rem;
 }
 
-.contactPage > p {
+.contactPage > div > p {
   margin-bottom: 20px;
 }
 
@@ -51,9 +51,6 @@ select {
   border: 2px solid var(--meadow);
 }
 
-input:focus {
-}
-
 #firstName {
   width: 95%;
   margin-right: 5%;
@@ -87,6 +84,9 @@ input:focus {
 }
 
 @media screen and (min-width: 1200px) {
+  .contactPage {
+    display: flex;
+  }
 }
 
 @media screen and (min-width: 1400px) {
