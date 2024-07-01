@@ -1,6 +1,9 @@
 nav > ul {
   display: flex;
   margin: 2rem 30px 0 0;
+  z-index: 5;
+  position: relative;
+  z-index: 1;
 }
 
 nav > ul > li {
@@ -8,12 +11,41 @@ nav > ul > li {
   padding: 15px;
 }
 
-.navLink {
-  color: black;
+.activeCrumble {
+  font-weight: bold;
+  padding-bottom: 3px;
+  border-bottom: var(--paleCrumble) 2px solid;
 }
 
-.active {
+.activeMeadow {
   font-weight: bold;
-  padding-bottom: 5px;
-  border-bottom: black 2px solid;
+  padding-bottom: 3px;
+  border-bottom: var(--meadow) 2px solid;
+}
+
+.activeWhite {
+  font-weight: bold;
+  padding-bottom: 3px;
+  border-bottom: white 2px solid;
+}
+
+.activeCherry {
+  font-weight: bold;
+  padding-bottom: 3px;
+  border-bottom: var(--cherry) 2px solid;
+}
+
+@media screen and (min-width: 575px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 992px) {
+}
+
+@media screen and (min-width: 1200px) {
+}
+
+@media screen and (min-width: 1400px) {
 }

@@ -1,7 +1,34 @@
-import { useLocation } from "react-router-dom";
 import "./nav.css";
 
 function Nav({ navLinks, currentLocale }) {
+  let textColor;
+  let activeClass;
+
+  switch (currentLocale) {
+    case "about":
+      textColor = "var(--paleCrumble)";
+      activeClass = "activeCrumble";
+      break;
+    case "services":
+      textColor = "var(--meadow)";
+      activeClass = "activeMeadow";
+      break;
+    case "faqs":
+      textColor = "var(--paleCrumble)";
+      activeClass = "activeCrumble";
+      break;
+    case "contact":
+      textColor = "var(--paleCrumble)";
+      activeClass = "activeCrumble";
+      break;
+    case "home":
+      textColor = "white";
+      activeClass = "activeWhite";
+      break;
+    default:
+      textColor = "var(--cherry)";
+  }
+
   return (
     <nav className="desktopNav">
       <ul>
@@ -12,10 +39,9 @@ function Nav({ navLinks, currentLocale }) {
                 href={link === "Home" ? "/" : "/" + link.toLowerCase()}
                 key={link}
                 className={
-                  currentLocale === link.toLowerCase()
-                    ? "navLink active"
-                    : "navLink"
+                  currentLocale === link.toLowerCase() ? activeClass : ""
                 }
+                style={{ color: textColor }}
               >
                 {link}
               </a>

@@ -17,6 +17,7 @@ article {
   border-radius: 15px;
   background-color: white;
   padding: 10px;
+  color: black;
 }
 
 article > span {

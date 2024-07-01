@@ -8,6 +8,11 @@
   --crumble: rgb(192, 174, 136);
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Cormorant", serif;
   font-optical-sizing: auto;

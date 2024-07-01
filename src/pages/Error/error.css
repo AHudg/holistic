@@ -1,3 +1,32 @@
+.errorPage {
+  background-color: var(--paleCrumble);
+  color: var(--cherry);
+  width: 100vw;
+  height: 75vh;
+}
+
+.errorPage h2 {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: bold;
+  font-style: italic;
+  padding-top: 50px;
+}
+
+.errorPage p {
+  text-align: center;
+  margin: 50px 40px;
+}
+
+.errorPage p > a {
+  color: var(--cherry);
+  font-style: italic;
+}
+
+.errorPage p > a:hover {
+  color: white;
+}
+
 @media screen and (min-width: 575px) {
 }
 

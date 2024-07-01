@@ -37,10 +37,13 @@ function App() {
       bgColor = "var(--sage)";
       textColor = "var(--paleCrumble)";
       break;
-    default:
+    case "home":
       bgColor;
       textColor = "white";
       break;
+    default:
+      bgColor = "var(--paleCrumble)";
+      textColor = "var(--cherry)";
   }
 
   useEffect(() => {
@@ -71,6 +74,7 @@ function App() {
           <Outlet />
           <Footer
             setModalClass={setModalClass}
+            currentLocale={currentLocale}
             bgColor={bgColor}
             textColor={textColor}
           />

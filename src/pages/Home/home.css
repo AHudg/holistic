@@ -16,6 +16,8 @@
 .hero {
   height: 100vh;
   width: auto;
+  position: relative;
+  z-index: -1;
 }
 
 .heroWords {
@@ -25,7 +27,7 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 45%;
+  top: 40%;
   width: 100vw;
   opacity: 0;
 }
@@ -34,7 +36,7 @@
   animation: fadeInAnimation ease 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-delay: 1s;
+  animation-delay: 0.5s;
 }
 
 @keyframes fadeInAnimation {
@@ -47,13 +49,14 @@
   }
 }
 
-.heroWords > p {
-  font-size: 1rem;
-}
-
 .heroWords > span {
   font-size: 3rem;
-  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+}
+
+.heroWords > p {
+  font-size: 1.2rem;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
 }
 
 .heroWords > a {
@@ -64,6 +67,11 @@
   border: 2px var(--paleCrumble) solid;
   color: var(--paleCrumble);
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.heroWords > a:hover {
+  color: white;
+  box-shadow: 0px 0px 10px var(--paleCrumble);
 }
 
 .whatDoula,

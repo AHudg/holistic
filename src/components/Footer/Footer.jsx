@@ -1,12 +1,11 @@
 import { useState } from "react";
-import { useLocation } from "react-router-dom";
 
 import PageBreak from "../PageBreak/PageBreak.jsx";
 import PrivacyPolicy from "../Legal/PrivacyPolicy.jsx";
 import ToS from "../Legal/ToS.jsx";
 import "./footer.css";
 
-function Footer({ setModalClass, bgColor, textColor }) {
+function Footer({ setModalClass, currentLocale, bgColor, textColor }) {
   const [openPrivacy, setOpenPrivacy] = useState(false);
   const [openToS, setOpenToS] = useState(false);
 
@@ -20,10 +19,7 @@ function Footer({ setModalClass, bgColor, textColor }) {
     setModalClass(true);
   };
 
-  let currentLocale = useLocation().pathname.split("/")[1];
-
-  if (!currentLocale) {
-    currentLocale = "home";
+  if (currentLocale === "home") {
     bgColor = "var(--sage)";
     textColor = "var(--paleCrumble)";
   }

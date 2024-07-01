@@ -24,7 +24,11 @@
 }
 
 .meadowBee {
-  filter: hue-rotate(30deg) brightness(95%);
+  filter: hue-rotate(30deg) brightness(90%);
+}
+
+.cherryBee {
+  filter: hue-rotate(300deg) brightness(90%);
 }
 
 @media screen and (min-width: 575px) {
