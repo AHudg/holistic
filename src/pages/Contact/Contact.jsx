@@ -21,36 +21,40 @@ function Contact({}) {
 
   return (
     <section className="contactPage">
-      <div>
-        <h2>Let's keep in touch!</h2>
-        <p>
-          Interested in connecting to learn more? I'd love to hear from you, and
-          would be honored to be apart of your journey! Feel free to use the
-          form below to start the conversation, send me an email directly, or
-          reach out via phone call / text.
-        </p>
+      <div className="infoFrame">
+        <div>
+          <h2>Let's keep in touch!</h2>
+          <p>
+            Interested in connecting to learn more? I'd love to hear from you,
+            and would be honored to be apart of your journey! Feel free to use
+            the form below to start the conversation, send me an email directly,
+            or reach out via phone call / text.
+          </p>
+        </div>
 
-        <div className="info">
-          <a href="tel:979-900-6015">
-            <i className="fa-solid fa-phone fa-lg"></i>
-          </a>
-          <span id="myPhone">979.900.6015</span>
-        </div>
-        <div className="info">
-          <a href="mailto:katherine@tendertouchdoula.com" target="_blank">
-            <i className="fa-solid fa-envelope fa-lg"></i>
-          </a>
-          <span id="myEmail">katherine@tendertouchdoula.com</span>
-        </div>
-        <div className="info">
-          <a href="http://instagram.com/_u/katherinee.ellis/" target="_blank">
-            <i className="fa-brands fa-square-instagram fa-lg"></i>
-          </a>
-          <p>Don't forget to follow on Instagram!</p>
+        <div>
+          <div className="info">
+            <a href="tel:979-900-6015">
+              <i className="fa-solid fa-phone fa-lg"></i>
+            </a>
+            <span id="myPhone">979.900.6015</span>
+          </div>
+          <div className="info">
+            <a href="mailto:katherine@tendertouchdoula.com" target="_blank">
+              <i className="fa-solid fa-envelope fa-lg"></i>
+            </a>
+            <span id="myEmail">katherine@tendertouchdoula.com</span>
+          </div>
+          <div className="info">
+            <a href="http://instagram.com/_u/katherinee.ellis/" target="_blank">
+              <i className="fa-brands fa-square-instagram fa-lg"></i>
+            </a>
+            <p>Don't forget to follow on Instagram!</p>
+          </div>
         </div>
       </div>
 
-      <div>
+      <div className="formFrame">
         {screenSize <= breakpoint ? (
           <PageBreak textColor={"var(--paleCrumble)"} />
         ) : (
@@ -61,14 +65,14 @@ function Contact({}) {
           <input type="hidden" name="form-name" value="contact"></input>
 
           <div>
-            <div>
+            <div className="nameDiv">
               <label htmlFor="firstName">First Name:</label>
               <input type="text" id="firstName" name="firstName"></input>
             </div>
 
-            <div>
+            <div className="nameDiv">
               <label htmlFor="lastName">Last Name:</label>
-              <input type="text" id="lastName" name="lastName"></input>
+              <input type="text" name="lastName"></input>
             </div>
           </div>
 

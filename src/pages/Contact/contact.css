@@ -1,21 +1,24 @@
 /* Contact */
 .contactPage {
-  padding: 40px 20px 10px;
   color: var(--paleCrumble);
   background-color: var(--sage);
 }
 
-.contactPage > div > h2 {
+.infoFrame {
+  padding: 40px 20px 10px;
+}
+
+.infoFrame > div > h2 {
   font-size: 2rem;
 }
 
-.contactPage > div > p {
+.infoFrame > div > p {
   margin-bottom: 20px;
 }
 
 .info {
   display: flex;
-  margin-left: 15px;
+  margin: 0 0 10px 15px;
 }
 
 .info i {
@@ -26,14 +29,10 @@
   margin-right: 15px;
 }
 
-.info p {
-  margin-bottom: 20px;
-}
-
 form {
   display: flex;
   flex-direction: column;
-  margin: 10px 0;
+  padding: 10px 20px;
 }
 
 form > div {
@@ -51,13 +50,14 @@ select {
   border: 2px solid var(--meadow);
 }
 
-#firstName {
-  width: 95%;
-  margin-right: 5%;
+.nameDiv {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
 }
 
-#lastName {
-  width: 100%;
+#firstName {
+  margin-right: 5%;
 }
 
 .contactBtn {
@@ -78,14 +78,40 @@ select {
 }
 
 @media screen and (min-width: 768px) {
+  .formFrame {
+    width: 100vw;
+  }
+
+  form {
+    width: 70vw;
+    margin: auto;
+  }
 }
 
 @media screen and (min-width: 992px) {
+  .infoFrame {
+    display: flex;
+  }
+
+  .infoFrame > div {
+    margin: 0 40px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .contactPage {
     display: flex;
+    justify-content: space-between;
+    padding: 40px 60px;
+  }
+
+  .infoFrame {
+    flex-direction: column;
+    padding-top: 100px;
+  }
+
+  form {
+    width: 40vw;
   }
 }
 
