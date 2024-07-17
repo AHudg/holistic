@@ -1,18 +1,21 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
-import App from "./App.jsx";
-import Error from "./pages/Error/Error.jsx";
-import Home from "./pages/Home/Home.jsx";
-import About from "./pages/About/About.jsx";
-import Testimonials from "./pages/Testimonials/Testimonials.jsx";
-import Contact from "./pages/Contact/Contact.jsx";
-import Services from "./pages/Services/Services.jsx";
-import FAQs from "./pages/FAQs/FAQs.jsx";
-
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
+
+// Lazy loading route components
+import App from "./App.jsx";
+import Error from "./pages/Error/Error.jsx";
+import Loading from "./pages/Loading/Loading.jsx";
+const Home = lazy(() => import("./pages/Home/Home.jsx"));
+const About = lazy(() => import("./pages/About/About.jsx"));
+const Testimonials = lazy(() =>
+  import("./pages/Testimonials/Testimonials.jsx")
+);
+const Contact = lazy(() => import("./pages/Contact/Contact.jsx"));
+const Services = lazy(() => import("./pages/Services/Services.jsx"));
+const FAQs = lazy(() => import("./pages/FAQs/FAQs.jsx"));
 
 const router = createBrowserRouter([
   {
@@ -22,27 +25,51 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Home />,
+        element: (
+          <Suspense fallback={<Loading />}>
+            <Home />
+          </Suspense>
+        ),
       },
       {
         path: "about",
-        element: <About />,
+        element: (
+          <Suspense fallback={<Loading />}>
+            <About />
+          </Suspense>
+        ),
       },
       {
         path: "testimonials",
-        element: <Testimonials />,
+        element: (
+          <Suspense fallback={<Loading />}>
+            <Testimonials />
+          </Suspense>
+        ),
       },
       {
         path: "contact",
-        element: <Contact />,
+        element: (
+          <Suspense fallback={<Loading />}>
+            <Contact />
+          </Suspense>
+        ),
       },
       {
         path: "services",
-        element: <Services />,
+        element: (
+          <Suspense fallback={<Loading />}>
+            <Services />
+          </Suspense>
+        ),
       },
       {
         path: "faqs",
-        element: <FAQs />,
+        element: (
+          <Suspense fallback={<Loading />}>
+            <FAQs />
+          </Suspense>
+        ),
       },
       {
         path: "*",

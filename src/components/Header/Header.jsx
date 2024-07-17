@@ -14,26 +14,37 @@ function Header({ setModalClass, currentLocale, bgColor, textColor }) {
       setScreenSize(window.innerWidth);
     };
 
-    window.addEventListener("resize", handleResize);
+    const debounceResize = debounce(handleResize, 150);
+
+    window.addEventListener("resize", debounceResize);
 
     return () => {
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener("resize", debounceResize);
     };
   }, []);
 
+  const debounce = (func, wait) => {
+    let timeout;
+    return (...args) => {
+      clearTimeout(timeout);
+      timeout = setTimeout(() => func(...args), wait);
+    };
+  };
+
   const navLinks = [
-    "Home",
-    "About",
-    // "Testimonials",
-    "Services",
-    "FAQs",
-    "Contact",
+    { name: "Home", path: "/" },
+    { name: "About", path: "/about" },
+    { name: "Testimonials", path: "/testimonials" },
+    { name: "Services", path: "/services" },
+    { name: "FAQs", path: "/faqs" },
+    { name: "Contact", path: "/contact" },
   ];
 
   return (
     <header
       className={currentLocale === "home" ? "absoluteHeader" : ""}
       style={{ backgroundColor: bgColor }}
+      role="banner"
     >
       <h1>
         <a href="/" style={{ color: textColor }}>

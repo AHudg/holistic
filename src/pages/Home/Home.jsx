@@ -1,6 +1,7 @@
 import Hero from "../../assets/ImageFour.jpg";
 import Wave from "../../components/WaveSVG/WaveSVG";
 import Katherine from "../../assets/Katherine.jpg";
+import flowerFrame from "../../assets/flowerFrame.png";
 import "./home.css";
 import "../../components/WaveSVG/waveSVG.css";
 
@@ -13,9 +14,10 @@ function Home({}) {
           <p>I can't wait to meet you.</p>
           <a href="/contact">Book Now!</a>
         </div>
-        <img src={Hero} className="hero"></img>
+        <img src={Hero} alt="Hero" className="hero"></img>
         <Wave classProp={"wave bottomPosition flip"} fill={"sageFill"} />
       </section>
+
       <section className="whatDoula">
         <div className="bee beeOne"></div>
         <h2 className="italics">What is a Doula?</h2>
@@ -32,6 +34,7 @@ function Home({}) {
           comfortable, and in charge of your birth.
         </p>
       </section>
+
       <section className="whyDoula">
         <div className="bee beeTwo"></div>
         <Wave classProp={"wave relative"} fill={"sageFill"} />
@@ -53,11 +56,13 @@ function Home({}) {
         </p>
         <div className="bee beeThree"></div>
       </section>
+
       <section className="banner">
         <Wave classProp={"wave"} fill={"meadowFill"} />
         <div className="bannerPhoto"></div>
         <Wave classProp={"wave bottomPosition flip"} fill={"crumbleFill"} />
       </section>
+
       <section className="serviceBanner">
         <div>
           <div className="lilly"></div>
@@ -79,10 +84,19 @@ function Home({}) {
           </div>
         </div>
       </section>
+
       <section className="aboutBanner">
         <div className="multiWaves multiCherryCrumbleSVG"></div>
         <h2 className="italics">Meet Your Future Doula</h2>
-        <img src={Katherine}></img>
+        <div className="aboutCluster">
+          <img src={flowerFrame} alt="Flower Frame" className="leftFrame"></img>
+          <img src={Katherine} alt="Katherine" className="homeAboutPhoto"></img>
+          <img
+            src={flowerFrame}
+            alt="Flower Frame"
+            className="rightFrame"
+          ></img>
+        </div>
         <p>
           Howdy! I'm Katherine, a proud birth doula and homemaker! I'm so
           thrilled that you've found your way here, and would love to be by your
@@ -95,11 +109,12 @@ function Home({}) {
         </p>
         <div className="multiWaves multiCherrySageSVG flip"></div>
       </section>
+
       <section className="faqBanner">
         <h2 id="faqHeader">Have Questions?</h2>
         <p>
           Inquiries to your general questions can typically be found at our FAQ
-          page <a href="faqs">here.</a>
+          page <a href="/faqs">here.</a>
         </p>
       </section>
     </div>

@@ -1,3 +1,4 @@
+/* UPDATE FROM CHATGPT */
 #homePage > section > p {
   padding-left: 30px;
   padding-right: 30px;
@@ -67,6 +68,7 @@
   border: 2px var(--paleCrumble) solid;
   color: var(--paleCrumble);
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
 .heroWords > a:hover {
@@ -119,6 +121,7 @@
 .whyDoula {
   background-color: var(--meadow);
   color: var(--paleCrumble);
+  padding-bottom: 30px;
 }
 
 .whyDoula h2 {
@@ -128,8 +131,8 @@
 }
 
 .beeThree {
-  bottom: 0px;
-  right: 50px;
+  bottom: 10px;
+  right: 20px;
   transform: rotate(115deg);
 }
 
@@ -144,8 +147,8 @@
 
 .serviceBanner {
   background-color: var(--crumble);
-  width: 100vw;
   padding: 30px 20px 40px;
+  color: var(--meadow);
 }
 
 .serviceBanner > div {
@@ -210,15 +213,34 @@
   color: var(--paleCrumble);
 }
 
-.aboutBanner p {
-  color: var(--paleCrumble);
+.aboutCluster {
+  margin: 15px 0 10px;
+  width: 100vw;
 }
 
-.aboutBanner > img {
-  width: 80vw;
+.leftFrame {
+  height: 425px;
+  rotate: 180deg;
+  width: 10vw;
+  margin-left: 5vw;
+}
+
+.homeAboutPhoto {
+  width: 70vw;
   border-radius: 20px;
   margin-bottom: 20px;
   border: 2px solid var(--cherry);
+}
+
+.rightFrame {
+  height: 425px;
+  width: 10vw;
+  margin-right: 5vw;
+}
+
+.aboutBanner > p {
+  color: var(--paleCrumble);
+  text-align: center;
 }
 
 .aboutBanner > p > a {

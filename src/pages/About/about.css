@@ -1,6 +1,6 @@
 .aboutSection {
   background-color: var(--paleCherry);
-  padding: 20px 20px;
+  padding: 20px;
   text-align: center;
   color: var(--paleCrumble);
 }
@@ -8,21 +8,29 @@
 .aboutSection > h2 {
   font-size: 2rem;
   font-style: italic;
+  margin-bottom: 20px;
+}
+
+.photoFrame {
+  position: relative;
 }
 
 .aboutPhoto {
   width: 80vw;
-  margin: 0 0 20px;
+  margin: 0px 0 20px;
   border-radius: 100px 100px 0 0;
   box-shadow: -10px 10px 0 var(--cherry);
 }
 
-.cherryFlower {
-  width: 80px;
-  position: absolute;
-  right: 25px;
-  transform: rotate(-20deg);
-  filter: drop-shadow(-5px 5px 5px rgba(0, 0, 0, 0.3));
+.flowerField {
+  margin-top: 20px;
+  width: 90vw;
+  /* position: absolute; */
+  /* right: 0px; */
+  /* top: 0; */
+  /* bottom: 0px; */
+  /* transform: rotate(-40deg); */
+  /* filter: drop-shadow(-5px 5px 5px rgba(0, 0, 0, 0)); */
 }
 
 @media screen and (min-width: 575px) {
@@ -35,21 +43,25 @@
 
 @media screen and (min-width: 768px) {
   .aboutPhoto {
-    width: 50vw;
-    box-shadow: -15px 15px 0 var(--cherry);
-    margin: 0 0 30px;
+    width: 40vw;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .aboutPhoto {
+  .photoFrame {
     float: left;
-    width: 40vw;
-    margin: 30px 30px 30px;
+    /* position: relative; */
+  }
+
+  .aboutPhoto {
+    margin: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .aboutPhoto {
+    width: 30vw;
+  }
 }
 
 @media screen and (min-width: 1400px) {

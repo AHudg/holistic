@@ -7,79 +7,91 @@ import { Outlet } from "react-router-dom";
 import Footer from "./components/Footer/Footer.jsx";
 
 function App() {
-  const [loading, setLoading] = useState(true);
+  // const [loading, setLoading] = useState(true);
   const [modalClass, setModalClass] = useState(false);
 
   let currentLocale = useLocation().pathname.split("/")[1];
 
   // to allow "Home" to highlight if active; lowercase to match later logic
-  if (!currentLocale) {
-    currentLocale = "home";
-  }
+  // if (!currentLocale) {
+  //   currentLocale = "home";
+  // }
 
-  let bgColor;
-  let textColor;
+  // Default to "home" if no path segment is found
+  currentLocale = currentLocale || "home";
 
-  switch (currentLocale) {
-    case "about":
-      bgColor = "var(--paleCherry)";
-      textColor = "var(--paleCrumble)";
-      break;
-    case "services":
-      bgColor = "var(--paleCrumble)";
-      textColor = "var(--meadow)";
-      break;
-    case "faqs":
-      bgColor = "var(--meadow)";
-      textColor = "var(--paleCrumble)";
-      break;
-    case "contact":
-      bgColor = "var(--sage)";
-      textColor = "var(--paleCrumble)";
-      break;
-    case "home":
-      bgColor;
-      textColor = "white";
-      break;
-    default:
-      bgColor = "var(--paleCrumble)";
-      textColor = "var(--cherry)";
-  }
+  const colorConfig = {
+    about: { bgColor: "var(--paleCherry)", textColor: "var(--paleCrumble)" },
+    services: { bgColor: "var(--paleCrumble)", textColor: "var(--meadow)" },
+    faqs: { bgColor: "var(--meadow)", textColor: "var(--paleCrumble)" },
+    contact: { bgColor: "var(--sage)", textColor: "var(--paleCrumble)" },
+    home: { bgColor: "", textColor: "white" },
+  };
 
-  useEffect(() => {
-    // call the user defined function checkLoad every second, only when variable loading has changed
-    setInterval(checkLoad, 1000);
-  }, [loading]);
+  const { bgColor, textColor } = colorConfig[currentLocale] || {
+    bgColor: "var(--paleCrumble)",
+    textColor: "var(--cherry)",
+  };
 
-  function checkLoad() {
-    if (document.getElementsByTagName("body") === undefined) {
-      setLoading(true);
-    } else {
-      setLoading(false);
-    }
-  }
+  // let bgColor;
+  // let textColor;
+
+  // switch (currentLocale) {
+  //   case "about":
+  //     bgColor = "var(--paleCherry)";
+  //     textColor = "var(--paleCrumble)";
+  //     break;
+  //   case "services":
+  //     bgColor = "var(--paleCrumble)";
+  //     textColor = "var(--meadow)";
+  //     break;
+  //   case "faqs":
+  //     bgColor = "var(--meadow)";
+  //     textColor = "var(--paleCrumble)";
+  //     break;
+  //   case "contact":
+  //     bgColor = "var(--sage)";
+  //     textColor = "var(--paleCrumble)";
+  //     break;
+  //   case "home":
+  //     bgColor;
+  //     textColor = "white";
+  //     break;
+  //   default:
+  //     bgColor = "var(--paleCrumble)";
+  //     textColor = "var(--cherry)";
+  // }
+
+  // useEffect(() => {
+  //   // call the user defined function checkLoad every second, only when variable loading has changed
+  //   setInterval(checkLoad, 1000);
+  // }, [loading]);
+
+  // function checkLoad() {
+  //   if (document.getElementsByTagName("body") === undefined) {
+  //     setLoading(true);
+  //   } else {
+  //     setLoading(false);
+  //   }
+  // }
 
   return (
     <div>
-      {loading === true ? (
-        <Loading />
-      ) : (
-        <div id="frame" className={modalClass ? "disableScroll" : ""}>
-          <Header
-            setModalClass={setModalClass}
-            currentLocale={currentLocale}
-            bgColor={bgColor}
-            textColor={textColor}
-          />
-          <Outlet />
-          <Footer
-            setModalClass={setModalClass}
-            currentLocale={currentLocale}
-            bgColor={bgColor}
-            textColor={textColor}
-          />
-        </div>
-      )}
+      <div id="frame" className={modalClass ? "disableScroll" : ""}>
+        <Header
+          setModalClass={setModalClass}
+          currentLocale={currentLocale}
+          bgColor={bgColor}
+          textColor={textColor}
+        />
+        <Outlet />
+        <Footer
+          setModalClass={setModalClass}
+          currentLocale={currentLocale}
+          bgColor={bgColor}
+          textColor={textColor}
+        />
+      </div>
     </div>
   );
 }

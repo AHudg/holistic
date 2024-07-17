@@ -12,12 +12,22 @@ function Contact({}) {
       setScreenSize(window.innerWidth);
     };
 
+    const debounceResize = debounce(handleResize, 150);
+
     window.addEventListener("resize", handleResize);
 
     return () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+  const debounce = (func, wait) => {
+    let timeout;
+    return (...args) => {
+      clearTimeout(timeout);
+      timeout = setTimeout(() => func(...args), wait);
+    };
+  };
 
   return (
     <section className="contactPage">
@@ -34,19 +44,27 @@ function Contact({}) {
 
         <div>
           <div className="info">
-            <a href="tel:979-900-6015">
+            <a href="tel:979-900-6015" aria-label="Phone">
               <i className="fa-solid fa-phone fa-lg"></i>
             </a>
             <span id="myPhone">979.900.6015</span>
           </div>
           <div className="info">
-            <a href="mailto:katherine@tendertouchdoula.com" target="_blank">
+            <a
+              href="mailto:katherine@tendertouchdoula.com"
+              target="_blank"
+              aria-label="Email"
+            >
               <i className="fa-solid fa-envelope fa-lg"></i>
             </a>
             <span id="myEmail">katherine@tendertouchdoula.com</span>
           </div>
           <div className="info">
-            <a href="http://instagram.com/_u/katherinee.ellis/" target="_blank">
+            <a
+              href="http://instagram.com/_u/katherinee.ellis/"
+              target="_blank"
+              aria-label="Instagram"
+            >
               <i className="fa-brands fa-square-instagram fa-lg"></i>
             </a>
             <p>Don't forget to follow on Instagram!</p>
@@ -55,13 +73,11 @@ function Contact({}) {
       </div>
 
       <div className="formFrame">
-        {screenSize <= breakpoint ? (
+        {screenSize <= breakpoint && (
           <PageBreak textColor={"var(--paleCrumble)"} />
-        ) : (
-          ""
         )}
 
-        <form name="contact" method="post">
+        <form name="contact" method="post" aria-label="Contact Form">
           <input type="hidden" name="form-name" value="contact"></input>
 
           <div>

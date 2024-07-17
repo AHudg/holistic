@@ -10,27 +10,39 @@ function PageBreak({ textColor }) {
     currentLocale = "home";
   }
 
-  let beeClass;
-  switch (currentLocale) {
-    case "services":
-      beeClass = "pageBreakBee meadowBee";
-      break;
-    case "home":
-      beeClass = "pageBreakBee";
-      break;
-    case "about":
-      beeClass = "pageBreakBee";
-      break;
-    case "faqs":
-      beeClass = "pageBreakBee";
-      break;
-    case "contact":
-      beeClass = "pageBreakBee";
-      break;
-    default:
-      beeClass = "pageBreakBee cherryBee";
-      break;
-  }
+  // let beeClass;
+  // switch (currentLocale) {
+  //   case "services":
+  //     beeClass = "pageBreakBee meadowBee";
+  //     break;
+  //   case "home":
+  //     beeClass = "pageBreakBee";
+  //     break;
+  //   case "about":
+  //     beeClass = "pageBreakBee";
+  //     break;
+  //   case "faqs":
+  //     beeClass = "pageBreakBee";
+  //     break;
+  //   case "contact":
+  //     beeClass = "pageBreakBee";
+  //     break;
+  //   default:
+  //     beeClass = "pageBreakBee cherryBee";
+  //     break;
+  // }
+
+  const beeClassMapping = {
+    services: "pageBreakBee meadowBee",
+    home: "pageBreakBee",
+    about: "pageBreakBee",
+    faqs: "pageBreakBee",
+    contact: "pageBreakBee",
+    default: "pageBreakBee cherryBee",
+  };
+
+  const beeClass = beeClassMapping[currentLocale] || beeClassMapping.default;
+
   return (
     <div className="pageBreak">
       <div>
@@ -43,7 +55,7 @@ function PageBreak({ textColor }) {
           style={{ backgroundColor: textColor }}
         ></div>
       </div>
-      <img src={bee} className={beeClass}></img>
+      <img src={bee} alt="Bee Decoration" className={beeClass}></img>
       <div>
         <div
           className="rightPageBreak"

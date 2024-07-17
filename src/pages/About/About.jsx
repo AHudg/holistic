@@ -1,5 +1,5 @@
 import AboutKatherine from "../../assets/AboutKatherine.jpeg";
-import RecoloredFlower from "../../assets/RecoloredFlower.png";
+import flowerField from "../../assets/FlowerField.png";
 
 import "./about.css";
 
@@ -7,8 +7,13 @@ function About({}) {
   return (
     <section className="aboutSection">
       <h2>Meet Your Future Doula</h2>
-      <img src={RecoloredFlower} className="cherryFlower" />
-      <img src={AboutKatherine} className="aboutPhoto" />
+      <div className="photoFrame">
+        <img
+          src={AboutKatherine}
+          alt="Katherine Ellis"
+          className="aboutPhoto"
+        />
+      </div>
       <p>
         Welcome! My name is Katherine Ellis and I am a proud birth doula and
         homemaker. I was born into a small town and into a family of 8 children
@@ -54,6 +59,7 @@ function About({}) {
         event! I have run a half marathon before, am currently training for a
         mini triathlon, and have a spartan on my list soon!
       </p>
+      <img src={flowerField} alt="Flower Field" className="flowerField" />
     </section>
   );
 }

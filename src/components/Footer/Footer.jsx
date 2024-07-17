@@ -34,19 +34,27 @@ function Footer({ setModalClass, currentLocale, bgColor, textColor }) {
             <span>Doula Services</span>
           </div>
           <div className="footerContact">
-            <a href="tel:979-900-6015">
+            <a href="tel:979-900-6015" aria-label="Phone">
               <i
                 className="fa-solid fa-phone fa-lg"
                 style={{ color: textColor }}
               ></i>
             </a>
-            <a href="mailto:katherine@tendertouchdoula.com" target="_blank">
+            <a
+              href="mailto:katherine@tendertouchdoula.com"
+              target="_blank"
+              aria-label="Email"
+            >
               <i
                 className="fa-solid fa-envelope fa-lg"
                 style={{ color: textColor }}
               ></i>
             </a>
-            <a href="http://instagram.com/_u/katherinee.ellis/" target="_blank">
+            <a
+              href="http://instagram.com/_u/katherinee.ellis/"
+              target="_blank"
+              aria-label="Instagram"
+            >
               <i
                 className="fa-brands fa-square-instagram fa-lg"
                 style={{ color: textColor }}
@@ -62,18 +70,14 @@ function Footer({ setModalClass, currentLocale, bgColor, textColor }) {
           </div>
         </div>
 
-        {openPrivacy ? (
+        {openPrivacy && (
           <PrivacyPolicy
             setOpenPrivacy={setOpenPrivacy}
             setModalClass={setModalClass}
           />
-        ) : (
-          <div></div>
         )}
-        {openToS ? (
+        {openToS && (
           <ToS setOpenToS={setOpenToS} setModalClass={setModalClass} />
-        ) : (
-          <div></div>
         )}
       </footer>
     </div>

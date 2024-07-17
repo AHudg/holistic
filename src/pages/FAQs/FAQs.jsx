@@ -2,7 +2,7 @@ import bee from "../../assets/beeCrumbleCutout.png";
 import "./faqs.css";
 
 function FAQs({}) {
-  let iterator = -1;
+  // let iterator = -1;
   const questions = [
     "What's a Doula",
     "Why a Doula",
@@ -39,7 +39,7 @@ function FAQs({}) {
   return (
     <section className="faqSection">
       <div>
-        <img src={bee} className="faqBackground"></img>
+        <img src={bee} alt="Bee" className="faqBackground"></img>
       </div>
       <div className="faqHeader">
         <h2>FAQs</h2>
@@ -48,16 +48,16 @@ function FAQs({}) {
       </div>
 
       <div className="faqDiv">
-        {questions.map((question) => {
-          iterator++;
+        {questions.map((question, index) => {
+          // iterator++;
           return (
-            <div key={"question" + iterator} className="faq">
+            <div key={"question" + index} className="faq">
               <div>
                 <h4>{question}</h4>
-                <label htmlFor={"expandCheckbox" + iterator}>
+                <label htmlFor={"expandCheckbox" + index}>
                   <input
                     type="checkbox"
-                    name={"expandCheckbox" + iterator}
+                    name={"expandCheckbox" + index}
                     className="expandCheckbox"
                     onClick={handleExpand}
                   ></input>
@@ -66,10 +66,10 @@ function FAQs({}) {
               </div>
               <p
                 className="answer"
-                id={"expandCheckbox" + iterator}
+                id={"expandCheckbox" + index}
                 data-status="closed"
               >
-                {answers[iterator]}
+                {answers[index]}
               </p>
             </div>
           );

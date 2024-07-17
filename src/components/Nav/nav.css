@@ -3,7 +3,7 @@ nav > ul {
   margin: 2rem 30px 0 0;
   z-index: 5;
   position: relative;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 nav > ul > li {
@@ -11,28 +11,24 @@ nav > ul > li {
   padding: 15px;
 }
 
-.activeCrumble {
-  font-weight: bold;
-  padding-bottom: 3px;
-  border-bottom: var(--paleCrumble) 2px solid;
-}
-
-.activeMeadow {
-  font-weight: bold;
-  padding-bottom: 3px;
-  border-bottom: var(--meadow) 2px solid;
-}
-
+.activeCrumble,
+.activeMeadow,
 .activeWhite {
   font-weight: bold;
   padding-bottom: 3px;
-  border-bottom: white 2px solid;
+  border-bottom: 2px solid;
 }
 
-.activeCherry {
-  font-weight: bold;
-  padding-bottom: 3px;
-  border-bottom: var(--cherry) 2px solid;
+.activeCrumble {
+  border-bottom-color: var(--paleCrumble);
+}
+
+.activeMeadow {
+  border-bottom-color: var(--meadow);
+}
+
+.activeWhite {
+  border-bottom-color: white;
 }
 
 @media screen and (min-width: 575px) {

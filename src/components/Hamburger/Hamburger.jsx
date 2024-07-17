@@ -1,4 +1,6 @@
-import { useState } from "react";
+// HAMBURGER FROM CHATGPT
+
+import { useState, useEffect } from "react";
 import "./hamburger.css";
 
 function Hamburger({ setModalClass, currentLocale, hamLinks, textColor }) {
