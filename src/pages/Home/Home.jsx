@@ -1,7 +1,7 @@
 import Hero from "../../assets/ImageFour.jpg";
 import Wave from "../../components/WaveSVG/WaveSVG";
 import Katherine from "../../assets/Katherine.jpg";
-import flowerFrame from "../../assets/flowerFrame.png";
+import flowerFrame from "../../assets/FlowerFrame.png";
 import "./home.css";
 import "../../components/WaveSVG/waveSVG.css";
 
