@@ -1,5 +1,3 @@
-// HAMBURGER FROM CHATGPT
-
 import { useState, useEffect } from "react";
 import "./hamburger.css";
 
@@ -23,6 +21,8 @@ function Hamburger({ setModalClass, currentLocale, hamLinks, textColor }) {
       setModalClass(false);
     }
   };
+
+  console.log(hamLinks);
 
   return (
     <div>
@@ -61,17 +61,17 @@ function Hamburger({ setModalClass, currentLocale, hamLinks, textColor }) {
           <ul>
             {hamLinks.map((link) => {
               return (
-                <li key={"li" + link}>
+                <li key={"li" + link.name}>
                   <a
-                    href={link === "Home" ? "/" : "/" + link.toLowerCase()}
-                    key={link}
+                    href={link.path}
+                    key={link.name}
                     className={
-                      currentLocale === link.toLowerCase()
+                      currentLocale === link.name.toLowerCase()
                         ? "hamLink active"
                         : "hamLink"
                     }
                   >
-                    {link}
+                    {link.name}
                   </a>
                 </li>
               );
