@@ -80,7 +80,7 @@ function Services({}) {
           </h3>
           <p>
             This is a great option for experienced moms who just need some extra
-            hands the day of. This includes:
+            hands the day of.
           </p>
 
           <ul>
@@ -102,10 +102,9 @@ function Services({}) {
         </div>
       </div>
       <p>
-        Some insurances will cover parts or all of your doula services (check
-        this out lol) and I am happy to discuss payment plans if needed. I am a
-        doula because I love what I do, so please reach out if you are wanting
-        to discuss different payment options.
+        I am happy to discuss payment plans if needed. I am a doula because I
+        love what I do, so please reach out if you are wanting to discuss
+        different payment options.
       </p>
     </section>
   );

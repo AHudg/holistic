@@ -1,4 +1,4 @@
-import Hero from "../../assets/ImageFour.jpg";
+// import Hero from "../../assets/HeroPhoto3.jpg";
 import Wave from "../../components/WaveSVG/WaveSVG";
 import Katherine from "../../assets/Katherine.jpg";
 import flowerFrame from "../../assets/FlowerFrame.png";
@@ -14,7 +14,7 @@ function Home({}) {
           <p>I can't wait to meet you.</p>
           <a href="/contact">Book Now!</a>
         </div>
-        <img src={Hero} alt="Hero" className="hero"></img>
+        <div className="hero"></div>
         <Wave classProp={"wave bottomPosition flip"} fill={"sageFill"} />
       </section>
 
@@ -26,12 +26,12 @@ function Home({}) {
           educationally, mentally, emotionally, and at times physically! There
           are two types of doulas: birth doulas and postpartum doulas. I am a
           certified birth doula who is excited to walk alongside you through
-          your pregnancy and labor, but do not offer postpartum services. My
-          passion is to provide education to help make informed decisions
-          regarding your birth plan. Pregnancy and labor can be overwhelming,
-          and no one should have to sift through the information alone. Doulas
-          work with your partner to create an environment where you feel safe,
-          comfortable, and in charge of your birth.
+          your pregnancy and labor. My passion is to provide education to help
+          make informed decisions regarding your birth plan. Pregnancy and labor
+          can be overwhelming, and no one should have to sift through the
+          information alone. Doulas work with your partner to create an
+          environment where you feel safe, comfortable, and in charge of your
+          birth.
         </p>
       </section>
 
@@ -50,9 +50,9 @@ function Home({}) {
           pregnancy and labor.
           <br /> <br />
           Doulas can help to decrease your chances of ending up in a cesarean
-          section or complications during birth. Fewer women end in epidural,
-          fewer women have instrumental vaginal deliveries, and decrease
-          likelihood of dissatisfaction with the birth experience.
+          section, to avoid complications during birth, to lessen the risk of
+          instrumental vaginal deliveries, and to decrease likelihood of
+          dissatisfaction with the birth experience.
         </p>
         <div className="bee beeThree"></div>
       </section>
@@ -75,8 +75,8 @@ function Home({}) {
             <p>
               I offer multiple packages to accomadate all my future mommas and
               their families. Whether it is for only the labor or for the full
-              pregnancy, I aim support you every step of the way. Interested in
-              learning more of what I have to offer?
+              pregnancy, I aim to support you every step of the way. Interested
+              in learning more of what I have to offer?
             </p>
             <a href="/services" className="italics">
               View the packages!

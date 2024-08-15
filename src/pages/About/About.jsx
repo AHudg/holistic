@@ -15,10 +15,10 @@ function About({}) {
         />
       </div>
       <p>
-        Welcome! My name is Katherine Ellis and I am a proud birth doula and
-        homemaker. I was born into a small town and into a family of 8 children
+        Welcome! My name is Katherine Ellis, and I am a proud birth doula and
+        homemaker. I was born into a small town and into a family of 8 children,
         and have loved being around birth and babies my whole life. My family
-        has instilled a love for the slower life into me from a young age. I was
+        has instilled into me a love for the slower life from a young age. I was
         raised with a plentiful garden in the backyard, chickens and ducks
         running around our orange trees, and worked alongside my brother in his
         generational Brahman ranch.
@@ -28,11 +28,11 @@ function About({}) {
         I am a second generation Aggie who graduated from Texas A&M in 2024 with
         a degree in Community Health; I have always loved education and the
         human body, and I knew that I needed to pursue a career that blended my
-        love for people and for education. I am a single woman who does this
-        full-time! Being single in this profession allows me to fully devote my
-        time to my patients, with no other interruptions or distractions. I am
-        always on call, and I am enthralled to meet my patients and walk with
-        them in such a sweet time of their lives.
+        love for people and for education. I currently do not have a family of
+        my own, which allows me to fully devote my time to my patients, with no
+        interruptions or distractions. I am always on call, and I am enthralled
+        to meet my patients and walk with them in such a sweet time of their
+        lives.
       </p>
       <br />
       <p>
@@ -47,7 +47,7 @@ function About({}) {
         hospital settings and graduated with a health degree, it is important to
         note that I do not offer medical advice or medical practice. Doulas are
         nonmedical support systems. I will connect you to someone who can help
-        with any issues that may arise and am always here to listen.
+        with any issues that may arise, and I am always here to listen.
       </p>
       <br />
       <p>
