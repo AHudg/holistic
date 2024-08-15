@@ -7,6 +7,7 @@ function About({}) {
   return (
     <section className="aboutSection">
       <h2>Meet Your Future Doula</h2>
+
       <div className="photoFrame">
         <img
           src={AboutKatherine}
@@ -14,6 +15,7 @@ function About({}) {
           className="aboutPhoto"
         />
       </div>
+
       <p>
         Welcome! My name is Katherine Ellis, and I am a proud birth doula and
         homemaker. I was born into a small town and into a family of 8 children,
@@ -24,6 +26,7 @@ function About({}) {
         generational Brahman ranch.
       </p>
       <br />
+
       <p>
         I am a second generation Aggie who graduated from Texas A&M in 2024 with
         a degree in Community Health; I have always loved education and the
@@ -35,6 +38,7 @@ function About({}) {
         lives.
       </p>
       <br />
+
       <p>
         I believe birth is a beautiful process designed by God and made for
         mothers. My biggest hope with pursuing this career is to create a space
@@ -50,6 +54,7 @@ function About({}) {
         with any issues that may arise, and I am always here to listen.
       </p>
       <br />
+
       <p>
         When I am not helping mamas in labor or meeting up with them, I enjoy a
         variety of different hobbies! I love gardening, riding horses, and am
@@ -59,6 +64,7 @@ function About({}) {
         event! I have run a half marathon before, am currently training for a
         mini triathlon, and have a spartan on my list soon!
       </p>
+
       <img src={flowerField} alt="Flower Field" className="flowerField" />
     </section>
   );

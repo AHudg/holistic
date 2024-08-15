@@ -15,6 +15,7 @@ function ToS({ setOpenToS, setModalClass }) {
         <h5>Terms of Service</h5>
         <h6>Last Updated: 05/25/2024</h6>
         <br />
+
         <p>
           Welcome to Tender Touch Doula Services (“we,” “us,” “our”). By
           accessing or using our website (the “Site”), you agree to comply with
@@ -22,6 +23,7 @@ function ToS({ setOpenToS, setModalClass }) {
           Terms carefully before using our Site.
         </p>
         <br />
+
         <p>
           <span>1. Acceptance of Terms</span>
           By accessing or using our Site, you agree to be bound by these Terms
@@ -29,6 +31,7 @@ function ToS({ setOpenToS, setModalClass }) {
           not use our Site.
         </p>
         <br />
+
         <p>
           <span>2. Services</span>Our Site provides information about doula
           services, service packages, FAQs, testimonials, and a contact form.
@@ -37,6 +40,7 @@ function ToS({ setOpenToS, setModalClass }) {
           services.
         </p>
         <br />
+
         <p>
           <span>3. Use of Information</span>The personal information collected
           through our contact form is used only to contact you regarding our
@@ -46,6 +50,7 @@ function ToS({ setOpenToS, setModalClass }) {
           internet transmission is completely secure.
         </p>
         <br />
+
         <p>
           <span>4. Intellectual Property</span>
           All content on this Site, including but not limited to text, graphics,
@@ -56,6 +61,7 @@ function ToS({ setOpenToS, setModalClass }) {
           to spread awareness of our company.
         </p>
         <br />
+
         <p>
           <span>5. Disclaimers and Limitation of Liability</span>We provide the
           Site on an “as is” and “as available” basis. We make no
@@ -66,6 +72,7 @@ function ToS({ setOpenToS, setModalClass }) {
           use of the Site is at your own risk
         </p>
         <br />
+
         <p>
           <span>6. Dispute Resolution</span>Any disputes arising out of or
           relating to these Terms or your use of the Site shall be resolved
@@ -74,6 +81,7 @@ function ToS({ setOpenToS, setModalClass }) {
           agree to not pursue further legal action such as suing or arbitration.
         </p>
         <br />
+
         <p>
           <span>7. Changes to Terms</span>We reserve the right to modify these
           Terms at any time. Any changes will be effective immediately upon
@@ -81,24 +89,28 @@ function ToS({ setOpenToS, setModalClass }) {
           posting of revised Terms signifies your acceptance of those changes.
         </p>
         <br />
+
         <p>
           <span>8. Governing Law</span>These Terms are governed by and construed
           in accordance with the laws of the State of Texas, United States,
           without regard to its conflict of law principles.
         </p>
         <br />
+
         <p>
           <span>9. Contact Information</span>
           If you have any questions about these Terms, please contact us at
           katherine@tendertouchdoula.com.
         </p>
         <br />
+
         <p>
           <span>10. Consent</span>
           By using our Site, you acknowledge that you have read, understood, and
           agree to be bound by these Terms.
         </p>
         <br />
+
         <ul>
           <li>Tender Touch Doula Services</li>
           <li>katherine@tendertouchdoula.com</li>

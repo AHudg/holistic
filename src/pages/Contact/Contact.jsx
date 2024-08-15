@@ -14,10 +14,10 @@ function Contact({}) {
 
     const debounceResize = debounce(handleResize, 150);
 
-    window.addEventListener("resize", handleResize);
+    window.addEventListener("resize", debounceResize);
 
     return () => {
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener("resize", debounceResize);
     };
   }, []);
 
@@ -49,6 +49,7 @@ function Contact({}) {
             </a>
             <span id="myPhone">979.900.6015</span>
           </div>
+
           <div className="info">
             <a
               href="mailto:katherine@tendertouchdoula.com"
@@ -59,6 +60,7 @@ function Contact({}) {
             </a>
             <span id="myEmail">katherine@tendertouchdoula.com</span>
           </div>
+
           <div className="info">
             <a
               href="http://instagram.com/_u/katherinee.ellis/"

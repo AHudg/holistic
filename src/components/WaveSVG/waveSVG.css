@@ -13,6 +13,10 @@
   bottom: 0;
 }
 
+.heroWave {
+  z-index: -1;
+}
+
 #frameSVG svg {
   position: relative;
   display: block;

@@ -15,6 +15,7 @@ function PrivacyPolicy({ setOpenPrivacy, setModalClass }) {
         <h5>Privacy Policy</h5>
         <h6>Effective Date: 05/25/2024</h6>
         <br />
+
         <p>
           <span>1. Introduction</span>Welcome to Tender Touch Doula Services
           ("Company," "we," "our," "us"). We are committed to protecting your
@@ -24,12 +25,14 @@ function PrivacyPolicy({ setOpenPrivacy, setModalClass }) {
           https://tendertouchdoula.com/ ("Website").
         </p>
         <br />
+
         <p>
           <span>2. Information We Collect</span>We collect personal information
           that you voluntarily provide to us through our contact form, including
           your first and last names, email address, and phone number.
         </p>
         <br />
+
         <p>
           <span>3. How We Use Your Information</span>The information you provide
           is used solely for the purpose of contacting you to discuss our doula
@@ -38,6 +41,7 @@ function PrivacyPolicy({ setOpenPrivacy, setModalClass }) {
           information for any other purpose.
         </p>
         <br />
+
         <p>
           <span>4. Information Sharing and Disclosure</span>We do not share,
           sell, rent, or trade your personal information with any third parties.
@@ -46,6 +50,7 @@ function PrivacyPolicy({ setOpenPrivacy, setModalClass }) {
           Policy.
         </p>
         <br />
+
         <p>
           <span>5. Data Security</span>We take the security of your personal
           information seriously. We implement reasonable security measures to
@@ -54,6 +59,7 @@ function PrivacyPolicy({ setOpenPrivacy, setModalClass }) {
           the Internet or method of electronic storage is completely secure.
         </p>
         <br />
+
         <p>
           <span>6. Your Rights</span>You have the right to:
         </p>
@@ -73,6 +79,7 @@ function PrivacyPolicy({ setOpenPrivacy, setModalClass }) {
           katherine@tendertouchdoula.com.
         </p>
         <br />
+
         <p>
           <span>7. Changes to This Privacy Policy</span>We may update this
           Privacy Policy from time to time to reflect changes in our practices
@@ -82,6 +89,7 @@ function PrivacyPolicy({ setOpenPrivacy, setModalClass }) {
           this Privacy Policy constitutes your acceptance of the revised policy.
         </p>
         <br />
+
         <p>
           <span>8. Children's Privacy</span>
           Our services are not directed to individuals under the age of 18. We
@@ -90,6 +98,7 @@ function PrivacyPolicy({ setOpenPrivacy, setModalClass }) {
           information, we will take steps to delete such information.
         </p>
         <br />
+
         <p>
           <span>9. Governing Law</span>
           This Privacy Policy is governed by the laws of the State of Texas and
@@ -97,11 +106,13 @@ function PrivacyPolicy({ setOpenPrivacy, setModalClass }) {
           will be resolved in accordance with Texas law.
         </p>
         <br />
+
         <p>
           <span>10. Consent</span>
           By using our Website, you consent to the terms of this Privacy Policy.
         </p>
         <br />
+
         <p>
           <span>11. Contact Us</span>If you have any questions or concerns about
           this Privacy Policy or our privacy practices, please contact us at:

@@ -52,6 +52,7 @@ function Header({ setModalClass, currentLocale, bgColor, textColor }) {
         </a>
         <span style={{ color: textColor }}>Doula Services</span>
       </h1>
+
       {screenSize < breakpoint ? (
         <Hamburger
           setModalClass={setModalClass}

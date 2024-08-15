@@ -9,13 +9,17 @@ function Home({}) {
   return (
     <div id="homePage">
       <section>
+        <div className="hero"></div>
+
         <div className="heroWords fadeIn">
           <span className="italics">Welcome!</span>
           <p>I can't wait to meet you.</p>
           <a href="/contact">Book Now!</a>
         </div>
-        <div className="hero"></div>
-        <Wave classProp={"wave bottomPosition flip"} fill={"sageFill"} />
+        <Wave
+          classProp={"wave bottomPosition flip heroWave"}
+          fill={"sageFill"}
+        />
       </section>
 
       <section className="whatDoula">

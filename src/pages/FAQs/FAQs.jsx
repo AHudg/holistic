@@ -2,7 +2,6 @@ import bee from "../../assets/beeCrumbleCutout.png";
 import "./faqs.css";
 
 function FAQs({}) {
-  // let iterator = -1;
   const questions = [
     "What's a Doula",
     "Why a Doula",
@@ -41,6 +40,7 @@ function FAQs({}) {
       <div>
         <img src={bee} alt="Bee" className="faqBackground"></img>
       </div>
+
       <div className="faqHeader">
         <h2>FAQs</h2>
         <h3>Frequently Asked Questions.</h3>
@@ -49,7 +49,6 @@ function FAQs({}) {
 
       <div className="faqDiv">
         {questions.map((question, index) => {
-          // iterator++;
           return (
             <div key={"question" + index} className="faq">
               <div>
@@ -64,6 +63,7 @@ function FAQs({}) {
                   <i className="fa-solid fa-plus fa-lg"></i>
                 </label>
               </div>
+
               <p
                 className="answer"
                 id={"expandCheckbox" + index}

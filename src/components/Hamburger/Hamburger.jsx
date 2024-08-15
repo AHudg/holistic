@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./hamburger.css";
 
 function Hamburger({ setModalClass, currentLocale, hamLinks, textColor }) {
@@ -22,8 +22,6 @@ function Hamburger({ setModalClass, currentLocale, hamLinks, textColor }) {
     }
   };
 
-  console.log(hamLinks);
-
   return (
     <div>
       <label htmlFor="hamburgerCheckbox" className="hamburgerContainer">
@@ -33,6 +31,7 @@ function Hamburger({ setModalClass, currentLocale, hamLinks, textColor }) {
           className="hamburgerCheckbox"
           onClick={handleHamburger}
         />
+
         <div className="hamburger">
           <span
             className="bar bar1"
@@ -52,11 +51,13 @@ function Hamburger({ setModalClass, currentLocale, hamLinks, textColor }) {
           ></span>
         </div>
       </label>
+
       <div id="hamburgerMenu">
         <div id="hamburgerHeading">
           <h3>Tender Touch</h3>
           <span className="italics">Doula Services</span>
         </div>
+
         <nav className="hamburgerNav">
           <ul>
             {hamLinks.map((link) => {

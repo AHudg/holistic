@@ -75,7 +75,6 @@
   border: 2px var(--paleCrumble) solid;
   color: var(--paleCrumble);
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
-  z-index: 1;
 }
 
 .heroWords > a:hover {
@@ -160,16 +159,17 @@
 
 .serviceBanner > div {
   display: flex;
-  justify-content: end;
+  justify-content: center;
 }
 
 .lilly {
-  position: absolute;
-  left: 0px;
-  bottom: 0px;
+  position: relative;
+  bottom: -25px;
   width: 40vw;
   height: 250px;
-  background-image: url(../../assets/LillyStencil.png);
+  /* background-image: url(../../assets/LillyStencil.png); */
+  background-image: url(../../assets/MeadowFlower.png);
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -181,7 +181,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: end;
-  width: 60vw;
+  width: 55vw;
+  margin-right: 5vw;
 }
 
 .serviceWords > h2 > a {
@@ -227,7 +228,6 @@
 }
 
 .leftFrame {
-  /* height: 425px; */
   height: 100%;
   rotate: 180deg;
   width: 10vw;
@@ -241,7 +241,6 @@
 }
 
 .rightFrame {
-  /* height: 425px; */
   height: 100%;
   width: 10vw;
   margin-right: 5vw;
@@ -313,16 +312,32 @@
   }
 
   .lilly {
-    position: relative;
-    left: -10px;
     bottom: -40px;
-    width: 40vw;
     height: 300px;
   }
 
-  .serviceWords {
-    width: 70vw;
-    margin-right: 20px;
+  .aboutCluster {
+    margin: 15px 0 10px;
+    width: 100vw;
+    height: 55vh;
+  }
+
+  .leftFrame {
+    height: 100%;
+    rotate: 180deg;
+    width: 10vw;
+    margin-left: 5vw;
+  }
+
+  .homeAboutPhoto {
+    width: 50vw;
+    border-radius: 20px;
+  }
+
+  .rightFrame {
+    height: 100%;
+    width: 10vw;
+    margin-right: 5vw;
   }
 }
 
@@ -334,17 +349,59 @@
     margin-bottom: 30px;
   }
 
+  .beeOne {
+    right: 80px;
+  }
+
+  .beeTwo {
+    left: 60px;
+  }
+
+  .beeThree {
+    bottom: 15px;
+    right: 30px;
+  }
+
   .bannerPhoto {
     height: 450px;
   }
 
+  .lilly {
+    bottom: -50px;
+    width: 35vw;
+    height: 350px;
+  }
+
   .serviceWords {
     width: 60vw;
-    margin-right: 30px;
   }
 }
 
 @media screen and (min-width: 992px) {
+  .beeOne {
+    right: 120px;
+  }
+
+  .beeTwo {
+    left: 80px;
+  }
+
+  .beeThree {
+    right: 50px;
+  }
+
+  .serviceWords {
+    justify-content: center;
+  }
+
+  .lilly {
+    width: 30vw;
+  }
+
+  .serviceWords {
+    width: 40vw;
+  }
+
   .multiWaves {
     aspect-ratio: 1800/450;
   }
@@ -356,15 +413,6 @@
   .multiCherrySageSVG {
     background-image: url(../../assets/bigCherrySage.svg);
   }
-
-  .lilly {
-    width: 20vw;
-  }
-
-  .serviceWords {
-    width: 50vw;
-    margin-right: 50px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -373,13 +421,30 @@
     width: 60vw;
   }
 
-  .serviceBanner > div {
-    margin: auto;
+  .beeOne {
+    right: 200px;
+    width: 100px;
+  }
+
+  .beeTwo {
+    left: 160px;
+    top: 20px;
+    width: 100px;
+  }
+
+  .beeThree {
+    bottom: 60px;
+    right: 155px;
+    width: 100px;
+  }
+
+  .lilly {
+    width: 20vw;
   }
 
   .serviceWords {
-    width: 50vw;
-    margin-right: 100px;
+    width: 40vw;
+    margin-left: 50px;
   }
 }
 
@@ -393,5 +458,36 @@
   .whyDoula p {
     width: 50vw;
     margin-bottom: 60px;
+  }
+
+  .beeOne {
+    right: 350px;
+  }
+
+  .beeTwo {
+    left: 220px;
+  }
+
+  .beeThree {
+    right: 225px;
+  }
+
+  .serviceWords {
+    width: 30vw;
+    margin-left: 50px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .beeOne {
+    right: 400px;
+  }
+
+  .beeTwo {
+    left: 300px;
+  }
+
+  .beeThree {
+    right: 250px;
   }
 }

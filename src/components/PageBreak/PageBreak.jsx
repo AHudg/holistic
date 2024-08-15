@@ -10,28 +10,6 @@ function PageBreak({ textColor }) {
     currentLocale = "home";
   }
 
-  // let beeClass;
-  // switch (currentLocale) {
-  //   case "services":
-  //     beeClass = "pageBreakBee meadowBee";
-  //     break;
-  //   case "home":
-  //     beeClass = "pageBreakBee";
-  //     break;
-  //   case "about":
-  //     beeClass = "pageBreakBee";
-  //     break;
-  //   case "faqs":
-  //     beeClass = "pageBreakBee";
-  //     break;
-  //   case "contact":
-  //     beeClass = "pageBreakBee";
-  //     break;
-  //   default:
-  //     beeClass = "pageBreakBee cherryBee";
-  //     break;
-  // }
-
   const beeClassMapping = {
     services: "pageBreakBee meadowBee",
     home: "pageBreakBee",
@@ -55,7 +33,9 @@ function PageBreak({ textColor }) {
           style={{ backgroundColor: textColor }}
         ></div>
       </div>
+
       <img src={bee} alt="Bee Decoration" className={beeClass}></img>
+
       <div>
         <div
           className="rightPageBreak"

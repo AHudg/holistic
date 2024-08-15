@@ -7,11 +7,13 @@ function Services({}) {
       <div className="serviceHeader">
         <h2>Packages & Fees</h2>
       </div>
+
       <div className="packageContainer">
         <div className="package">
           <h3>
             Pregnancy & Birth Plan Consultation <span>$60</span>
           </h3>
+
           <p>
             Navigating pregnancy and forming a birth plan can be overwhelming
             and confusing, lets chat about your goals and what you are desiring
@@ -27,6 +29,7 @@ function Services({}) {
             <li>connecting you to resources</li>
             <li>and so much more.</li>
           </ul>
+
           <p className="bottomBlurb">
             This time is for you, so I encourage you to bring your birth partner
             and come with questions!

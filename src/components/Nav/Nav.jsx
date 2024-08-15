@@ -21,34 +21,6 @@ function Nav({ navLinks, currentLocale }) {
 
   const { textColor, activeClass } = getNavStyles(currentLocale);
 
-  // let textColor;
-  // let activeClass;
-
-  // switch (currentLocale) {
-  //   case "about":
-  //     textColor = "var(--paleCrumble)";
-  //     activeClass = "activeCrumble";
-  //     break;
-  //   case "services":
-  //     textColor = "var(--meadow)";
-  //     activeClass = "activeMeadow";
-  //     break;
-  //   case "faqs":
-  //     textColor = "var(--paleCrumble)";
-  //     activeClass = "activeCrumble";
-  //     break;
-  //   case "contact":
-  //     textColor = "var(--paleCrumble)";
-  //     activeClass = "activeCrumble";
-  //     break;
-  //   case "home":
-  //     textColor = "white";
-  //     activeClass = "activeWhite";
-  //     break;
-  //   default:
-  //     textColor = "var(--cherry)";
-  // }
-
   return (
     <nav className="desktopNav" role="navigation" aria-label="Main Navigation">
       <ul>

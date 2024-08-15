@@ -33,6 +33,7 @@ function Footer({ setModalClass, currentLocale, bgColor, textColor }) {
             <h4>Tender Touch</h4>
             <span>Doula Services</span>
           </div>
+
           <div className="footerContact">
             <a href="tel:979-900-6015" aria-label="Phone">
               <i
@@ -40,6 +41,7 @@ function Footer({ setModalClass, currentLocale, bgColor, textColor }) {
                 style={{ color: textColor }}
               ></i>
             </a>
+
             <a
               href="mailto:katherine@tendertouchdoula.com"
               target="_blank"
@@ -50,6 +52,7 @@ function Footer({ setModalClass, currentLocale, bgColor, textColor }) {
                 style={{ color: textColor }}
               ></i>
             </a>
+
             <a
               href="http://instagram.com/_u/katherinee.ellis/"
               target="_blank"
@@ -62,6 +65,7 @@ function Footer({ setModalClass, currentLocale, bgColor, textColor }) {
             </a>
           </div>
         </div>
+
         <div className="legal">
           <p>&copy; 2024 Key Six Designs, LLC.</p>
           <div>
