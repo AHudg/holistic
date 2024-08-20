@@ -9,10 +9,13 @@
   font-size: 2rem;
   font-style: italic;
   margin-bottom: 20px;
+  text-shadow: 4px 3px 2px rgba(102, 10, 35, 0.5);
 }
 
-.photoFrame {
-  position: relative;
+.aboutFlex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .aboutPhoto {
@@ -23,19 +26,15 @@
 }
 
 .flowerField {
-  margin-top: 20px;
+  margin-top: 40px;
   width: 90vw;
-  /* position: absolute; */
-  /* right: 0px; */
-  /* top: 0; */
-  /* bottom: 0px; */
-  /* transform: rotate(-40deg); */
-  /* filter: drop-shadow(-5px 5px 5px rgba(0, 0, 0, 0)); */
+  max-height: 25vh;
+  max-width: 800px;
 }
 
 @media screen and (min-width: 575px) {
   .aboutPhoto {
-    width: 60vw;
+    width: 50vw;
     box-shadow: -15px 15px 0 var(--cherry);
     margin: 0 0 30px;
   }
@@ -45,24 +44,62 @@
   .aboutPhoto {
     width: 40vw;
   }
+
+  .aboutFlex > div > p {
+    width: 80vw;
+  }
 }
 
 @media screen and (min-width: 992px) {
-  .photoFrame {
-    float: left;
-    /* position: relative; */
+  .aboutFlex {
+    display: block;
   }
 
   .aboutPhoto {
+    width: 35vw;
     margin: 30px;
+    float: left;
+  }
+
+  .aboutFlex > div > p {
+    width: 80vw;
+    margin: 0 10vw;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .aboutFlex {
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    display: flex;
+  }
+
+  .aboutFlex > div {
+    display: flex;
+    flex-direction: column;
+  }
+
   .aboutPhoto {
     width: 30vw;
+    float: none;
+  }
+
+  .aboutFlex > div > p {
+    width: 40vw;
+    margin: 0 30px;
   }
 }
 
 @media screen and (min-width: 1400px) {
+  .aboutFlex > div > p {
+    width: 35vw;
+    margin: 0 60px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .aboutPhoto {
+    width: 20vw;
+  }
 }

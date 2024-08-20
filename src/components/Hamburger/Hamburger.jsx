@@ -55,7 +55,7 @@ function Hamburger({ setModalClass, currentLocale, hamLinks, textColor }) {
       <div id="hamburgerMenu">
         <div id="hamburgerHeading">
           <h3>Tender Touch</h3>
-          <span className="italics">Doula Services</span>
+          <span>Doula Services</span>
         </div>
 
         <nav className="hamburgerNav">

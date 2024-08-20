@@ -34,7 +34,7 @@ function Header({ setModalClass, currentLocale, bgColor, textColor }) {
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
-    { name: "Testimonials", path: "/testimonials" },
+    // { name: "Testimonials", path: "/testimonials" },
     { name: "Services", path: "/services" },
     { name: "FAQs", path: "/faqs" },
     { name: "Contact", path: "/contact" },

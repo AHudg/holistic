@@ -1,11 +1,38 @@
-// import Hero from "../../assets/HeroPhoto3.jpg";
+import { useState, useEffect } from "react";
+
 import Wave from "../../components/WaveSVG/WaveSVG";
 import Katherine from "../../assets/Katherine.jpg";
-import flowerFrame from "../../assets/FlowerFrame.png";
+import horizontal from "../../assets/FlowerFrame.png";
+import vertical from "../../assets/FlowerFrameVertical.png";
 import "./home.css";
 import "../../components/WaveSVG/waveSVG.css";
 
 function Home({}) {
+  const [screenSize, setScreenSize] = useState(window.innerWidth);
+  const breakpoint = 992;
+
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenSize(window.innerWidth);
+    };
+
+    const debounceResize = debounce(handleResize, 150);
+
+    window.addEventListener("resize", debounceResize);
+
+    return () => {
+      window.removeEventListener("resize", debounceResize);
+    };
+  }, []);
+
+  const debounce = (func, wait) => {
+    let timeout;
+    return (...args) => {
+      clearTimeout(timeout);
+      timeout = setTimeout(() => func(...args), wait);
+    };
+  };
+
   return (
     <div id="homePage">
       <section>
@@ -92,30 +119,76 @@ function Home({}) {
       <section className="aboutBanner">
         <div className="multiWaves multiCherryCrumbleSVG"></div>
         <h2 className="italics">Meet Your Future Doula</h2>
-        <div className="aboutCluster">
-          <img src={flowerFrame} alt="Flower Frame" className="leftFrame"></img>
-          <img src={Katherine} alt="Katherine" className="homeAboutPhoto"></img>
-          <img
-            src={flowerFrame}
-            alt="Flower Frame"
-            className="rightFrame"
-          ></img>
-        </div>
-        <p>
-          Howdy! I'm Katherine, a proud birth doula and homemaker! I'm so
-          thrilled that you've found your way here, and would love to be by your
-          side during your journey. I am a second generation Aggie who graduated
-          from Texas A&M in 2024 with a degree in Community Health; I have
-          always loved education and the human body, and I knew that I needed...
-          <a href="/about" className="italics">
-            Read More.
-          </a>
-        </p>
+        {screenSize < breakpoint ? (
+          <div>
+            <div className="aboutCluster">
+              <img
+                src={vertical}
+                alt="Flower Frame"
+                className="leftFrame"
+              ></img>
+              <img
+                src={Katherine}
+                alt="Katherine"
+                className="homeAboutPhoto"
+              ></img>
+              <img
+                src={vertical}
+                alt="Flower Frame"
+                className="rightFrame"
+              ></img>
+            </div>
+            <p>
+              Howdy! I'm Katherine, a proud birth doula and homemaker! I'm so
+              thrilled that you've found your way here, and would love to be by
+              your side during your journey. I am a second generation Aggie who
+              graduated from Texas A&M in 2024 with a degree in Community
+              Health; I have always loved education and the human body, and I
+              knew that I needed...
+              <a href="/about" className="italics">
+                Read More.
+              </a>
+            </p>
+          </div>
+        ) : (
+          <div className="breakpointDiv">
+            <img
+              src={Katherine}
+              alt="Katherine"
+              className="homeAboutPhoto"
+            ></img>
+            <div className="aboutCluster">
+              <img
+                src={horizontal}
+                alt="Flower Frame"
+                className="leftFrame"
+              ></img>
+              <p>
+                Howdy! I'm Katherine, a proud birth doula and homemaker! I'm so
+                thrilled that you've found your way here, and would love to be
+                by your side during your journey. I am a second generation Aggie
+                who graduated from Texas A&M in 2024 with a degree in Community
+                Health; I have always loved education and the human body, and I
+                knew that I needed...
+                <a href="/about" className="italics">
+                  Read More.
+                </a>
+              </p>
+              <img
+                src={horizontal}
+                alt="Flower Frame"
+                className="rightFrame"
+              ></img>
+            </div>
+          </div>
+        )}
         <div className="multiWaves multiCherrySageSVG flip"></div>
       </section>
 
       <section className="faqBanner">
-        <h2 id="faqHeader">Have Questions?</h2>
+        <h2 id="faqHeader" className="italics">
+          Have Questions?
+        </h2>
         <p>
           Inquiries to your general questions can typically be found at our FAQ
           page <a href="/faqs">here.</a>
