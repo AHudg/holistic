@@ -18,7 +18,7 @@ function App() {
     services: { bgColor: "var(--paleCrumble)", textColor: "var(--meadow)" },
     faqs: { bgColor: "var(--meadow)", textColor: "var(--paleCrumble)" },
     contact: { bgColor: "var(--sage)", textColor: "var(--paleCrumble)" },
-    home: { bgColor: "", textColor: "white" },
+    home: { bgColor: "rgba(0,0,0,0.3", textColor: "white" },
   };
 
   const { bgColor, textColor } = colorConfig[currentLocale] || {
