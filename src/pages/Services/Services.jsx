@@ -5,12 +5,22 @@ function Services({}) {
     <section className="serviceSection">
       <div className="serviceHeader">
         <h2>Packages & Fees</h2>
+        <div className="consultation">
+          <h3>Offering Free Pregnancy Consultations!</h3>
+
+          <p>
+            Let's meet up and see if we are a good fit for each other! This is
+            just a time to get to know each other more on a personal level. We
+            can discuss my birth philosophy and your birth desires- but we don't
+            get into the weeds quite yet.
+          </p>
+        </div>
       </div>
 
       <div className="packageContainer">
         <div className="package">
           <h3>
-            Pregnancy & Birth Plan Consultation <span>$60</span>
+            Birth Plan Consultation <span>$60</span>
           </h3>
 
           <p>

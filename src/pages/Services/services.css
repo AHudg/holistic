@@ -11,6 +11,14 @@
   text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
 }
 
+.consultation {
+  margin: 40px 10px;
+}
+
+.consultation > h3 {
+  font-style: italic;
+}
+
 .package > h3 {
   margin: 20px 0;
   border-bottom: double 3px var(--meadow);
@@ -40,16 +48,23 @@
     width: 70vw;
     margin: auto;
   }
+
+  .consultation {
+    margin: 40px auto;
+    width: 70vw;
+  }
 }
 
 @media screen and (min-width: 768px) {
-  .package {
+  .package,
+  .consultation {
     width: 60vw;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .package {
+  .package,
+  .consultation {
     width: 50vw;
   }
 }
