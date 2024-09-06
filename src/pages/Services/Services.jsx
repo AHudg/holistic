@@ -1,4 +1,3 @@
-import RightFlower from "../../assets/RightFlower.png";
 import "./services.css";
 
 function Services({}) {
