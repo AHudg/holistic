@@ -79,7 +79,7 @@ function Services({}) {
 
         <div className="package">
           <h3>
-            Labor Only Doula Package <span>$575</span>
+            Labor Only Doula Package <span>$800</span>
           </h3>
           <p>
             This is a great option for experienced moms who just need some extra

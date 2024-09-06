@@ -21,7 +21,7 @@
 .hero {
   position: relative;
   z-index: -1;
-  background-image: url("../../assets/HeroPhoto2.jpg");
+  background-image: url("../../assets/OptionOne.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -145,7 +145,7 @@
 }
 
 .bannerPhoto {
-  background-image: url("../../assets/ImageThree.jpg");
+  background-image: url("../../assets/OptionTwo.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
