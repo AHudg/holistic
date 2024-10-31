@@ -28,7 +28,7 @@ function Footer({ setModalClass, currentLocale, bgColor, textColor }) {
     <div style={{ backgroundColor: bgColor }}>
       <PageBreak textColor={textColor} />
       <footer style={{ color: textColor }}>
-        <div>
+        <div className="screenLeft">
           <div className="logo">
             <h4>Tender Touch</h4>
             <span>Doula Services</span>
@@ -66,11 +66,19 @@ function Footer({ setModalClass, currentLocale, bgColor, textColor }) {
           </div>
         </div>
 
-        <div className="legal">
-          <p>&copy; 2024 Key Six Designs, LLC.</p>
-          <div>
-            <p onClick={handlePrivacy}>Privacy Policy</p>
-            <p onClick={handleToS}>Terms of Service</p>
+        <div className="screenRight">
+          <div className="locales">
+            <p>
+              Proudly serving the Bryan / College Station and surrounding areas!
+            </p>
+          </div>
+
+          <div className="legal">
+            <p>&copy; 2024 Key Six Designs, LLC.</p>
+            <div>
+              <p onClick={handlePrivacy}>Privacy Policy</p>
+              <p onClick={handleToS}>Terms of Service</p>
+            </div>
           </div>
         </div>
 
