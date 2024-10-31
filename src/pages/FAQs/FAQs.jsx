@@ -3,10 +3,10 @@ import "./faqs.css";
 
 function FAQs({}) {
   const questions = [
-    "What's a Doula",
-    "Why a Doula",
+    "What's a Doula?",
+    "Why a Doula?",
     "Where areas do you serve? ",
-    "What packages are offered",
+    "What packages are offered?",
     "I can't afford a doula, what can I do to support my baby and my health?",
     "What's a prenatal meeting?",
     "How do the two week postpartum check-ins work?",
