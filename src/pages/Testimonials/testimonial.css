@@ -1,8 +1,85 @@
 .testSection {
   background-color: var(--testimonial);
   color: var(--paleCrumble);
-  padding: 20px;
+  padding: 15px 20px;
   text-align: center;
+  width: 100vw;
+}
+
+.testSection > h2 {
+  font-size: 2rem;
+  font-weight: bolder;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.testSection > h3 {
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+.testSection > h4 {
+  font-style: italic;
+  font-size: 1rem;
+  text-align: end;
+}
+
+.testContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px 5px;
+}
+
+.testBlurb {
+  position: relative;
+  background-color: var(--paleCrumble);
+  color: var(--cherry);
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 40px;
+}
+
+.quotations {
+  position: absolute;
+  width: 60px;
+  height: 80px;
+  background-image: url(../../assets/Quotations.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+}
+
+.quoteTop {
+  top: -35px;
+  left: -10px;
+}
+
+.quoteBottom {
+  bottom: -30px;
+  right: -10px;
+  transform: scaleX(-1);
+}
+
+.testForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.testForm > input {
+  margin: 0 30px 10px;
+  border: 2px var(--cherry) solid;
+  border-radius: 10px;
+  background-color: var(--paleCrumble);
+}
+
+.testBtn {
+  background-color: var(--paleCrumble);
+  border: 2px var(--cherry) solid;
+  padding: 5px 15px;
+  color: var(--cherry);
+  font-weight: bold;
+  border-radius: 15px;
 }
 
 @media screen and (min-width: 575px) {
