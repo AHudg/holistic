@@ -91,7 +91,7 @@ function Testimonials({}) {
         method="post"
         aria-label="Testimonial Form"
       >
-        <input type="hidden" name="form-name" value="contact"></input>
+        <input type="hidden" name="form-name" value="testimonial"></input>
 
         <h5>We'd love to hear from you.</h5>
         <h6>
