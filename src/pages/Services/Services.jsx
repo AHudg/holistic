@@ -47,7 +47,7 @@ function Services({}) {
 
         <div className="package">
           <h3>
-            Full Service Doula Package <span>$1000</span>
+            Full Service Doula Package <span>$1200</span>
           </h3>
           <p>
             This service is great for first time mothers, or mothers who feel
@@ -57,7 +57,9 @@ function Services({}) {
 
           <ul>
             <p>This includes:</p>
-            <li>2 prenatal visits</li>
+            <li>
+              2-3 prenatal meetings to discuss and plan for birth and postpartum
+            </li>
             <li>
               availability virtually 24/7 via phone call/texting/emails
               throughout your entire pregnancy
@@ -74,6 +76,7 @@ function Services({}) {
               to resources needed
             </li>
             <li>2 hour postpartum care</li>
+            <li>1 postpartum visit at the client's convenience</li>
             <li>
               up to 2 weeks virtual postpartum check ins and answering questions
               if needed!
@@ -88,7 +91,7 @@ function Services({}) {
 
         <div className="package">
           <h3>
-            Labor Only Doula Package <span>$800</span>
+            Labor Only Doula Package <span>$1000</span>
           </h3>
           <p>
             This is a great option for experienced moms who just need some extra
