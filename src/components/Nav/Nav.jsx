@@ -4,6 +4,7 @@ function Nav({ navLinks, currentLocale }) {
   const getNavStyles = (locale) => {
     switch (locale) {
       case "about":
+      case "testimonials":
       case "faqs":
       case "contact":
         return {

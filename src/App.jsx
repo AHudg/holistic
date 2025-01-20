@@ -15,6 +15,10 @@ function App() {
 
   const colorConfig = {
     about: { bgColor: "var(--paleCherry)", textColor: "var(--paleCrumble)" },
+    testimonials: {
+      bgColor: "var(--testimonial)",
+      textColor: "var(--paleCrumble)",
+    },
     services: { bgColor: "var(--paleCrumble)", textColor: "var(--meadow)" },
     faqs: { bgColor: "var(--meadow)", textColor: "var(--paleCrumble)" },
     contact: { bgColor: "var(--sage)", textColor: "var(--paleCrumble)" },

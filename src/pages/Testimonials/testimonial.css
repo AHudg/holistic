@@ -1,3 +1,10 @@
+.testSection {
+  background-color: var(--testimonial);
+  color: var(--paleCrumble);
+  padding: 20px;
+  text-align: center;
+}
+
 @media screen and (min-width: 575px) {
 }
 
