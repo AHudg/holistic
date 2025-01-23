@@ -1,11 +1,15 @@
 .testSection {
   background-color: var(--testimonial);
   color: var(--paleCrumble);
-  padding: 15px 20px;
   text-align: center;
 }
 
+.testContainer {
+  padding: 0 20px;
+}
+
 .testSection > h2 {
+  padding-top: 30px;
   font-size: 2rem;
   font-weight: bolder;
   text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
@@ -14,20 +18,21 @@
 .testSection > h3 {
   font-style: italic;
   font-size: 1.2rem;
+  margin: 0 20px;
 }
 
 .testSection > h4 {
   font-style: italic;
   font-size: 1rem;
   text-align: end;
-  margin-right: 5px;
+  margin: 20px 30px 0 0;
 }
 
 .testContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 20px 5px;
+  margin: 10px 5px;
 }
 
 .testBlurb {
@@ -55,10 +60,13 @@
   left: -10px;
 }
 
+form {
+  padding: 30px 20px;
+}
+
 .testForm {
   display: flex;
   flex-direction: column;
-  /* width: 100%; */
 }
 
 .testForm > input,
@@ -80,7 +88,8 @@
   width: 50%;
 }
 
-#firstNameTest {
+#firstNameTest,
+#phoneTest {
   margin-right: 5%;
 }
 
@@ -89,7 +98,7 @@ label {
   text-align: start;
 }
 
-#messageTest {
+textarea {
   height: 30vh;
 }
 
@@ -100,49 +109,96 @@ label {
   color: var(--cherry);
   font-weight: bold;
   border-radius: 15px;
-  margin: 20px 0 10px;
+  margin: 20px 0 0;
 }
 
 @media screen and (min-width: 575px) {
-  .testSection {
-    padding: 15px 40px;
+  .testSection > h4 {
+    margin-right: 40px;
+  }
+
+  .testContainer {
+    padding: 0px 40px;
   }
 
   .testBlurb {
     padding: 40px;
     margin-bottom: 50px;
   }
+
+  form {
+    padding: 30px 40px;
+  }
+
+  textarea {
+    height: 20vh;
+  }
 }
 
 @media screen and (min-width: 768px) {
-  .testSection {
-    padding: 15px 60px;
+  .testSection > h4 {
+    margin-right: 60px;
+  }
+
+  .testContainer {
+    padding: 0px 60px;
+  }
+
+  form {
+    padding: 30px 60px;
+    margin: 0 60px;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .testSection {
-    padding: 15px 80px;
+  .testSection > h4 {
+    margin-right: 100px;
+  }
+
+  .testContainer {
+    padding: 0px 100px;
+  }
+
+  form {
+    padding: 30px 100px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .testContainer {
     justify-content: space-between;
-    margin-top: 30px;
   }
 
   .testBlurb {
     width: 40vw;
   }
+
+  form {
+    margin: 0 120px;
+  }
 }
 
 @media screen and (min-width: 1400px) {
-  .testSection {
-    padding: 15px 120px;
+  .testSection > h4 {
+    margin-right: 120px;
+  }
+
+  .testContainer {
+    padding: 0px 120px;
   }
 
   .testContainer {
     margin: 40px 0;
+  }
+
+  form {
+    padding: 30px 120px;
+    margin: 0 200px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  form {
+    margin: 0 300px;
   }
 }

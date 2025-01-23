@@ -1,4 +1,6 @@
 import { useRef } from "react";
+
+import PageBreak from "../../components/PageBreak/PageBreak.jsx";
 import "./testimonial.css";
 
 function Testimonials({}) {
@@ -85,6 +87,9 @@ function Testimonials({}) {
           </p>
         </div>
       </div>
+
+      <PageBreak textColor={"var(--paleCrumble)"} />
+
       <form
         ref={targetRef}
         name="testimonial"
@@ -103,27 +108,29 @@ function Testimonials({}) {
           <div>
             <div className="nameDiv">
               <label htmlFor="firstNameTest">First Name:</label>
-              <input
-                type="text"
-                id="firstNameTest"
-                name="firstNameTest"
-              ></input>
+              <input type="text" id="firstNameTest" name="firstName"></input>
             </div>
 
             <div className="nameDiv">
               <label htmlFor="lastNameTest">Last Name:</label>
-              <input type="text" name="lastNameTest"></input>
+              <input type="text" name="lastName"></input>
             </div>
           </div>
 
-          <label htmlFor="emailTest">Email:</label>
-          <input type="text" id="emailTest" name="emailTest"></input>
+          <div>
+            <div className="nameDiv">
+              <label htmlFor="phoneTest">Phone:</label>
+              <input type="text" id="phoneTest" name="phone"></input>
+            </div>
 
-          <label htmlFor="phoneTest">Phone:</label>
-          <input type="text" id="phoneTest" name="phoneTest"></input>
+            <div className="nameDiv">
+              <label htmlFor="emailTest">Email:</label>
+              <input type="text" id="emailTest" name="email"></input>
+            </div>
+          </div>
 
           <label htmlFor="messageTest">Testimonial:</label>
-          <textarea id="messageTest" name="messageTest"></textarea>
+          <textarea id="messageTest" name="message"></textarea>
         </div>
 
         <button type="submit" className="testBtn">
