@@ -100,11 +100,21 @@ function Testimonials({}) {
         </h6>
 
         <div className="testForm">
-          <label htmlFor="firstNameTest">First Name:</label>
-          <input type="text" id="firstNameTest" name="firstNameTest"></input>
+          <div>
+            <div className="nameDiv">
+              <label htmlFor="firstNameTest">First Name:</label>
+              <input
+                type="text"
+                id="firstNameTest"
+                name="firstNameTest"
+              ></input>
+            </div>
 
-          <label htmlFor="lastNameTest">Last Name:</label>
-          <input type="text" name="lastNameTest"></input>
+            <div className="nameDiv">
+              <label htmlFor="lastNameTest">Last Name:</label>
+              <input type="text" name="lastNameTest"></input>
+            </div>
+          </div>
 
           <label htmlFor="emailTest">Email:</label>
           <input type="text" id="emailTest" name="emailTest"></input>
@@ -113,7 +123,7 @@ function Testimonials({}) {
           <input type="text" id="phoneTest" name="phoneTest"></input>
 
           <label htmlFor="messageTest">Testimonial:</label>
-          <input type="textarea" id="messageTest" name="messageTest"></input>
+          <textarea id="messageTest" name="messageTest"></textarea>
         </div>
 
         <button type="submit" className="testBtn">

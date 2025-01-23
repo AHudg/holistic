@@ -3,7 +3,6 @@
   color: var(--paleCrumble);
   padding: 15px 20px;
   text-align: center;
-  width: 100vw;
 }
 
 .testSection > h2 {
@@ -21,6 +20,7 @@
   font-style: italic;
   font-size: 1rem;
   text-align: end;
+  margin-right: 5px;
 }
 
 .testContainer {
@@ -55,22 +55,42 @@
   left: -10px;
 }
 
-.quoteBottom {
-  bottom: -30px;
-  right: -10px;
-  transform: scaleX(-1);
-}
-
 .testForm {
   display: flex;
   flex-direction: column;
+  /* width: 100%; */
 }
 
-.testForm > input {
-  margin: 0 30px 10px;
+.testForm > input,
+.nameDiv > input,
+.testForm > textarea {
   border: 2px var(--cherry) solid;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: var(--paleCrumble);
+}
+
+.testForm > div {
+  display: flex;
+}
+
+.nameDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+}
+
+#firstNameTest {
+  margin-right: 5%;
+}
+
+label {
+  margin-top: 10px;
+  text-align: start;
+}
+
+#messageTest {
+  height: 30vh;
 }
 
 .testBtn {
@@ -80,19 +100,49 @@
   color: var(--cherry);
   font-weight: bold;
   border-radius: 15px;
+  margin: 20px 0 10px;
 }
 
 @media screen and (min-width: 575px) {
+  .testSection {
+    padding: 15px 40px;
+  }
+
+  .testBlurb {
+    padding: 40px;
+    margin-bottom: 50px;
+  }
 }
 
 @media screen and (min-width: 768px) {
+  .testSection {
+    padding: 15px 60px;
+  }
 }
 
 @media screen and (min-width: 992px) {
+  .testSection {
+    padding: 15px 80px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
+  .testContainer {
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
+  .testBlurb {
+    width: 40vw;
+  }
 }
 
 @media screen and (min-width: 1400px) {
+  .testSection {
+    padding: 15px 120px;
+  }
+
+  .testContainer {
+    margin: 40px 0;
+  }
 }
