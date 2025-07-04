@@ -1,0 +1,95 @@
+.serviceSection {
+  background-color: var(--paleCrumble);
+  text-align: center;
+  padding: 20px;
+  color: var(--meadow);
+}
+
+.serviceHeader > h2 {
+  font-size: 2rem;
+  font-weight: bolder;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.consultation {
+  margin: 40px 10px;
+}
+
+.consultation > h3 {
+  font-style: italic;
+}
+
+.package > h3 {
+  margin: 20px 0;
+  border-bottom: double 3px var(--meadow);
+  font-style: italic;
+}
+
+.package > ul {
+  margin: 10px 20px;
+}
+
+.package > ul > p,
+.package > ul > li {
+  text-align: start;
+}
+
+.package > ul > li {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.postService {
+  display: block;
+  margin: 10px 0 10px;
+}
+
+.bottomBlurb {
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 575px) {
+  .package {
+    width: 70vw;
+    margin: auto;
+  }
+
+  .consultation {
+    margin: 40px auto;
+    width: 70vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .package,
+  .consultation {
+    width: 60vw;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .package,
+  .consultation {
+    width: 50vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .packageContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .package {
+    width: 40vw;
+    margin: 0 50px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .package {
+    margin: 0 10px;
+    width: 30vw;
+  }
+}

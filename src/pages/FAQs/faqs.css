@@ -1,0 +1,127 @@
+.faqSection {
+  background-color: var(--meadow);
+  position: relative;
+  overflow: hidden;
+  color: var(--paleCrumble);
+}
+
+.faqBackground {
+  width: 350px;
+  height: auto;
+  rotate: -45deg;
+  position: absolute;
+  top: 110px;
+  right: -150px;
+  opacity: 0.2;
+  filter: hue-rotate(30deg);
+}
+
+.faqHeader {
+  padding: 50px 30px;
+  margin-bottom: 50px;
+}
+
+.faqHeader > h2 {
+  font-size: 5rem;
+  margin: 0;
+}
+
+.faqHeader > h3 {
+  font-size: 1rem;
+  font-weight: lighter;
+  font-style: italic;
+  width: 75%;
+  position: relative;
+  z-index: 1;
+}
+
+.faqDiv {
+  margin-bottom: 30px;
+}
+
+.faq {
+  border-bottom: var(--paleCrumble) 2px solid;
+  margin: 10px 20px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.faq > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq > div > h4 {
+  font-weight: bold;
+}
+
+.expandCheckbox {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+}
+
+.answer {
+  max-height: 1px;
+  opacity: 0;
+  font-weight: lighter;
+  transition: max-height 1s ease-in-out, opacity 0.5s;
+}
+
+.answerSelected {
+  max-height: 1000px;
+  opacity: 1;
+  transition: max-height 1s ease-in-out, opacity 0.5s;
+  transition-delay: 0s, 0.5s;
+  transition-property: max-height, opacity;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 575px) {
+  .faqDiv {
+    width: 80vw;
+    margin: 0 auto 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .faqHeader {
+    margin-left: 40px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .faqBackground {
+    width: 450px;
+    top: 90px;
+  }
+
+  .faqHeader {
+    margin-left: 100px;
+  }
+
+  .faqDiv {
+    width: 70vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .faqHeader {
+    margin-left: 200px;
+  }
+
+  .faqDiv {
+    width: 50vw;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .faqBackground {
+    width: 550px;
+    right: -200px;
+  }
+
+  .faqDiv {
+    width: 40vw;
+  }
+}

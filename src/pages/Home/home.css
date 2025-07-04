@@ -1,0 +1,544 @@
+/* UPDATE FROM CHATGPT */
+#homePage > section > p {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#homePage > section {
+  position: relative;
+  overflow: hidden;
+}
+
+#homePage > section > p,
+#homePage > section > div > div > p {
+  text-align: center;
+}
+
+#homePage > a {
+  z-index: 1;
+}
+
+.hero {
+  position: relative;
+  z-index: -1;
+  background-image: url("../../assets/OptionOne.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.heroWords {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 40%;
+  width: 100vw;
+  opacity: 0;
+}
+
+.fadeIn {
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.heroWords > span {
+  font-size: 3rem;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+}
+
+.heroWords > p {
+  font-size: 1.2rem;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+}
+
+.heroWords > a {
+  margin: 10px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: var(--sage);
+  border: 2px var(--paleCrumble) solid;
+  color: var(--paleCrumble);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.heroWords > a:hover {
+  color: white;
+  box-shadow: 0px 0px 10px var(--paleCrumble);
+}
+
+.whatDoula,
+.faqBanner {
+  background-color: var(--sage);
+  color: var(--paleCrumble);
+}
+
+.whatDoula h2 {
+  margin: 40px auto 15px;
+  font-size: 2.25rem;
+  text-align: center;
+  text-shadow: 4px 3px 2px var(--meadow);
+}
+
+.whatDoula p,
+.whyDoula p {
+  margin-bottom: 30px;
+}
+
+.bee {
+  position: absolute;
+  width: 80px;
+  height: 70px;
+  background-image: url(../../assets/beeCrumbleCutout.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.8;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+}
+
+.beeOne {
+  top: 30px;
+  right: -5px;
+  transform: rotate(-55deg);
+}
+
+.beeTwo {
+  top: 5px;
+  left: 30px;
+  transform: rotate(30deg);
+  z-index: 1;
+}
+
+.whyDoula {
+  background-color: var(--meadow);
+  color: var(--paleCrumble);
+  padding-bottom: 30px;
+}
+
+.whyDoula h2 {
+  margin: 75px auto 15px;
+  font-size: 2.25rem;
+  text-align: center;
+  text-shadow: 4px 3px 2px rgba(61, 71, 28, 0.5);
+}
+
+.beeThree {
+  bottom: 10px;
+  right: 20px;
+  transform: rotate(115deg);
+}
+
+.bannerPhoto {
+  background-image: url("../../assets/OptionTwo.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 250px;
+  width: 100vw;
+}
+
+.serviceBanner {
+  background-color: var(--crumble);
+  padding: 30px 20px 40px;
+  color: var(--meadow);
+}
+
+.serviceBanner > div {
+  display: flex;
+  justify-content: center;
+}
+
+.lilly {
+  position: relative;
+  bottom: -25px;
+  width: 40vw;
+  height: 250px;
+  background-image: url(../../assets/MeadowFlower.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index: 999;
+}
+
+.serviceWords {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  width: 55vw;
+  margin-right: 5vw;
+}
+
+.serviceWords > h2 > a {
+  color: var(--meadow);
+  font-size: 2.25rem;
+  text-shadow: 4px 3px 2px rgba(126, 114, 88, 0.5);
+}
+
+.serviceWords > p {
+  color: var(--meadow);
+}
+
+.serviceWords > a {
+  color: var(--crumble);
+  background-color: var(--meadow);
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-top: 15px;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+}
+
+.serviceWords > a:hover {
+  box-shadow: 5px 5px 10px var(--sage);
+  color: white;
+}
+
+.aboutBanner {
+  background-color: var(--paleCherry);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutBanner h2 {
+  font-size: 2.25rem;
+  text-align: center;
+  color: var(--paleCrumble);
+  text-shadow: 4px 3px 2px rgba(102, 10, 35, 0.5);
+}
+
+.aboutCluster {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.leftFrame {
+  width: 10vw;
+}
+
+.homeAboutPhoto {
+  width: 60vw;
+  border-radius: 20px;
+  border: 2px solid var(--cherry);
+  margin: 0 5px;
+}
+
+.rightFrame {
+  width: 10vw;
+  transform: rotate(180deg);
+}
+
+.aboutBanner > div > p,
+.aboutBanner > div > div > p {
+  color: var(--paleCrumble);
+  text-align: center;
+  margin: 0 15px;
+}
+
+.aboutBanner > div > p > a,
+.aboutBanner > div > div > p > a {
+  color: var(--paleCrumble);
+  margin-left: 10px;
+}
+
+.aboutBanner > div > p > a:hover,
+.aboutBanner > div > div > p > a:hover {
+  color: white;
+}
+
+.faqBanner {
+  padding-bottom: 30px;
+}
+
+#faqHeader {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--paleCrumble);
+  text-shadow: 4px 3px 2px var(--meadow);
+}
+
+.faqBanner > p > a {
+  color: var(--paleCrumble);
+  font-style: italic;
+}
+
+.faqBanner > p > a:hover {
+  color: white;
+}
+
+.testimonialBanner {
+  background-color: var(--cherry);
+}
+
+.multiWaves {
+  aspect-ratio: 900/450;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  top: 0px;
+}
+
+.multiCherryCrumbleSVG {
+  background-image: url(../../assets/smallCherryCrumble.svg);
+}
+
+.multiCherrySageSVG {
+  background-image: url(../../assets/smallCherrySage.svg);
+}
+
+.flip {
+  transform: rotate(180deg);
+}
+
+@media screen and (min-width: 575px) {
+  .bannerPhoto {
+    height: 350px;
+  }
+
+  .lilly {
+    bottom: -40px;
+    height: 300px;
+  }
+
+  .leftFrame {
+    width: 8vw;
+  }
+
+  .homeAboutPhoto {
+    width: 55vw;
+  }
+
+  .rightFrame {
+    width: 8vw;
+  }
+
+  .aboutBanner > div > p {
+    margin: auto;
+    width: 80vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .whatDoula p,
+  .whyDoula p {
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+  .beeOne {
+    right: 80px;
+  }
+
+  .beeTwo {
+    left: 60px;
+  }
+
+  .beeThree {
+    bottom: 15px;
+    right: 30px;
+  }
+
+  .bannerPhoto {
+    height: 450px;
+  }
+
+  .lilly {
+    bottom: -50px;
+    width: 35vw;
+    height: 350px;
+  }
+
+  .serviceWords {
+    width: 60vw;
+  }
+
+  .leftFrame {
+    width: 7vw;
+  }
+
+  .homeAboutPhoto {
+    width: 45vw;
+  }
+
+  .rightFrame {
+    width: 7vw;
+  }
+
+  .aboutBanner > div > p {
+    width: 70vw;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .beeOne {
+    right: 120px;
+  }
+
+  .beeTwo {
+    left: 80px;
+  }
+
+  .beeThree {
+    right: 50px;
+  }
+
+  .serviceWords {
+    justify-content: center;
+  }
+
+  .lilly {
+    width: 30vw;
+  }
+
+  .serviceWords {
+    width: 40vw;
+  }
+
+  .multiWaves {
+    aspect-ratio: 1800/450;
+  }
+
+  .multiCherryCrumbleSVG {
+    background-image: url(../../assets/bigCherryCrumble.svg);
+  }
+
+  .multiCherrySageSVG {
+    background-image: url(../../assets/bigCherrySage.svg);
+  }
+
+  .breakpointDiv {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+  }
+
+  .homeAboutPhoto {
+    width: 30vw;
+    margin-right: 50px;
+  }
+
+  .aboutCluster {
+    flex-direction: column;
+    width: auto;
+    width: 40vw;
+  }
+
+  .leftFrame {
+    width: 100%;
+  }
+
+  .rightFrame {
+    width: 100%;
+    transform: rotate(180deg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .whatDoula p,
+  .whyDoula p {
+    width: 60vw;
+  }
+
+  .beeOne {
+    right: 200px;
+    width: 100px;
+  }
+
+  .beeTwo {
+    left: 160px;
+    top: 20px;
+    width: 100px;
+  }
+
+  .beeThree {
+    bottom: 60px;
+    right: 155px;
+    width: 100px;
+  }
+
+  .lilly {
+    width: 20vw;
+  }
+
+  .serviceWords {
+    width: 40vw;
+    margin-left: 50px;
+  }
+
+  .homeAboutPhoto {
+    width: 25vw;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .whatDoula h2,
+  .whyDoula h2 {
+    margin-top: 80px;
+  }
+
+  .whatDoula p,
+  .whyDoula p {
+    width: 50vw;
+    margin-bottom: 60px;
+  }
+
+  .beeOne {
+    right: 350px;
+  }
+
+  .beeTwo {
+    left: 220px;
+  }
+
+  .beeThree {
+    right: 225px;
+  }
+
+  .serviceWords {
+    width: 30vw;
+    margin-left: 50px;
+  }
+
+  .homeAboutPhoto {
+    width: 20vw;
+  }
+
+  .aboutCluster {
+    width: 30vw;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .beeOne {
+    right: 400px;
+  }
+
+  .beeTwo {
+    left: 300px;
+  }
+
+  .beeThree {
+    right: 250px;
+  }
+}

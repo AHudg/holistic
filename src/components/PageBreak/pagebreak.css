@@ -1,0 +1,47 @@
+.pageBreak {
+  display: flex;
+}
+
+.pageBreak > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.leftPageBreak,
+.rightPageBreak {
+  display: inline;
+  width: 100%;
+  height: 1px;
+  margin-bottom: 2px;
+}
+
+.pageBreakBee {
+  width: 50px;
+  height: auto;
+}
+
+.meadowBee {
+  filter: hue-rotate(30deg) brightness(90%);
+}
+
+.cherryBee {
+  filter: hue-rotate(300deg) brightness(90%);
+}
+
+@media screen and (min-width: 575px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 992px) {
+}
+
+@media screen and (min-width: 1200px) {
+}
+
+@media screen and (min-width: 1400px) {
+}

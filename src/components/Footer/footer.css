@@ -1,0 +1,101 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+.screenLeft {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo > h4 {
+  margin-bottom: 0;
+}
+
+.footerContact {
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.screenRight {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.legal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.legal > p {
+  font-size: 0.75rem;
+  margin-top: 20px;
+}
+
+.legal > div {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.legal > div > p {
+  font-size: 0.75rem;
+}
+
+@media screen and (min-width: 575px) {
+  .screenLeft {
+    width: 75%;
+  }
+
+  .legal > div {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 992px) {
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 50px;
+  }
+
+  .screenLeft {
+    width: 30%;
+  }
+
+  .legal {
+    align-items: end;
+    text-align: end;
+  }
+
+  .legal > div {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+}
+
+@media screen and (min-width: 1400px) {
+}

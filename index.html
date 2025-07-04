@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tender Touch Doula Services</title>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <meta name="description" content="Tender Touch offers personalized doula servcies for expected mothers. Learn more about our packages, services and contact us for more informatio." />
+    <meta name="keywords" content="Doula, Birth, Pregnancy, Doula Services, Birth Support, Postpartum Support, Tender Touch Doula, College, Station, College Station, Bryan, Texas, TX, 77801, 77802, 77803, 77804, 77805, 77806, 77807, 77808" />
+    <meta name="author" content="Tender Touch Doula Services" />
+    <script defer
+      src="https://kit.fontawesome.com/2b5d982922.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="/src/main.jsx" defer></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" id="firstName" name="firstName"></input>
+      <input type="text" id="lastName" name="lastName"></input>
+      <input type="text" id="email" name="email"></input>
+      <input type="text" id="phone" name="phone"></input>
+      <select id="method" name="method">
+        <option value="" hidden>
+          Select an option
+        </option>
+        <option value="email">Email</option>
+        <option value="call">Phone Call</option>
+        <option value="text">Text Message</option>
+      </select>
+      <input type="date" id="due" name="due"></input>
+      <input type="text" id="location" name="location"></input>
+      <input type="textarea" id="Message" name="Message"></input>
+      <select id="referral" name="referral">
+        <option value="" hidden>
+          Select an option
+        </option>
+        <option value="center">Birthing Center</option>
+        <option value="friend">Friend</option>
+        <option value="previous">Previous Client</option>
+        <option value="google">Google</option>
+        <option value="social">Social Media</option>
+        <option value="other">Other</option>
+      </select>
+      <button type="submit">Submit</button>
+    </form>
+
+    <form name="testimonial" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" id="firstNameTest" name="firstName"></input>
+      <input type="text" id="lastNameTest" name="lastName"></input>
+      <input type="text" id="emailTest" name="email"></input>
+      <input type="text" id="phoneTest" name="phone"></input>
+      <textarea id="messageTest" name="message"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+.wave {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.topPosition {
+  top: 0;
+}
+
+.bottomPosition {
+  bottom: 0;
+}
+
+.heroWave {
+  z-index: -1;
+}
+
+#frameSVG svg {
+  position: relative;
+  display: block;
+  width: calc(141% + 1.3px);
+  height: 79px;
+}
+
+.sageFill {
+  fill: var(--sage);
+}
+
+.meadowFill {
+  fill: var(--meadow);
+}
+
+.crumbleFill {
+  fill: var(--crumble);
+}

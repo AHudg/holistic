@@ -1,0 +1,104 @@
+.aboutSection {
+  background-color: var(--paleCherry);
+  padding: 20px;
+  text-align: center;
+  color: var(--paleCrumble);
+}
+
+.aboutSection > h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-shadow: 3px 3px 2px rgba(102, 10, 35, 0.5);
+}
+
+.aboutFlex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutPhoto {
+  width: 80vw;
+  margin: 0px 0 20px;
+  border-radius: 100px 100px 0 0;
+  box-shadow: -10px 10px 0 var(--cherry);
+}
+
+.flowerField {
+  margin-top: 40px;
+  width: 90vw;
+  max-height: 25vh;
+  max-width: 800px;
+}
+
+@media screen and (min-width: 575px) {
+  .aboutPhoto {
+    width: 50vw;
+    box-shadow: -15px 15px 0 var(--cherry);
+    margin: 0 0 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .aboutPhoto {
+    width: 40vw;
+  }
+
+  .aboutFlex > div > p {
+    width: 80vw;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .aboutFlex {
+    display: block;
+  }
+
+  .aboutPhoto {
+    width: 35vw;
+    margin: 30px;
+    float: left;
+  }
+
+  .aboutFlex > div > p {
+    width: 80vw;
+    margin: 0 10vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .aboutFlex {
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    display: flex;
+  }
+
+  .aboutFlex > div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aboutPhoto {
+    width: 30vw;
+    float: none;
+  }
+
+  .aboutFlex > div > p {
+    width: 40vw;
+    margin: 0 30px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .aboutFlex > div > p {
+    width: 35vw;
+    margin: 0 60px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .aboutPhoto {
+    width: 20vw;
+  }
+}

@@ -1,0 +1,204 @@
+.testSection {
+  background-color: var(--testimonial);
+  color: var(--paleCrumble);
+  text-align: center;
+}
+
+.testContainer {
+  padding: 0 20px;
+}
+
+.testSection > h2 {
+  padding-top: 30px;
+  font-size: 2rem;
+  font-weight: bolder;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.testSection > h3 {
+  font-style: italic;
+  font-size: 1.2rem;
+  margin: 0 20px;
+}
+
+.testSection > h4 {
+  font-style: italic;
+  font-size: 1rem;
+  text-align: end;
+  margin: 20px 30px 0 0;
+}
+
+.testContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 10px 5px;
+}
+
+.testBlurb {
+  position: relative;
+  background-color: var(--paleCrumble);
+  color: var(--cherry);
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 40px;
+}
+
+.quotations {
+  position: absolute;
+  width: 60px;
+  height: 80px;
+  background-image: url(../../assets/Quotations.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+}
+
+.quoteTop {
+  top: -35px;
+  left: -10px;
+}
+
+form {
+  padding: 30px 20px;
+}
+
+.testForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.testForm > input,
+.nameDiv > input,
+.testForm > textarea {
+  border: 2px var(--cherry) solid;
+  border-radius: 5px;
+  background-color: var(--paleCrumble);
+}
+
+.testForm > div {
+  display: flex;
+}
+
+.nameDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+}
+
+#firstNameTest,
+#phoneTest {
+  margin-right: 5%;
+}
+
+label {
+  margin-top: 10px;
+  text-align: start;
+}
+
+textarea {
+  height: 30vh;
+}
+
+.testBtn {
+  background-color: var(--paleCrumble);
+  border: 2px var(--cherry) solid;
+  padding: 5px 15px;
+  color: var(--cherry);
+  font-weight: bold;
+  border-radius: 15px;
+  margin: 20px 0 0;
+}
+
+@media screen and (min-width: 575px) {
+  .testSection > h4 {
+    margin-right: 40px;
+  }
+
+  .testContainer {
+    padding: 0px 40px;
+  }
+
+  .testBlurb {
+    padding: 40px;
+    margin-bottom: 50px;
+  }
+
+  form {
+    padding: 30px 40px;
+  }
+
+  textarea {
+    height: 20vh;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .testSection > h4 {
+    margin-right: 60px;
+  }
+
+  .testContainer {
+    padding: 0px 60px;
+  }
+
+  form {
+    padding: 30px 60px;
+    margin: 0 60px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .testSection > h4 {
+    margin-right: 100px;
+  }
+
+  .testContainer {
+    padding: 0px 100px;
+  }
+
+  form {
+    padding: 30px 100px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .testContainer {
+    justify-content: space-between;
+  }
+
+  .testBlurb {
+    width: 40vw;
+  }
+
+  form {
+    margin: 0 120px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .testSection > h4 {
+    margin-right: 120px;
+  }
+
+  .testContainer {
+    padding: 0px 120px;
+  }
+
+  .testContainer {
+    margin: 40px 0;
+  }
+
+  form {
+    padding: 30px 120px;
+    margin: 0 200px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  form {
+    margin: 0 300px;
+  }
+}

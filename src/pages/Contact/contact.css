@@ -1,0 +1,119 @@
+/* Contact */
+.contactPage {
+  color: var(--paleCrumble);
+  background-color: var(--sage);
+}
+
+.infoFrame {
+  padding: 40px 20px 10px;
+}
+
+.infoFrame > div > h2 {
+  font-size: 2rem;
+}
+
+.infoFrame > div > p {
+  margin-bottom: 20px;
+}
+
+.info {
+  display: flex;
+  margin: 0 0 10px 15px;
+}
+
+.info i {
+  color: var(--paleCrumble);
+}
+
+.info a {
+  margin-right: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+}
+
+form > div {
+  display: flex;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input,
+select {
+  border-radius: 5px;
+  background-color: rgb(176, 185, 166);
+  border: 2px solid var(--meadow);
+}
+
+.nameDiv {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+#firstName {
+  margin-right: 5%;
+}
+
+.contactBtn {
+  width: 50%;
+  margin: 20px auto;
+  border-radius: 10px;
+  color: var(--paleCrumble);
+  background-color: var(--meadow);
+  border: 1px solid var(--paleCrumble);
+}
+
+.contactBtn:hover {
+  font-weight: bold;
+  box-shadow: 1px 1px 3px var(--paleCrumble);
+}
+
+@media screen and (min-width: 575px) {
+}
+
+@media screen and (min-width: 768px) {
+  .formFrame {
+    width: 100vw;
+  }
+
+  form {
+    width: 70vw;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .infoFrame {
+    display: flex;
+  }
+
+  .infoFrame > div {
+    margin: 0 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contactPage {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 60px;
+  }
+
+  .infoFrame {
+    flex-direction: column;
+    padding-top: 100px;
+  }
+
+  form {
+    width: 40vw;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+}
