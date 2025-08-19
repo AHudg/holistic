@@ -17,13 +17,7 @@ function About({}) {
 
         <div>
           <p>
-            Welcome! My name is Katherine Ellis, and I am a proud birth and postpartum doula
-            and homemaker. I was born into a small town and into a family of 8
-            children, and have loved being around birth and babies my whole
-            life. My family has instilled into me a love for the slower life
-            from a young age. I was raised with a plentiful garden in the
-            backyard, chickens and ducks running around our orange trees, and
-            worked alongside my brother in his generational Brahman ranch.
+          Welcome! My name is Katherine Ellis and I am a proud birth and postpartum doula and homemaker. I would like to add that my new name will be Katherine Kutchey coming Spring of 2026, so if you were referred to me by a friend and my last name is different---you are in the right spot! I was born into a small town and into a family of 8 children, and have loved being around birth and babies my whole life. My family has instilled into me a love for the slower life from a young age. I was raised with a plentiful garden in the backyard, chickens and ducks running around our orange trees, and worked alongside my brother in his generational Brahman ranch.
           </p>
           <br />
 
@@ -33,8 +27,8 @@ function About({}) {
             the human body, and I knew that I needed to pursue a career that
             blended my love for people and for education. I currently do not
             have a family of my own, which allows me to fully devote my time to
-            my patients, with no interruptions or distractions. I am always on
-            call, and I am enthralled to meet my patients and walk with them in
+            my moms, with no interruptions or distractions. I am always on
+            call, and I am thrilled to meet my future mamas and walk with them in
             such a sweet time of their lives.
           </p>
           <br />

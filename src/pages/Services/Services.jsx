@@ -155,6 +155,7 @@ function Services({}) {
         love what I do, so please reach out if you are wanting to discuss
         different payment options.
       </p>
+      <p>If you’re here on behalf of a family member, I do offer gift certificates to pay for a mom to have postpartum care! Please reach out and we can get that set up! </p>
     </section>
   );
 }

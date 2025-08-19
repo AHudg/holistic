@@ -55,14 +55,7 @@ function Home({}) {
         <p>
           Doula is the professional name for someone who is your support—
           educationally, mentally, emotionally, and at times physically! There
-          are two types of doulas: birth doulas and postpartum doulas. I am a
-          certified birth doula who is excited to walk alongside you through
-          your pregnancy and labor. My passion is to provide education to help
-          make informed decisions regarding your birth plan. Pregnancy and labor
-          can be overwhelming, and no one should have to sift through the
-          information alone. Doulas work with your partner to create an
-          environment where you feel safe, comfortable, and in charge of your
-          birth.
+          are two types of doulas: birth doulas and postpartum doulas. I am a certified birth and postpartum doula who is excited to walk alongside you through your pregnancy, labor, and postpartum. My passion is to provide education to help you make informed decisions regarding your birth plan and postpartum preparation. Pregnancy and labor can be overwhelming, and no one should have to sift through the information alone. Postpartum is a time for nourishment, for rest, and for recovery. Doulas work with your partner to create an environment where you feel safe, comfortable, and in charge of your birth, as well as excited for the postpartum transition instead of fearful.
         </p>
       </section>
 
