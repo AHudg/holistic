@@ -15,6 +15,9 @@ const Testimonials = lazy(() =>
 );
 const Contact = lazy(() => import("./pages/Contact/Contact.jsx"));
 const Services = lazy(() => import("./pages/Services/Services.jsx"));
+const BirthServices = lazy(() => import("./components/Services/BirthServices.jsx"));
+const PostpartumServices = lazy(() => import("./components/Services/PostpartumServices.jsx"));
+const MealServices = lazy(() => import("./components/Services/MealServices.jsx"));
 const FAQs = lazy(() => import("./pages/FAQs/FAQs.jsx"));
 
 const router = createBrowserRouter([
@@ -55,14 +58,32 @@ const router = createBrowserRouter([
           </Suspense>
         ),
       },
-      {
-        path: "services",
-        element: (
-          <Suspense fallback={<Loading />}>
-            <Services />
-          </Suspense>
-        ),
-      },
+     {
+  path: "services",
+  element: (
+    <Suspense fallback={<Loading />}>
+      <Services />
+    </Suspense>
+  ),
+  children: [
+    {
+      index: true,
+      element: <BirthServices />,
+    },
+    {
+      path: "birth",
+      element: <BirthServices />,
+    },
+    {
+      path: "postpartum",
+      element: <PostpartumServices />,
+    },
+    {
+      path: "meals",
+      element: <MealServices />,
+    },
+  ],
+},
       {
         path: "faqs",
         element: (

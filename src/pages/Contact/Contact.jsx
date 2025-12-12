@@ -115,6 +115,8 @@ function Contact({}) {
             <option value="" hidden>Select an option</option>
             <option value="birth">Birth Doula</option>
             <option value="postpartum">Postpartum Doula</option>
+            <option value="meals">Meals</option>
+            <option value="everything">All of the Above</option>
             <option value="other">Other</option>
           </select>
 
