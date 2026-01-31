@@ -1,0 +1,93 @@
+.consultation {
+  margin: 30px auto;
+}
+
+.consultation > h3 {
+  font-style: italic;
+}
+
+.package > h3 {
+  margin: 20px 0;
+  border-bottom: double 3px var(--meadow);
+  font-style: italic;
+}
+
+.package > ul {
+  margin: 10px 20px;
+}
+
+.package > ul > p,
+.package > ul > li {
+  text-align: start;
+}
+
+.package > ul > li {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.postService {
+  display: block;
+  margin: 10px 0 10px;
+}
+
+.bottomBlurb {
+  margin-bottom: 40px;
+}
+
+.menu > h3 {
+  font-style: italic;
+}
+
+.menu > h4 {
+  display: inline-block;
+  padding: 0px 15px;
+  font-style: italic;
+  font-size:larger;
+  border-bottom: double 3px var(--meadow);
+}
+
+@media screen and (min-width: 575px) {
+  .package {
+    width: 70vw;
+    margin: auto;
+  }
+
+  .consultation {
+    width: 70vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .package,
+  .consultation {
+    width: 60vw;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .package,
+  .consultation {
+    width: 50vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .packageContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .package {
+    width: 40vw;
+    margin: 0 50px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .package {
+    width: 30vw;
+    margin: 0 10px;
+  }
+}

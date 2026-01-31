@@ -35,7 +35,7 @@ function Header({ setModalClass, currentLocale, bgColor, textColor }) {
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Testimonials", path: "/testimonials" },
-    { name: "Services", path: "/services" },
+    { name: "Services", path: "/services/birth" },
     { name: "FAQs", path: "/faqs" },
     { name: "Contact", path: "/contact" },
   ];

@@ -1,5 +1,7 @@
+import "./outletservices.css";
+
 function PostpartumServices({ }) {
-  return <div>
+  return <div className="packageContainer">
     <div className="package">
           <h3>
             Postpartum Doula Support

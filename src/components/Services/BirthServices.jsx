@@ -1,6 +1,5 @@
 import "./outletservices.css";
 
-
 function BirthServices({ }) {
   return <div>
         <div className="consultation">
@@ -14,6 +13,7 @@ function BirthServices({ }) {
           </p>
         </div>
 
+      <div className="packageContainer">
         <div className="package">
           <h3>
             Birth Plan Consultation <span>$60</span>
@@ -110,6 +110,7 @@ function BirthServices({ }) {
             If your labor allows, I will be happy to take some photos of your
             birth as well.
           </p>
+        </div>
         </div>
       </div>
 }

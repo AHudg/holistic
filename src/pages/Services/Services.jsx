@@ -7,21 +7,19 @@ function Services({}) {
       <div className="serviceHeader">
         <h2>Packages & Fees</h2>
         <div className="serviceToggle" role="tablist" aria-label="Services">
-          <NavLink to="birth" className={({ isActive }) => `toggleBtn ${isActive ? "active" : ""}`}>
+          <NavLink to="birth" className={({ isActive }) => `toggleBtn ${isActive ? "serviceMenu activeService" : "serviceMenu"}`}>
             Birth Doula
           </NavLink>
-          <NavLink to="postpartum" className={({ isActive }) => `toggleBtn ${isActive ? "active" : ""}`}>
+          <NavLink to="postpartum" className={({ isActive }) => `toggleBtn ${isActive ? "serviceMenu activeService" : "serviceMenu"}`}>
             Postpartum Doula
           </NavLink>
-          <NavLink to="meals" className={({ isActive }) => `toggleBtn ${isActive ? "active" : ""}`}>
+          <NavLink to="meals" className={({ isActive }) => `toggleBtn ${isActive ? "serviceMenu activeService" : "serviceMenu"}`}>
             Meals
           </NavLink>
         </div>
       </div>
 
-      <div className="packageContainer">
         <Outlet />
-      </div>
       
       <p>
         I am happy to discuss payment plans if needed. I am a doula because I

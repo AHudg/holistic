@@ -102,7 +102,7 @@ function Home({}) {
               pregnancy, I aim to support you every step of the way. Interested
               in learning more of what I have to offer?
             </p>
-            <a href="/services" className="italics">
+            <a href="/services/birth" className="italics">
               View the packages!
             </a>
           </div>
