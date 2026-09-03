@@ -51,7 +51,7 @@ function BirthServices({ }) {
             some extra support throughout postpartum as well. The postpartum support in this
             package ranges between 5-9 days of help, each shift being 4 hours long, and spread
             between 2-3 weeks. This fee also contains the birth fee. If you wanted more 
-            postpartum support than this, please visit the <Link to="/services/postpartum">
+            postpartum support than this, please visit the <Link to="/services/postpartum" className="partumLink">
             postpartum doula services here</Link> to read more.
           </p>
 

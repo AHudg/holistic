@@ -47,6 +47,12 @@
   border-bottom: double 3px var(--meadow);
 }
 
+.partumLink {
+  color: var(--meadow);
+  font-style: italic;
+  border-bottom: double 1px var(--meadow);
+}
+
 @media screen and (min-width: 575px) {
   .package {
     width: 70vw;
