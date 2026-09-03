@@ -1,4 +1,4 @@
-import AboutKatherine from "../../assets/AboutKatherine.jpeg";
+import AboutKatherine from "../../assets/AboutPhoto.jpeg";
 import flowerField from "../../assets/FlowerField.png";
 
 import "./about.css";
