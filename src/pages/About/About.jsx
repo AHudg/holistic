@@ -17,7 +17,16 @@ function About({}) {
 
         <div>
           <p>
-          Welcome! My name is Katherine Ellis and I am a proud birth and postpartum doula and homemaker. I would like to add that my new name will be Katherine Kutchey coming Spring of 2026, so if you were referred to me by a friend and my last name is different---you are in the right spot! I was born into a small town and into a family of 8 children, and have loved being around birth and babies my whole life. My family has instilled into me a love for the slower life from a young age. I was raised with a plentiful garden in the backyard, chickens and ducks running around our orange trees, and worked alongside my brother in his generational Brahman ranch.
+          Welcome! My name is Katherine Kutchey and I am a proud birth, postpartum 
+          doula, and homemaker. I would like to add that my name has recently changed 
+          from Ellis to Kutchey as I married the love of my life this past spring–  
+          if you were referred to me by a friend and my last name is different– you 
+          are in the right spot! I was born into a small town and into a family of 
+          8 children, and have loved being around birth and babies my whole life. My 
+          family has instilled into me a love for the slower life from a young age. 
+          I was raised with a plentiful garden in the backyard, chickens and ducks 
+          running around our orange trees, and worked alongside my brother in his 
+          generational Brahman ranch.
           </p>
           <br />
 
@@ -27,9 +36,11 @@ function About({}) {
             the human body, and I knew that I needed to pursue a career that
             blended my love for people and for education. I currently do not
             have a family of my own, which allows me to fully devote my time to
-            my moms, with no interruptions or distractions. I am always on
-            call, and I am thrilled to meet my future mamas and walk with them in
-            such a sweet time of their lives.
+            my moms, with no interruptions or distractions. I have supported over 
+            40 moms in their labor, and I have taken care of numerous families in 
+            postpartum, including triplets!! I am always on call, and I am thrilled 
+            to meet my future mamas and walk with them in such a sweet time of their 
+            lives.
           </p>
           <br />
 
@@ -52,13 +63,10 @@ function About({}) {
 
           <p>
             When I am not helping mamas in labor or meeting up with them, I
-            enjoy a variety of different hobbies! I love gardening, riding
-            horses, and am always experimenting with new recipes in the kitchen!
-            I end almost every day with my nose in a book before bed. I adore
-            getting outside and will often hike with friends, go for walks, or
-            start training for my next event! I have run a half marathon before,
-            am currently training for a mini triathlon, and have a spartan on my
-            list soon!
+            enjoy a variety of different hobbies! I love gardening and am always 
+            experimenting with new recipes in the kitchen! I end almost every day 
+            with my nose in a book before bed. I adore getting outside and will 
+            often hike with friends, go for walks, or start training for my next event!
           </p>
         </div>
       </div>

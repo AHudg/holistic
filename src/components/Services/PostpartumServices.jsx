@@ -12,7 +12,7 @@ function PostpartumServices({ }) {
             <span className="postService">Overnight Support - $45/hour</span>
             <p>Think of this as a blend of everything you need wrapped into one: a maid, a cook, a listening ear, and someone to hold your baby so you can finally rest.
           </p>
-
+          <br></br>
           <p>Postpartum support is completely personalized to you. Some of the ways I help include:</p>
           <ul>
             <li>Washing bottles or pump parts</li>
@@ -22,7 +22,7 @@ function PostpartumServices({ }) {
             <li>Accompanying you to appointments for an extra set of hands</li>
             <li>Offering lactaction support and gentle guidance</li>
           </ul>
-
+          <br></br>
           <p>Each package includes:</p>
           <ul>
             <li>A customized postpartum planning document</li>
@@ -34,6 +34,8 @@ function PostpartumServices({ }) {
           <p className="bottomBlurb">
             Postpartum is a sacred time for rest, nourishment, and support. I'm here to help you experience all three.
           </p>
+          <p>If you’re here on behalf of a family member, I do offer gift certificates to pay for a mom to have postpartum care! Please reach out and we can get that set up! </p>
+
         </div>
   </div>
 }
